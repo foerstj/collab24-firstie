@@ -151,7 +151,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.83147,0,0.55557;
-	  p position = -1.83603,0,1.86316,0x9a9c05e9;
+	  p position = -1.31119,0,1.81755,0x9a9c05e9;
 	}
 }
 [t:sign_glb_01,n:0x03501066]
@@ -163,7 +163,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.980785,0,-0.19509;
-	  p position = -3.84628,-0.534945,-3.9557,0x61e16709;
+	  p position = -1.91421,-0.534945,1.57416,0x9a9c05e9;
 	}
 }
 [t:lever_glb_05,n:0x035010f4]
