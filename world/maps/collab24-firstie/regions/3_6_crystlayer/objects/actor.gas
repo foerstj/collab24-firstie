@@ -255,6 +255,22 @@
 	  p position = 2.46304,0.861359,2.8068,0xb4ff1abc;
 	}
 }
+[t:c24_3_crystal_golem_red,n:0x036014e5]
+{
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,0.382683;
+	  p position = 2.3184,-0.497757,-0.995514,0xb4ff1abc;
+	}
+}
+[t:c24_3_crystal_golem_red,n:0x036014e8]
+{
+	[placement]
+	{
+	  q orientation = 0,-1,0,-1.93715e-007;
+	  p position = 3.60883,0.804478,2.52239,0xb4ff1abc;
+	}
+}
 [t:c24_3_crystal_mage_red,n:0x036004d6]
 {
 	[placement]
@@ -376,6 +392,14 @@
 	{
 	  q orientation = 0,0.923879,0,0.382683;
 	  p position = 3.07919,0,-1.17481,0x61b07c40;
+	}
+}
+[t:c24_3_crystal_beast_red,n:0x036014ea]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.55557,0,0.831469;
+	  p position = -0.949028,0,1.2463,0x61b07c40;
 	}
 }
 [t:c24_3_crystal_warrior_red,n:0x0360056e]
@@ -1100,6 +1124,14 @@
 	  p position = 1.66203,-1.0338,-3.5732,0x19cc3edc;
 	}
 }
+[t:c24_3_crystal_golem_gold,n:0x03601417]
+{
+	[placement]
+	{
+	  q orientation = 0,0.0871554,0,-0.996195;
+	  p position = -1.39381,-0.323198,-0.49485,0x19cc3edc;
+	}
+}
 [t:c24_3_crystal_golem_gold,n:0x0360044b]
 {
 	[placement]
@@ -1122,6 +1154,14 @@
 	{
 	  q orientation = 0,0.980785,0,0.19509;
 	  p position = -0.991615,0,-0.622738,0x0fdd5087;
+	}
+}
+[t:c24_3_crystal_golem_gold,n:0x0360142d]
+{
+	[placement]
+	{
+	  q orientation = 0,0.333807,0,-0.942642;
+	  p position = -1.09164,0,1.06397,0x0fdd5087;
 	}
 }
 [t:c24_3_crystal_warrior_gold,n:0x036003d2]
@@ -1234,6 +1274,14 @@
 	{
 	  q orientation = 0,0.382683,0,0.92388;
 	  p position = 0.697182,0,-3.57533,0xd9d2b85f;
+	}
+}
+[t:c24_3_crystal_warrior_gold,n:0x03601533]
+{
+	[placement]
+	{
+	  q orientation = 0,0.83867,0,-0.544639;
+	  p position = 2.30265,0,-3.88861,0xd9d2b85f;
 	}
 }
 [t:c24_3_crystal_mage_gold,n:0x03600536]
