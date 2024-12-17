@@ -20938,8 +20938,8 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,0.128199,0,-0.991748;
-	  p position = 0.598608,0,-3.50758,0x200a9edb;
+	  q orientation = 0,0.497966,0,-0.867196;
+	  p position = 2.30684,0,-2.38211,0x200a9edb;
 	}
 }
 [t:shroom_cav_group_09,n:0x03300a21]
@@ -20954,15 +20954,15 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,0.5458,0,0.837915;
-	  p position = -1.64344,0,-3.05788,0x200a9edb;
+	  q orientation = 0,0.978434,0,0.206556;
+	  p position = -1.72294,0,-2.61363,0x200a9edb;
 	}
 }
 [t:tent_grs_camp,n:0x03300fc5]
 {
 	[placement]
 	{
-	  q orientation = 0,1,0,-1.49012e-007;
+	  q orientation = 0,1,0,-1.66939e-007;
 	  p position = 0.380249,0,-3.05945,0x200a9edb;
 	}
 }
