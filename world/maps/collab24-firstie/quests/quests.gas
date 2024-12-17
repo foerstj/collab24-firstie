@@ -17,6 +17,7 @@
 	[c24_3_1_crystal_master]
 	{
 		chapter = chapter_03_underland;
+		quest_image = b_gui_ig_mnu_jnl_quest_pad;
 		screen_name = "The Crystal Master";
 		victory_sample = s_e_level_up_quest;
 		[*]
@@ -29,6 +30,7 @@
     [c24_3_2_gypsy_greetings]
     {
 		chapter = chapter_03_underland;
+		quest_image = b_gui_ig_mnu_jnl_quest_34;
 		screen_name = "Gypsy Greetings";
 		victory_sample = s_e_level_up_quest;
 		[*]
@@ -41,6 +43,7 @@
     [c24_3_3_amulet]
     {
 		chapter = chapter_03_underland;
+		quest_image = b_gui_ig_mnu_jnl_quest_amulet;
 		screen_name = "Lost Amulet";
 		victory_sample = s_e_level_up_quest;
 		[*]
