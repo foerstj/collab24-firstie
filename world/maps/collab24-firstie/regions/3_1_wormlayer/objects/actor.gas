@@ -26,7 +26,7 @@
 	  p position = 2.00214,0,-1.34513,0xca291c9f;
 	}
 }
-[t:darkling_reveal,n:0x0310011a]
+[t:c24_3_darkling_reveal,n:0x0310011a]
 {
 	[placement]
 	{
@@ -260,14 +260,14 @@
 	  p position = 1.46118,0,-2.69574,0x6d0a9242;
 	}
 }
-[t:darkling_reveal,n:0x031005b9]
+[t:c24_3_darkling_reveal,n:0x031005b9]
 {
 	[placement]
 	{
 	  p position = 1.7209,0,1.34518,0x97335c38;
 	}
 }
-[t:darkling_reveal,n:0x031005ba]
+[t:c24_3_darkling_reveal,n:0x031005ba]
 {
 	[placement]
 	{
@@ -429,7 +429,7 @@
 	  p position = -1.60977,0,0.780518,0xb9124bc5;
 	}
 }
-[t:darkling_reveal,n:0x03100890]
+[t:c24_3_darkling_reveal,n:0x03100890]
 {
 	[placement]
 	{

@@ -1,0 +1,32 @@
+[t:template,n:c24_3_darkling_base]
+{
+	specializes = darkling_base;
+}
+
+[t:template,n:c24_3_darkling_reveal]
+{
+	specializes = c24_3_darkling_base;
+
+	category_name = "1W_evil_d";
+	doc = "revealing darkling";
+	[mind]
+	{
+		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible = true;
+		sight_origin_height = 1;
+		actor_auto_fidgets = false;
+	}
+	[common]
+	{
+		[template_triggers]
+		{
+			[*]
+			{
+				single_shot = true;
+				action* = call_sfx_script("darkling_eye_glow");
+				action* = call_sfx_script("darkling_reveal");
+				condition* = receive_world_message("we_enemy_spotted");
+			}
+		}
+	}
+}
