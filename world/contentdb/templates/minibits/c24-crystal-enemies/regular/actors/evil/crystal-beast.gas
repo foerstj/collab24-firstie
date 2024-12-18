@@ -4,6 +4,7 @@
 
     common:screen_name = "Crystal Beast";
     aspect:material = ice;
+    aspect:experience_value = 150;  // 113 in base
 }
 
 [t:template,n:c24_3_crystal_beast_purple]

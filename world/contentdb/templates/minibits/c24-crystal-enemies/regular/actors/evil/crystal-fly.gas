@@ -127,7 +127,7 @@
 
     common:screen_name = "Crystal Fly";
 
-    // stats from krug_dog
+    // stats from krug_dog, edited
 	[actor]
 	{
 		[skills]
@@ -140,7 +140,7 @@
 	}
 	[aspect]
 	{
-		experience_value = 9;
+		experience_value = 10;  // was 9
 		life = 12;
 		max_life = 12;
 		mana = 2;

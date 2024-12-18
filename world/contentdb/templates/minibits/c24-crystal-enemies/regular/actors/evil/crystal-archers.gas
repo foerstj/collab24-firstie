@@ -8,7 +8,7 @@
         spew_equipped_kill_count = 7;
     }
 
-    // stats from krug_throw
+    // stats from krug_throw, edited
 	[actor]
 	{
 		[skills]
@@ -21,7 +21,7 @@
 	}
 	[aspect]
 	{
-		  experience_value = 27;
+		  experience_value = 20;  // was 27
 		  life = 23;
 		  mana = 6;
 		  max_life = 23;

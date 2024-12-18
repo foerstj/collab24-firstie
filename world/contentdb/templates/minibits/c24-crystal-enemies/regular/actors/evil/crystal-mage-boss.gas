@@ -63,7 +63,7 @@
 	}
 	[aspect]
 	{
-		experience_value = 85;
+		experience_value = 200;  // 85 in base
 		mana = 500;
 		max_mana = 500;
         // EDITED - quadrupled, was 44

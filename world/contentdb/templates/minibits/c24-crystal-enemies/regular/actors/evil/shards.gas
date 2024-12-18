@@ -15,7 +15,7 @@
 		selected_active_location = il_active_primary_spell;
 	}
 
-    // stats from mucosa_small
+    // stats from mucosa_small, edited
 	[actor]
 	{
 		[skills]
@@ -27,7 +27,7 @@
 	}
 	[aspect]
 	{
-		experience_value = 39;
+		experience_value = 20;  // was 39
 		life = 47;
         max_life = 47;
         mana = 10;

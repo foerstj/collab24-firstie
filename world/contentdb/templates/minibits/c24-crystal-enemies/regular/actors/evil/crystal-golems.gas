@@ -195,6 +195,7 @@
     specializes = dsx_golem_frost_ranged_base;
 
     common:screen_name = "Crystal Golem";
+    aspect:experience_value = 35;  // 24 in base
 }
 
 [t:template,n:c24_3_crystal_golem_purple]
