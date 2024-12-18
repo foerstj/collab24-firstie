@@ -114,4 +114,5 @@
     specializes = dsx_bubber_base;
 
     common:screen_name = "Little Lizard";
+    aspect:experience_value = 40;
 }

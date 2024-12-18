@@ -88,4 +88,5 @@
 
     common:screen_name = "Shroom Skrubb";
     aspect:textures:0 = b_c_edm_sb;
+    aspect:experience_value = 60;  // 83 in base
 }

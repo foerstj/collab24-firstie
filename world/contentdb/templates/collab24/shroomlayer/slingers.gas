@@ -8,6 +8,7 @@
 	{
 		screen_name = "Shroom Slinger";
 	}
+    aspect:experience_value = 50;  // 61 in base
 
 	[actor]
 	{
@@ -161,6 +162,7 @@
     specializes = dsx_jungle_slinger_boss_base;
 
     common:screen_name = "Shroom Slinger Camora";
+    aspect:experience_value = 100;  // 61 in base
 	[inventory]
 	{
 		[pcontent]

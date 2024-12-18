@@ -21,7 +21,7 @@
 	}
 	[aspect]
 	{
-		  experience_value = 20;  // was 27
+		  experience_value = 25;  // was 27
 		  life = 23;
 		  mana = 6;
 		  max_life = 23;

@@ -192,7 +192,7 @@
 	}
 	[aspect]
 	{
-		experience_value = 44;
+		experience_value = 50;  // was 44
         mana = 14;
         max_mana = 14;
         // DOUBLED, was 41 - they need to feel more bulky
@@ -566,7 +566,7 @@
 	}
 	[aspect]
 	{
-		experience_value = 44;
+		experience_value = 50;  // was 44
         mana = 14;
         max_mana = 14;
         // DOUBLED, was 41 - they need to feel more bulky

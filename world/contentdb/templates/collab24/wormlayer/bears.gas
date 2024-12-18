@@ -128,7 +128,7 @@
 {
     specializes = bear_base;
 
-    // stats & loot from mucosa_large
+    // stats & loot from mucosa_large, edited
 	[actor]
 	{
 		[skills]
@@ -140,7 +140,7 @@
 	}
 	[aspect]
 	{
-		experience_value = 61;
+		experience_value = 80;  // was 61
 		life = 68;
         max_life = 68;
         mana = 10;

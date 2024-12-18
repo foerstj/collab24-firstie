@@ -1,6 +1,8 @@
 [t:template,n:c24_3_darkling_base]
 {
 	specializes = darkling_base;
+
+    aspect:experience_value = 60;  // 85 in base
 }
 
 [t:template,n:c24_3_darkling_reveal]
