@@ -20739,22 +20739,6 @@
 	  p position = -1.59152,0,1.91779,0x92bf84a5;
 	}
 }
-[t:shroom_cav_group_09,n:0x03300925]
-{
-	[aspect]
-	{
-	  f scale_multiplier = 1.11172;
-	}
-	[common]
-	{
-		dev_instance_text = "gaspy plant_gen";
-	}
-	[placement]
-	{
-	  q orientation = 0,0.301547,0,0.953451;
-	  p position = -3.00585,0,-3.61304,0x92bf84a5;
-	}
-}
 [t:tent_grs_camp,n:0x03300fc6]
 {
 	[placement]
@@ -25636,6 +25620,22 @@
 	{
 	  q orientation = 0,0.622515,0,0.782608;
 	  p position = -0.334732,0,-0.291909,0xf094dba8;
+	}
+}
+[t:shroom_cav_group_09,n:0x03300925]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 1.11172;
+	}
+	[common]
+	{
+		dev_instance_text = "gaspy plant_gen";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.887418,0,0.460966;
+	  p position = 0.272247,2.38419e-006,1.39748,0xf3132558;
 	}
 }
 [t:shroom_cav_group_09,n:0x033009b6]
