@@ -58,5 +58,6 @@ robocopy "%bits%\world\contentdb\templates\minibits" "%tmp%\Bits\world\contentdb
 robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" /S
 robocopy "%bits%\world\global\moods\%res%" "%tmp%\Bits\world\global\moods\%res%" /S
 robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" %res%-*.gas /S
+robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" minibits-*.gas /S
 "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%map_cs%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
 if %errorlevel% neq 0 pause
