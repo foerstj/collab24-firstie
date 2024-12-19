@@ -117,7 +117,7 @@
 	}
 	[t:start_group,n:3_test_pre]
 	{
-	  b default = false;
+	  b default = true;
 		description = "This is the default group.";
 	  b dev_only = true;
 	  i id = 300;
@@ -343,7 +343,7 @@
 	}
 	[t:start_group,n:3_underland_town]
 	{
-	  b default = true;
+	  b default = false;
 		description = "The Underling town of Shroomington.";
 	  b dev_only = false;
 	  i id = 34;
