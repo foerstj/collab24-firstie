@@ -234,7 +234,7 @@
 		}
 	}
 
-    // stats from krug_guard, switched to ranged
+    // stats from krug_guard, switched to ranged, edited
 	[actor]
 	{
 		[skills]
@@ -242,15 +242,15 @@
 			strength = 11, 0;
 			dexterity = 13,  0;
 			intelligence = 7,  0;
-			ranged = 4,  0;
+			ranged = 12,  0;  // was 4
 		}
 	}
 	[aspect]
 	{
 		experience_value = 61;
-		life = 55;
+		life = 200;  // was 55
+		max_life = 200;  // was 55
 		mana = 14;
-		max_life = 55;
 		max_mana = 14;
 	}
 	[attack]

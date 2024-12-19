@@ -196,6 +196,23 @@
 
     common:screen_name = "Crystal Golem";
     aspect:experience_value = 35;  // 24 in base
+	[actor]
+	{
+		[skills]
+		{
+			strength = 	8, 0;
+			intelligence = 	7, 0;
+			dexterity =	7, 0;
+			melee =         9, 0;  // 2 in base
+			nature_magic = 	3, 0;
+			combat_magic = 	8, 0;  // 3 in base
+		}
+	}
+	[aspect]
+	{
+		life = 50;  // was 31
+		max_life = 50;  // was 31
+    }
 }
 
 [t:template,n:c24_3_crystal_golem_purple]

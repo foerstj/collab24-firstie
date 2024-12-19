@@ -23,6 +23,7 @@
 			strength =  8, 0;
 			intelligence =  6, 0;
 			dexterity =  13, 0;
+            combat_magic = 10, 0;  // added
 		}
 	}
 	[aspect]

@@ -18,7 +18,7 @@
 			intelligence 	=  7, 0;
 			dexterity 	=  8, 0;
 			ranged 		=  4, 0;
-			combat_magic	=  4, 0;
+			combat_magic	=  8, 0;
 			nature_magic	=  4, 0;
 		}
 	}
@@ -163,6 +163,18 @@
 
     common:screen_name = "Shroom Slinger Camora";
     aspect:experience_value = 100;  // 61 in base
+	[actor]
+	{
+		[skills]
+		{
+			strength 		=  10, 0;
+			intelligence 	=  8, 0;
+			dexterity 		=  9, 0;
+			ranged 			=  5, 0;
+			combat_magic	=  10, 0;  // 5 in base
+			nature_magic	=  5, 0;
+		}
+	}
 	[inventory]
 	{
 		[pcontent]

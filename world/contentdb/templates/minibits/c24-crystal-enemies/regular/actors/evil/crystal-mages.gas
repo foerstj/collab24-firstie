@@ -38,15 +38,15 @@
 			dexterity = 4, 0;
 			intelligence = 8, 0;
 			melee = 1, 0;
-			combat_magic = 3, 0;
+			combat_magic = 12, 0;  // was 3
 		}
 	}
 	[aspect]
 	{
 		experience_value = 16;
-		life = 19;
+		life = 50;  // was 19
+		max_life = 50;  // was 19
 		mana = 81;
-		max_life = 19;
 		max_mana = 81;
 	}
 	[attack]

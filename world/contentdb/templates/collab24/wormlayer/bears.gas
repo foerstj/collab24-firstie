@@ -136,6 +136,7 @@
 			strength =  14, 0;
 			intelligence =  4, 0;
 			dexterity =  10, 0;
+            melee = 11, 0;  // added
 		}
 	}
 	[aspect]

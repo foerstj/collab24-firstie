@@ -58,7 +58,7 @@
 			dexterity = 6, 0;
 			intelligence = 10, 0;
 			melee = 2, 0;
-			combat_magic = 4, 0;
+			combat_magic = 15, 0;  // was 4
 		}
 	}
 	[aspect]
@@ -66,9 +66,8 @@
 		experience_value = 200;  // 85 in base
 		mana = 500;
 		max_mana = 500;
-        // EDITED - quadrupled, was 44
-		life = 176;
-		max_life = 176;
+		life = 300;  // was 44
+		max_life = 300;  // was 44
 	}
 	[attack]
 	{

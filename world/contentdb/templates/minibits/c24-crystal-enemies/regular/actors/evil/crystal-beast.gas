@@ -5,6 +5,17 @@
     common:screen_name = "Crystal Beast";
     aspect:material = ice;
     aspect:experience_value = 150;  // 113 in base
+	[actor]
+	{
+		[skills]
+		{
+			strength =  22, 0;
+			intelligence =  3, 0;
+			dexterity =  9, 0;
+            melee =  	13,  0;  // 5 in base
+            combat_magic = 13, 0;  // added
+		}
+	}
 }
 
 [t:template,n:c24_3_crystal_beast_purple]

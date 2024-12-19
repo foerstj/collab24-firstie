@@ -156,7 +156,7 @@
 		[other] { il_active_primary_spell = c24_3_spell_syrrus_fire; }
 	}
 
-    // stats & loot from mine_worm
+    // stats & loot from mine_worm, edited
 	[actor]
 	{
 		[skills]
@@ -165,6 +165,7 @@
 			intelligence =  2, 0;
 			dexterity =  5, 0;
 			ranged =  11,  0;
+			combat_magic =  11,  0;  // added
 		}
 	}
 	[aspect]

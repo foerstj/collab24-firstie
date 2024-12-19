@@ -187,7 +187,8 @@
 			strength =  	12, 0;
 			intelligence =  7, 0;
 			dexterity =  	2, 0;
-            combat_magic =  4,  0;
+            combat_magic =  10,  0;  // was 4
+            melee =  10,  0;  // added
 		}
 	}
 	[aspect]
@@ -195,9 +196,9 @@
 		experience_value = 50;  // was 44
         mana = 14;
         max_mana = 14;
-        // DOUBLED, was 41 - they need to feel more bulky
-		life = 82;
-        max_life = 82;
+        // was 41 - they need to feel more bulky
+		life = 100;
+        max_life = 100;
 	}
 	[attack]
 	{
@@ -561,7 +562,8 @@
 			strength =  	12, 0;
 			intelligence =  7, 0;
 			dexterity =  	2, 0;
-            combat_magic =  4,  0;
+            combat_magic =  10,  0;  // was 4
+            melee =  10,  0;  // added
 		}
 	}
 	[aspect]
@@ -569,9 +571,9 @@
 		experience_value = 50;  // was 44
         mana = 14;
         max_mana = 14;
-        // DOUBLED, was 41 - they need to feel more bulky
-		life = 82;
-        max_life = 82;
+        // was 41 - they need to feel more bulky
+		life = 100;
+        max_life = 100;
 	}
 	[attack]
 	{

@@ -150,7 +150,7 @@
 {
     specializes = dsx_spider_emerald_base;
 
-    // stats from spider_adolescent
+    // stats from spider_adolescent, edited
 	[actor]
 	{
 		[skills]
@@ -158,7 +158,7 @@
 			strength =  6, 0;
 			intelligence =  2, 0;
 			dexterity =  7, 0;
-			melee =  3, 0;
+			melee =  9, 0;  // was 3
 		}
 	}
 	[aspect]

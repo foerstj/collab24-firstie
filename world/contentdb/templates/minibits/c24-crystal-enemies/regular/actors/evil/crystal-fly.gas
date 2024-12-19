@@ -135,7 +135,7 @@
 			strength =  3, 0;
 			intelligence =  1, 0;
 			dexterity =  6, 0;
-			melee =  1,  0;
+			melee =  5,  0;  // was 1
 		}
 	}
 	[aspect]
