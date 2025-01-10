@@ -4,7 +4,7 @@ set res=collab24
 :: name of map, case-sensitive
 set map_cs=Collab 24 Firstie
 :: tank properties
-set year=2024
+set year=2025
 set copyright=CC-BY-SA %year%
 set author=Firstie
 set title=%map_cs%
