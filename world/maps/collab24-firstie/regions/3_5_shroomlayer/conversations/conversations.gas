@@ -5,7 +5,12 @@
 		order = 0;
 		screen_text = "This is a bad business, but we're no' the only ones in it! These crystals up there in the Crystlayer are getting stirred up by these mages, but there'll be a blasted goblin behind this or I'm a mule's father!";
         choice = more;
-        activate_quest* = i_must_scream;
+      b quest_dialog = true;
+        activate_quest* = i_must_scream,0;
+        activate_quest* = i_must_scream,1;
+        activate_quest* = i_must_scream,2;
+        activate_quest* = i_must_scream,3;
+        activate_quest* = i_must_scream,4;
 	}
 	[text*]
 	{
@@ -16,6 +21,7 @@
 	[text*]
 	{
 		screen_text = "If you happen to come across the Crystal Master and aren't afraid of him, it would be a big relief for us if you could take him out.";
+      b quest_dialog = true;
         activate_quest* = c24_3_1_crystal_master;
 	}
 }

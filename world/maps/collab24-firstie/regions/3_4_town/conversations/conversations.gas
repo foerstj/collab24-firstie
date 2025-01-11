@@ -29,9 +29,9 @@ We meet too rarely; being a mayor is a busy job...
 
 The office does come with its perks, for sure. Like this elevator to a private viewpoint, for example. Check it out!";
         choice = more;
+      b quest_dialog = true;
         activate_quest* = collab24_slice2_quest_mayor_greet,1;
         complete_quest* = collab24_slice2_quest_mayor_greet;
-      b quest_dialog = true;
 	}
 }
 [mayor_main]
@@ -47,11 +47,13 @@ The office does come with its perks, for sure. Like this elevator to a private v
         order = 1;
         screen_text = "These mages are led by the Crystal Master. The guards have spotted him occasionally, but as of now we weren't able to chase him away. We need all manpower to guard the town and the elevators.
 You look quite capable of fighting him, though. If you can chase him off, the town would be deeply obliged to you.";
+      b quest_dialog = true;
         activate_quest* = c24_3_1_crystal_master;
     }
     [text*]
     {
         screen_text = "These mages are led by the Crystal Master. If you can chase him off, the town would be deeply obliged to you.";
+      b quest_dialog = true;
         activate_quest* = c24_3_1_crystal_master;
     }
 }
@@ -229,20 +231,22 @@ What can I show you?";
 	}
 	[text*]
 	{
-		activate_quest* = c24_3_3_amulet,0;
-		activate_quest* = c24_3_3_amulet,1;
 		screen_text = "Our wares and cart are lost in the Crystlayer, but we can replace them. However, we were delivering an amulet to a Larissan lady called Persephone, which got lost as well. It's a family heirloom of hers. If you dare to go this way, would you look for the amulet? Lady Persephone would be very thankful to receive it.";
 	  f scroll_rate = 10.000000;
+      b quest_dialog = true;
+		activate_quest* = c24_3_3_amulet,0;
+		activate_quest* = c24_3_3_amulet,1;
 	}
 }
 [inn_v_stand_active_0]
 {
 	[text*]
 	{
-		activate_quest* = c24_3_3_amulet,1;
-		activate_quest* = c24_3_3_amulet,2;
 		screen_text = "You found the amulet! We were delivering it to a Larissan lady called Persephone. She would be very thankful to receive it - it's a family heirloom of hers.";
 	  f scroll_rate = 10.000000;
+      b quest_dialog = true;
+		activate_quest* = c24_3_3_amulet,1;
+		activate_quest* = c24_3_3_amulet,2;
 	}
 }
 [inn_v_stand_active_1]
@@ -280,9 +284,10 @@ What can I show you?";
 	}
 	[text*]
 	{
-		activate_quest* = c24_3_2_gypsy_greetings,0;
 		screen_text = "We have friends waiting for us in Larissa, they're probably already wondering where we are. If you make it there, please find Pesha and tell him of our holdup, so he doesn't worry too much. Thank you.";
 	  f scroll_rate = 10.000000;
+      b quest_dialog = true;
+		activate_quest* = c24_3_2_gypsy_greetings,0;
 	}
 }
 [inn_v_sit_active]
