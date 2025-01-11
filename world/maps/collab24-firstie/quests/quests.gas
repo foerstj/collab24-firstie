@@ -29,9 +29,9 @@
 		}
 	}
 
-    // shared quest - chapter 3 + 4
-    [c24_3_2_gypsy_greetings]
-    {
+	// shared quest - chapter 3 + 4
+	[c24_3_2_gypsy_greetings]
+	{
 		chapter = chapter_03_underland;
 		quest_image = b_gui_ig_mnu_jnl_quest_34;
 		screen_name = "Gypsy Greetings";
@@ -39,39 +39,39 @@
 		[*]
 		{
 			description = "Inform Pesha in Larissa about the holdup of the Gypsies in Shroomington";
-		  	i order = 0;
-		  	b required = false;
+		  i order = 0;
+		  b required = false;
 		}
-    }
+	}
 
-    // shared quest - chapter 3 + 4
-    [c24_3_3_amulet]
-    {
+	// shared quest - chapter 3 + 4
+	[c24_3_3_amulet]
+	{
 		chapter = chapter_03_underland;
 		quest_image = b_gui_ig_mnu_jnl_quest_amulet;
 		screen_name = "Lost Amulet";
 		victory_sample = s_e_level_up_quest;
 		[*]
 		{
-            // if you find the amulet first
+			// if you find the amulet first
 			description = "Ask the Gypsies in Shroomington about their lost amulet";
-		  	i order = 0;
-		  	b required = false;
+		  i order = 0;
+		  b required = false;
 		}
 		[*]
 		{
-            // if you speak to the gypsy first
+			// if you speak to the gypsy first
 			description = "Find Persephone's amulet lost in the Crystlayer on the way to Larissa";
-		  	i order = 1;
-		  	b required = false;
+		  i order = 1;
+		  b required = false;
 		}
 		[*]
 		{
 			description = "Deliver the Elder Wood Amulet to Persephone in Larissa";
-		  	i order = 2;
-		  	b required = false;
+		  i order = 2;
+		  b required = false;
 		}
-    }
+	}
 
 
     // shared quest - all chapters
