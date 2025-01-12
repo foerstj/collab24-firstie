@@ -26,6 +26,8 @@
 			description = "Find and slay the Crystal Master who threatens the town of Shroomington";
 		  	i order = 0;
 		  	b required = false;
+			speaker = "Mayor Dinghis";
+			address = 3_4_town:conversations:mayor_main;
 		}
 	}
 
@@ -41,6 +43,8 @@
 			description = "Inform Pesha in Larissa about the holdup of the Gypsies in Shroomington";
 		  i order = 0;
 		  b required = false;
+			speaker = "Ria";
+			address = 3_4_town:conversations:inn_v_sit_inactive;
 		}
 	}
 
@@ -64,12 +68,16 @@
 			description = "Find Persephone's amulet lost in the Crystlayer on the way to Larissa";
 		  i order = 1;
 		  b required = false;
+			speaker = "Lennor";
+			address = 3_4_town:conversations:inn_v_stand_inactive;
 		}
 		[*]
 		{
 			description = "Deliver the Elder Wood Amulet to Persephone in Larissa";
 		  i order = 2;
 		  b required = false;
+			speaker = "Lennor";
+			address = 3_4_town:conversations:inn_v_stand_inactive;
 		}
 	}
 
