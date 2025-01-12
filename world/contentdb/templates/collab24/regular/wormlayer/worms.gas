@@ -179,6 +179,12 @@
 {
     specializes = googore_base;
 
+    [inventory]
+    {
+   		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=c24_3_spell_googore_spit; }
+    }
+
     // stats & loot from rector, EDITED
 	[actor]
 	{
@@ -208,9 +214,6 @@
 	[defend] { defense=25; }
 	[inventory]
 	{
-   		selected_active_location = il_active_primary_spell;
-		[other] { il_active_primary_spell=c24_3_spell_googore_spit; }
-
     	[pcontent]
 		{
 			[oneof*]
