@@ -1,0 +1,328 @@
+[t:template,n:3W_dsx_spider_emerald_base]  // = 3W_dsx_spider_emerald
+{
+  category_name = "3W_evil_d";
+  doc = "3W_dsx_spider_emerald";
+  specializes = actor_evil;
+
+  [actor]
+    {
+      [skills]
+	{
+	  strength =  36.5, 0;
+	  intelligence =  11.3, 0;
+	  dexterity =  21.6, 0;
+	  melee = 73, 0;
+	}
+    }
+  [aspect]
+    {
+      [textures]	{ 0 = b_c_edm_emerald_spider; }
+
+      experience_value = 647250;
+      life = 1961;
+      max_life = 1961;
+      mana = 0;
+      max_mana = 0;
+      model = m_c_edm_sp_pos_1;
+            scale_base = 1.5;
+		[voice]
+		{
+			[die]			{ priority = high; * = s_e_die_spider_SED; }
+			[enemy_spotted]	{ priority = high; * = s_e_call_spider_emerald_SED; }
+			[attack]	{ priority = high; * = s_e_attack_spider_SED; }
+		}
+    }
+  [attack]
+    {
+      attack_range = 0.5;
+      damage_min = 299.7;
+      damage_max = 488.4;
+      reload_delay = 1;
+    }
+  [defend] { defense = 604.3; }
+
+  [body]
+    {
+      avg_move_velocity = 2.350000;
+      [bone_translator]
+	{
+	  body_anterior = bone02;
+	  body_mid = bone04;
+	  body_posterior = bone04;
+	  kill_bone = bone04;
+	  shield_bone = bone01;
+	  weapon_bone = bone02;
+	}
+      [chore_dictionary]
+	{
+	  chore_prefix = a_c_edm_sp_fs;
+	  [chore_attack]
+	    {
+	      chore_stances = 0;
+	      skrit = select_attack;
+	      [anim_files] { 00=at; }
+	    }
+	  [chore_default]
+	    {
+	      chore_stances = 0;
+	      skrit = infinite_loop;
+	      [anim_files] { 00=dfs; }
+	    }
+	  [chore_die]
+	    {
+	      chore_stances = 0;
+	      skrit = select_transition;
+	      [anim_files] { 00=di; }
+	    }
+	  [chore_fidget]
+	    {
+	      chore_stances = 0;
+	      skrit = select_fidget;
+	      [anim_files] { 00=dff; }
+	    }
+	  [chore_walk]
+	    {
+	      chore_stances = 0;
+	      skrit = select_walk;
+	      [anim_files] { 00=wl; }
+	    }
+	}
+    }
+
+  [common] { screen_name = "Emerald Spider"; }
+
+  [mind]
+    {
+      melee_engage_range = 14.0;
+      personal_space_range = 0.7;
+      ranged_engage_range = 14.0;
+      sight_range = 14.0;
+    }
+  [physics]
+    {
+      break_effect = spider_guts_black;
+      explode_when_killed = true;
+      explosion_magnitude = 1.0;
+      gib_gore_good = true;
+      [break_particulate]
+				{
+					frag_glb_emerald_spider_01 = 1;
+					frag_glb_emerald_spider_02 = 3;
+					frag_glb_emerald_spider_03 = 5;
+					frag_glb_emerald_spider_04 = 5;
+					frag_glb_emerald_spider_05 = 1;
+				}
+    }
+	[inventory] 
+		{
+			drop_at_use_point = true;
+			[pcontent]
+	{
+	/* Generated: Tue Jun 17 11:13:15 2003
+		Level 4, Strong */
+		[oneof*]
+		{
+			[gold*]
+			{
+				chance = 0.2;
+				min = 196601;
+				max = 382279;
+			}
+			[oneof*]
+			{
+				chance = 0.088888888888889;
+				il_main = potion_mana_super;
+				il_main = potion_health_super;
+			}
+			[oneof*]
+			{
+				chance = 0.2;
+				il_main = #weapon/222;
+				il_main = #armor/74-629;
+				il_main = #*/222;
+			}
+		}
+	}
+		}
+}
+
+[t:template,n:3W_c24_3_spider_emerald]
+{
+    specializes = 3W_dsx_spider_emerald_base;
+
+    // stats from 3W_spider_adolescent, edited
+	[actor]
+	{
+		[skills]
+		{
+			strength =  30.1, 0;
+			intelligence =  3.5, 0;
+			dexterity =  21.2, 0;
+			melee =  90, 0;  // unchanged
+		}
+	}
+	[aspect]
+	{
+		experience_value = 608157;
+		life = 704;
+		max_life = 704;
+		mana = 62;
+		max_mana = 62;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 249.9;
+		damage_min = 169.3;
+	}
+	[defend] { defense=423.7; }
+
+    // clear loot
+    [inventory]
+    {
+        [pcontent] {}
+    }
+}
+
+
+[t:template,n:3W_dsx_spider_red_black_base]  // = 3W_dsx_spider_red_black
+{
+	category_name = "3W_evil_d";
+	doc = "3W_dsx_spider_red_black";
+	specializes = actor_evil;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  36.5, 0;
+			intelligence =  11.3, 0;
+			dexterity = 21.6, 0;
+			melee =  73,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 552870;
+		life = 592;
+		max_life = 592;
+		mana = 185;
+		max_mana = 185;
+		model = m_c_edm_sp_pos_1;
+		[voice]
+		{
+			[die]			{ priority = high; * = s_e_die_spider; }
+			[enemy_spotted]	{ priority = high; * = s_e_call_spider; }
+		}
+	}
+	[attack]
+	{
+		attack_range = 1;
+		damage_max = 447.7;
+		damage_min = 283.1;
+		reload_delay = 1;
+	}
+	[defend] { defense=585.8; }
+	[body]
+	{
+		avg_move_velocity = 2.350000;
+		[bone_translator]
+		{
+			body_anterior = bone02;
+			body_mid = bone04;
+			body_posterior = bone04;
+			kill_bone = bone04;
+			shield_bone = bone01;
+			weapon_bone = bone02;
+		}
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_edm_sp_fs;
+			[chore_attack]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files] { 00=at; }
+			}
+			[chore_default]
+			{
+				chore_stances = 0;
+				skrit = infinite_loop;
+				[anim_files] { 00=dfs; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=di; }
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0;
+				skrit = select_fidget;
+				[anim_files] { 00=dff; }
+			}
+			[chore_walk]
+			{
+				chore_stances = 0;
+				skrit = select_walk;
+				[anim_files] { 00=wl; }
+			}
+		}
+	}
+	[common] { screen_name="Widow Spider"; }
+
+	[mind]
+	{
+		melee_engage_range = 14.0;
+		personal_space_range = 0.7;
+		ranged_engage_range = 14.0;
+		sight_range = 14.0;
+	}
+	[physics]
+	{
+		break_effect = spider_guts_black;
+		explode_when_killed = true;
+		explosion_magnitude = 1.0;
+		gib_gore_good = true;
+		[break_particulate]
+		{
+			frag_glb_spider_01 = 1;
+			frag_glb_spider_02 = 3;
+			frag_glb_spider_03 = 5;
+			frag_glb_spider_04 = 5;
+			frag_glb_spider_05 = 1;
+		}
+	}
+}
+
+[t:template,n:3W_c24_3_spider_red_black]
+{
+    specializes = 3W_dsx_spider_red_black_base;
+
+    // stats from 3W_spider_adolescent_yellow
+	[actor]
+	{
+		[skills]
+		{
+			strength =  20.1, 0;
+			intelligence =  1.7, 0;
+			dexterity =  18.1, 0;
+			melee =  90, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 330815;
+		life = 31;
+		max_life = 31;
+		mana = 31;
+		max_mana = 31;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 17.1;
+		damage_min = 14;
+	}
+	[defend] { defense=108.5; }
+}
