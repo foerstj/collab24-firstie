@@ -131,7 +131,7 @@
 {
     specializes = coil_gob_01_base;
 
-    // stats & loot from krug_shaman_boss_01
+    // stats (but not loot) from krug_shaman_boss_01
 	[actor]
 	{
 		[skills]
@@ -160,28 +160,4 @@
 	{
 		  defense = 70;
 	}
-    [inventory]
-    {
-		[pcontent]
-		{
-			[all*]
-			{
-				[gold*]
-				{
-					max = 121;
-					min = 84;
-					min_pile = 10;
-					piles = 4 - 6;
-				}
-				[all*]
-				{
-					il_main = #weapon/14-16;
-					il_main = #body/29-35;
-				    il_main = #body,ro/29-35;
-					  max = 2;
-					  min = 1;
-				}
-             }
-		}
-    }
 }
