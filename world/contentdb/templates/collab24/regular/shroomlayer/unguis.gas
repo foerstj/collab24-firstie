@@ -154,7 +154,6 @@
     }
     [attack]
     {
-        attack_range = 2.5;
         damage_max = 32; 
         damage_min = 25; 
     }
