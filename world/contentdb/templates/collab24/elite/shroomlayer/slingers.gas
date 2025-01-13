@@ -1,0 +1,244 @@
+[t:template,n:3W_dsx_jungle_slinger_base2]  // = 3W_dsx_jungle_slinger
+{
+	category_name = "3W_evil_d";
+	doc = "3W_dsx_jungle_slinger";
+	specializes = 3W_dsx_jungle_slinger_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength 	=  36.8, 0;
+			intelligence 	=  11.1, 0;
+			dexterity 	=  20.7, 0;
+			ranged 		=  74, 0;
+			combat_magic	=  74, 0;
+			nature_magic	=  74, 0;
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 181.5;
+		damage_min = 99;
+		damage_bonus_min_cmagic = 207;
+		damage_bonus_max_cmagic = 187;
+	}
+	[common]
+	{
+		screen_name = "Jungle Slinger";
+	}
+	[defend] { defense=293.3; }
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=dsx_spell_jungle_slinger; }
+		[pcontent]
+	{
+	/* Generated: Tue Jun 17 11:13:15 2003
+		Level 7, Weak */
+		[oneof*]
+		{
+			[gold*]
+			{
+				chance = 0.2;
+				min = 159286;
+				max = 315032;
+			}
+			[oneof*]
+			{
+				chance = 0.088888888888889;
+				il_main = potion_mana_super;
+				il_main = potion_health_super;
+			}
+			[oneof*]
+			{
+				chance = 0.1;
+				il_main = #weapon/141-201;
+				il_main = #armor/55-473;
+				il_main = #*/141-201;
+			}
+			[oneof*]
+			{
+				chance = 0.005;
+				il_main = #weapon/-rare(1)/91-222;
+				il_main = #armor/-rare(1)/0-473;
+				il_main = #*/-rare(1)/91-222;
+			}
+			
+		}
+	}
+	}
+}
+
+[t:template,n:3W_c24_3_slinger]
+{
+	specializes = 3W_dsx_jungle_slinger_base2;
+
+	[common]
+	{
+		screen_name = "Shroom Slinger";
+	}
+    //aspect:experience_value = 50;  // 61 in base
+	//[actor]
+	//{
+	//	[skills]
+	//	{
+	//		strength 	=  9, 0;
+	//		intelligence 	=  7, 0;
+	//		dexterity 	=  8, 0;
+	//		ranged 		=  4, 0;
+	//		combat_magic	=  8, 0;  // 4 in base
+	//		nature_magic	=  4, 0;
+	//	}
+	//}
+}
+
+
+[t:template,n:3W_dsx_jungle_slinger_boss_base]  // = 3W_dsx_jungle_slinger_boss
+{
+	category_name = "3W_evil_d";
+	doc = "3W_dsx_jungle_slinger_boss";
+	specializes = 3W_dsx_jungle_slinger_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength 		=  40.9, 0;
+			intelligence 	=  12.7, 0;
+			dexterity 		=  23.3, 0;
+			ranged 			=  75, 0;
+			combat_magic	=  75, 0;
+			nature_magic	=  75, 0;
+		}
+	}
+	[aspect]
+	{
+		scale_base = 1.6;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 302.5;
+		damage_min = 198;
+		damage_bonus_min_cmagic = 180;
+		damage_bonus_max_cmagic = 275;
+	}
+	[common]
+	{
+		screen_name = "Jungle Slinger Camora";
+    		membership = monster,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode; 	
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("unique_ray_purple"); // Placeholder
+			}
+
+		}
+	}
+	[defend] { defense=517; }
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=dsx_spell_jungle_slinger_boss; }
+		
+		[pcontent]
+		{
+			/* Generated: Tue Jun 17 11:13:15 2003
+			Level 7, Special */
+			[all*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 159286;
+					max = 315032;
+				}
+				[oneof*]
+				{
+					il_main = amulet_ilorn;
+				}
+				[oneof*]
+				{
+					chance = 0.088888888888889;
+					il_main = potion_mana_super;
+					il_main = potion_health_super;
+				}
+				[oneof*]
+				{
+					il_main = #weapon/201-222;
+					il_main = #armor/88-583;
+					il_main = #*/201-222;
+				}
+				[oneof*]
+				{
+					il_main = #weapon/-rare(1)/222-302;
+					il_main = #armor/-rare(1)/165-781;
+					il_main = #*/-rare(1)/222-302;
+				}
+			}
+		}
+	}
+}
+
+[t:template,n:3W_c24_3_slinger_boss]
+{
+    specializes = 3W_dsx_jungle_slinger_boss_base;
+
+    common:screen_name = "Shroom Slinger Camora";
+    //aspect:experience_value = 100;  // 61 in base
+	//[actor]
+	//{
+	//	[skills]
+	//	{
+	//		strength 		=  10, 0;
+	//		intelligence 	=  8, 0;
+	//		dexterity 		=  9, 0;
+	//		ranged 			=  5, 0;
+	//		combat_magic	=  10, 0;  // 5 in base
+	//		nature_magic	=  5, 0;
+	//	}
+	//}
+	[inventory]
+	{
+		[pcontent]
+		{
+			/* Generated: Tue Jun 17 11:13:15 2003
+			Level 7, Special */
+			[all*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 159286;
+					max = 315032;
+				}
+				//[oneof*]
+				//{
+				//	il_main = amulet_ilorn;
+				//}
+				[oneof*]
+				{
+					chance = 0.088888888888889;
+					il_main = potion_mana_super;
+					il_main = potion_health_super;
+				}
+				[oneof*]
+				{
+					il_main = #weapon/201-222;
+					il_main = #armor/88-583;
+					il_main = #*/201-222;
+				}
+				[oneof*]
+				{
+					il_main = #weapon/-rare(1)/222-302;
+					il_main = #armor/-rare(1)/165-781;
+					il_main = #*/-rare(1)/222-302;
+				}
+			}
+		}
+	}
+}

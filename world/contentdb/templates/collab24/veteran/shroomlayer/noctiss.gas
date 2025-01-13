@@ -1,0 +1,174 @@
+[t:template,n:2W_dsx_noctiss_base]  // = 2W_dsx_noctiss
+//balanced for Level 15
+{
+	category_name = "2W_evil_d";
+	doc = "2W_dsx_noctiss";
+	specializes = 2W_noctiss_base;
+	
+	[actor]
+	{
+		[skills]
+		{
+			strength =		33.2, 0;
+			intelligence =	10.6, 0;
+			dexterity =		19.2, 0;
+			nature_magic =	56, 0;
+			combat_magic =	56, 0;
+		}
+	}
+	[aspect]
+	{			
+		experience_value = 54236;
+		life = 1184.7;
+		max_life = 1184.7;
+		mana = 44.9;
+		max_mana = 44.9;
+	}
+
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 190.7;
+		damage_min = 132.9;
+		damage_bonus_min_cmagic = 111;
+		damage_bonus_max_cmagic = 156;
+	}
+
+	[common]
+	{
+		screen_name="Noctiss";
+		membership=monster;
+		[template_triggers]
+		{
+			[*]
+			{
+				single_shot = true;
+				action* = call_sfx_script("ghost_eye_glow");
+				condition* = receive_world_message("we_enemy_spotted");
+			}
+		}
+	}
+	[defend] { defense=402.9; }
+
+	[inventory]
+	{
+		spew_equipped_kill_count = ;		
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=dsx_spell_noctiss_sap; }
+
+			
+	}
+
+	[mind]
+	{
+		melee_engage_range = 14;
+		personal_space_range = 0.7;
+		ranged_engage_range = 14.0;
+		sight_range = 14.0;
+
+		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible = true;
+	
+		jat_fidget	= world\ai\jobs\common\job_fidget.skrit;
+	
+		actor_auto_fidgets = false;
+		sight_origin_height = 1;
+	
+		actor_weapon_preference			= WP_MAGIC;
+		actor_auto_switches_to_magic	= true;
+		actor_auto_switches_to_karate	= false;
+		actor_auto_switches_to_melee	= false;
+	}
+
+	[physics]
+	{
+		break_effect = ghost_die;
+		explode_when_killed = true;
+		gib_gore_good = true;
+	}
+}
+
+[t:template,n:2W_c24_3_base_noctiss]
+{
+    specializes = 2W_dsx_noctiss_base;
+
+	[common]
+	{
+		[template_triggers]
+		{
+			[*]
+			{
+				single_shot = true;
+				action* = call_sfx_script("ghost_eye_glow");
+				action* = call_sfx_script("darkling_reveal");  // ADDED
+				condition* = receive_world_message("we_enemy_spotted");
+			}
+		}
+	}
+
+    // stats & loot from 2W_darkling
+	[actor]
+	{
+		[skills]
+		{
+			strength =  46.6, 0;
+			intelligence =  11.6, 0;
+			dexterity =  27.9, 0;
+			combat_magic =  64,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 29665;
+		life = 294.4;
+		max_life = 294.4;
+		mana = 102.4;
+		max_mana = 102.4;
+	}
+	[attack]
+	{
+		damage_max = 246.4;
+		damage_min = 172.8;
+		damage_bonus_min_cmagic = 97;
+		damage_bonus_max_cmagic = 143;
+	}
+	[defend] { defense=268; }
+	[inventory]
+	{
+    	[pcontent]
+		{
+			[all*]
+			{
+   				chance = 0.03;
+                il_main = #nmagic/32-70;
+                il_main = #cmagic/19-51;
+			}
+			[oneof*]
+			{
+				chance = 0.18;
+				il_main = #*/151-175;
+				il_main = #armor/77-384;
+			}
+		}
+	}
+}
+[t:template,n:2W_c24_3_noctiss_red]
+{
+    specializes = 2W_c24_3_base_noctiss;
+
+    aspect:textures:0 = b_c_edm_noctiss;
+	[inventory]
+	{
+		[other] { il_active_primary_spell = c24_3_spell_noctiss_sap_red; }
+	}
+}
+[t:template,n:2W_c24_3_noctiss_blue]
+{
+    specializes = 2W_c24_3_base_noctiss;
+
+    aspect:textures:0 = b_c_edm_noctiss_02;
+	[inventory]
+	{
+		[other] { il_active_primary_spell = c24_3_spell_noctiss_sap_blue; }
+	}
+}
