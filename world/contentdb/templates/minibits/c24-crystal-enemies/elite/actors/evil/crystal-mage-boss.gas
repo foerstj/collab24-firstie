@@ -1,0 +1,109 @@
+[t:template,n:3W_c24_3_crystal_mage_boss]
+{
+    specializes = 3W_c24_3_base_crystal_mage;
+
+    [common]
+    {
+        screen_name = "Crystal Master";
+		membership=monster,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode;
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("unique_ray_purple(sgx)");
+			}
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("unique_light_purple(sgx)");
+			}
+		}
+    }
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other]
+		{
+			il_active_primary_spell = c24_3_spell_crystal_mage_boss_iceblast;
+			il_spell_1 = 3W_c24_3_spell_summon_crystal_mage_monster;
+		}
+	}
+    [mind]
+    {
+		jat_cast 						= world\ai\jobs\common\job_cast.skrit
+			?rand_spell					= true
+			&spell_chances				= "0.5,                                    0.5"
+			&spells						= "c24_3_spell_crystal_mage_boss_iceblast, 3W_c24_3_spell_summon_crystal_mage_monster";
+    }
+    // auto-reveal
+	[mind]
+	{
+		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible = true
+            &auto_reveal = true;
+	}
+    aspect:textures:0 = b_c_edm_sw-03;  // Lost Witch
+
+    // stats & loot from 3W_krug_shaman_boss_01 "Huskar the Shaman", increased
+	[actor]
+	{
+		[skills]
+		{
+			  combat_magic = 90, 0;  // unchanged
+			  dexterity = 18.3, 0;
+			  intelligence = 17.4, 0;
+			  melee = 88, 0;
+			  strength = 51.7, 0;
+		}
+	}
+	[aspect]
+	{
+		  experience_value = 917150;  // unchanged
+		  life = 2000;  // was 800.8
+		  max_life = 2000;  // was 800.8
+		  mana = 9100;
+		  max_mana = 9100;
+	}
+	[attack]
+	{
+		  damage_max = 240.2;
+		  damage_min = 131;
+		damage_bonus_min_cmagic = 204;
+		damage_bonus_max_cmagic = 305;
+	}
+	[defend]
+	{
+		  defense = 1310.4;
+	}
+	[inventory]
+	{
+		[pcontent]
+		{
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.5;
+					max = 1816125;
+					min = 1260781;
+					min_pile = 10;
+					piles = 4 - 6;
+				}
+				[all*]
+				{
+					chance = 0.5;
+					il_main = #weapon/225-257;
+					il_main = #body/528-637;
+                    il_main = #body,ro/528-637;
+					  max = 2;
+					  min = 1;
+				}
+             }
+		}
+	}
+}

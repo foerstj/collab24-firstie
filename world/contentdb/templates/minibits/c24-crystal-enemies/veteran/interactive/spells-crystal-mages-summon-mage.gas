@@ -1,0 +1,54 @@
+[t:template,n:2W_c24_3_spell_summon_crystal_mage_monster]
+{
+	specializes = base_spell_monster;
+
+	category_name = "magic";
+	[common]
+	{
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script( "ice_mage_charge" );
+				condition* = receive_world_message("we_req_cast");
+			}
+		}
+	}
+	[inventory]
+	{
+		[delayed_pcontent]
+		{
+			[oneof*]
+			{
+				[all*]
+				{
+					chance = 1.0;
+					il_main = 2W_c24_3_crystal_mage_purple_ar;
+				}
+			}
+		}
+	}
+	[magic]
+	{
+		cast_range = 10;
+		cast_reload_delay = 1;
+		caster_state_name = "Controlling Monster";
+		effect_duration = 600;
+		requires_line_of_sight = true;
+		speed_bias = 1;
+		target_type_flags = tt_conscious_enemy;
+		usage_context_flags = uc_offensive;
+		state_name = "Controlling Monster";
+		require_state_check = true;
+	}
+	[spell_summon_random]
+	{
+		monster_summon = true;
+		spawn_radius	= 3.0;
+		effect_script = "summon";
+		end_script = "un_summon";
+		script_params = "[scale(1.75)]";
+		description = "Summoned Creature";
+		caster_description = "Controlling Summoned";
+	}
+}

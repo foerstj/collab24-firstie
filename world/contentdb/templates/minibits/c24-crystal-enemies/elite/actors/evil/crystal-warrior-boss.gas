@@ -1,25 +1,25 @@
-[t:template,n:ice_warrior_boss_01_base]  // = ice_warrior_boss_01
+[t:template,n:3W_ice_warrior_boss_01_base]  // = 3W_ice_warrior_boss_01
 {
-	category_name = "1W_evil_d";
-	doc = "ice_warrior boss";
+	category_name = "3W_evil_d";
+	doc = "3W_ice_warrior boss";
 	specializes = actor_evil;
 	[actor]
 	{
 		[skills]
 		{
-			strength 	=  18, 0;
-			intelligence =  5, 0;
-			dexterity 	=  11, 0;
-            melee 		=  13,  0;
+			strength 	=  68.5, 0;
+			intelligence =  8.4, 0;
+			dexterity 	=  29.2, 0;
+            melee 		=  99,  0;
 		}
 	}
 	[aspect]
 	{
-		experience_value = 550;
-		life = 327;
-        max_life = 327;
-        mana = 8;
-		max_mana = 8;
+		experience_value = 1339250;
+		life = 2201.8;
+        max_life = 2201.8;
+        mana = 53.9;
+		max_mana = 53.9;
 		model = m_c_edm_iw_pos_1;
 		textures:0 = b_c_edm_iw-02;
 		material = ice;
@@ -31,8 +31,8 @@
 	[attack]
 	{
 		attack_range = 0.5;
-		damage_max = 33;
-		damage_min = 29;
+		damage_max = 551.9;
+		damage_min = 378.1;
 	}
 	[body]
 	{
@@ -110,7 +110,7 @@
 			}
 		}
 	}
-    [defend] { defense=202; }
+    [defend] { defense=1444.3; }
    	[inventory]
 	{
 		selected_active_location = IL_ACTIVE_MELEE_WEAPON;
@@ -122,31 +122,33 @@
                   es_weapon_hand = sd_un_ice_avg;
 			}
 
-			[all*]
+			[oneof*]
 			{
 				[oneof*]
 				{
-					il_main = #armor,f/130-145;
-	                il_main = #weapon/44-48;
+					chance = 0.794;
+					il_main = #body,f/857-963;
+	                il_main = #weapon/285-311;
 				}
 				[oneof*]
 				{
 	            	chance = 0.004;
-	                il_main = #weapon/-rare(1)/51-59;
-	                il_main = #armor/-rare(1)/155-172;
-                    il_main = #*/-rare(1)/51-59;
+	                il_main = #weapon/-rare(1)/330-382;
+	                il_main = #armor/-rare(1)/1044-1158;
+                    il_main = #*/-rare(1)/330-382;
                 }
 				[oneof*]
 				{
                 	chance = 0.002;
-	                il_main = #weapon/-unique(2)/51-59;
-	                il_main = #armor/-unique(2)/155-172;
-                    il_main = #*/-unique(2)/51-59;
+	                il_main = #weapon/-unique(2)/330-382;
+	                il_main = #armor/-unique(2)/1044-1158;
+                    il_main = #*/-unique(2)/330-382;
 	            }
 				[gold*]
 				{
-					max = 484;
-					min = 241;
+					chance = 0.2;
+					max = 397740;
+					min = 198048;
 					min_pile = 41;
 					piles = 2 - 4;
 				}
@@ -190,9 +192,9 @@
 	}
 }
 
-[t:template,n:c24_3_crystal_warrior_boss]
+[t:template,n:3W_c24_3_crystal_warrior_boss]
 {
-    specializes = ice_warrior_boss_01_base;
+    specializes = 3W_ice_warrior_boss_01_base;
 
     aspect:textures:0 = b_i_cav_gems-02-static;  // purple
   	[common]
@@ -248,32 +250,32 @@
 		}
 	}
 
-    // stats from krug_guard, edited
+    // stats from 3W_krug_guard, edited
 	[actor]
 	{
 		[skills]
 		{
-			strength = 13, 0;
-			dexterity = 11,  0;
-			intelligence = 7,  0;
-			melee = 12,  0;  // was 4
+			  strength = 58.9, 0;
+			  dexterity = 31.8,  0;
+			  intelligence = 12.1,  0;
+			  melee = 91,  0;  // unchanged
 		}
 	}
 	[aspect]
 	{
-		experience_value = 61;
-		life = 200;  // was 55
-		max_life = 200;  // was 55
-		mana = 14;
-		max_mana = 14;
+		  experience_value = 789645;
+		  life = 1500;  // was 586.7
+		  max_life = 1500;  // was 586.7
+		  mana = 149.3;
+		  max_mana = 149.3;
 	}
 	[attack]
 	{
-		damage_max = 26;
-		damage_min = 22;
+		  damage_max = 487.5;
+		  damage_min = 331.6;
 	}
 	[defend]
 	{
-		defense = 57;
+		  defense = 741.3;
 	}
 }

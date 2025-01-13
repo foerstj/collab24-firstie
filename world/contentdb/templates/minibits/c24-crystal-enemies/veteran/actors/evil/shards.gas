@@ -1,0 +1,273 @@
+[t:template,n:2W_c24_3_base_shard]
+{
+    specializes = 2W_base_shard;
+
+    [aspect]
+    {
+        scale_base = 0.2;
+    }
+    [common]
+    {
+        screen_name = "Crystal Shard";
+    }
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+	}
+
+    // stats from 2W_mucosa_small, edited
+	[actor]
+	{
+		[skills]
+		{
+			strength =  28, 0;
+			intelligence =  8.8, 0;
+			dexterity =  29.3, 0;
+            combat_magic = 52, 0;  // added
+		}
+	}
+	[aspect]
+	{
+		experience_value = 25935;  // unchanged
+		life = 620;
+        max_life = 620;
+        mana = 100;
+		max_mana = 100;
+	}
+	[attack]
+	{
+		damage_max = 44;
+		damage_min = 18;
+		damage_bonus_min_cmagic = 61;
+		damage_bonus_max_cmagic = 118;
+	}
+	[defend] { defense=305; }
+}
+
+[t:template,n:2W_c24_3_shard_green]
+{
+    specializes = 2W_c24_3_base_shard;
+
+    [aspect]
+    {
+		[textures] { 0 = b_i_cav_gems-03-static; }  // green
+    }
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_c24_3_crystal_shard_01_green = 1;
+			frag_c24_3_crystal_shard_02_green = 1;
+			frag_c24_3_crystal_shard_03_green = 2;
+			frag_c24_3_crystal_shard_04_green = 3;
+			frag_c24_3_crystal_shard_05_green = 3;
+		}
+	}
+  	[common]
+    {
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("crystal_light_green(sgx)");
+			}
+		}
+    }
+	[inventory]
+	{
+		[other] { il_active_primary_spell = c24_3_spell_shard_zap_green; }
+	}
+}
+
+[t:template,n:2W_c24_3_shard_teal]
+{
+    specializes = 2W_c24_3_base_shard;
+
+    [aspect]
+    {
+		[textures] { 0 = b_i_cav_gems-01-static; }  // teal
+    }
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_c24_3_crystal_shard_01_teal = 1;
+			frag_c24_3_crystal_shard_02_teal = 1;
+			frag_c24_3_crystal_shard_03_teal = 2;
+			frag_c24_3_crystal_shard_04_teal = 3;
+			frag_c24_3_crystal_shard_05_teal = 3;
+		}
+	}
+  	[common]
+    {
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("crystal_light_cyan(sgx)");
+			}
+		}
+    }
+	[inventory]
+	{
+		[other] { il_active_primary_spell = c24_3_spell_shard_zap_teal; }
+	}
+}
+
+[t:template,n:2W_c24_3_shard_blue]
+{
+    specializes = 2W_c24_3_base_shard;
+
+    [aspect]
+    {
+		[textures] { 0 = b_i_cav_gems-04-static; }  // blue
+    }
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_c24_3_crystal_shard_01_blue = 1;
+			frag_c24_3_crystal_shard_02_blue = 1;
+			frag_c24_3_crystal_shard_03_blue = 2;
+			frag_c24_3_crystal_shard_04_blue = 3;
+			frag_c24_3_crystal_shard_05_blue = 3;
+		}
+	}
+  	[common]
+    {
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("crystal_light_blue(sgx)");
+			}
+		}
+    }
+	[inventory]
+	{
+		[other] { il_active_primary_spell = c24_3_spell_shard_zap_blue; }
+	}
+}
+
+[t:template,n:2W_c24_3_shard_purple]
+{
+    specializes = 2W_c24_3_base_shard;
+
+    [aspect]
+    {
+		[textures] { 0 = b_i_cav_gems-02-static; }  // purple
+    }
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_c24_3_crystal_shard_01_purple = 1;
+			frag_c24_3_crystal_shard_02_purple = 1;
+			frag_c24_3_crystal_shard_03_purple = 2;
+			frag_c24_3_crystal_shard_04_purple = 3;
+			frag_c24_3_crystal_shard_05_purple = 3;
+		}
+	}
+  	[common]
+    {
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("crystal_light_purple(sgx)");
+			}
+		}
+    }
+	[inventory]
+	{
+		[other] { il_active_primary_spell = c24_3_spell_shard_zap_purple; }
+	}
+}
+
+[t:template,n:2W_c24_3_shard_red]
+{
+    specializes = 2W_c24_3_base_shard;
+
+    [aspect]
+    {
+		[textures] { 0 = b_i_cav_gems-05-static; }  // red
+    }
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_c24_3_crystal_shard_01_red = 1;
+			frag_c24_3_crystal_shard_02_red = 1;
+			frag_c24_3_crystal_shard_03_red = 2;
+			frag_c24_3_crystal_shard_04_red = 3;
+			frag_c24_3_crystal_shard_05_red = 3;
+		}
+	}
+  	[common]
+    {
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("crystal_light_red(sgx)");
+			}
+		}
+    }
+	[inventory]
+	{
+		[other] { il_active_primary_spell = c24_3_spell_shard_zap_red; }
+	}
+}
+
+[t:template,n:2W_c24_3_shard_gold]
+{
+    specializes = 2W_c24_3_base_shard;
+
+    [aspect]
+    {
+		[textures] { 0 = b_i_cav_gems-06-static; }  // gold
+    }
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_c24_3_crystal_shard_01_gold = 1;
+			frag_c24_3_crystal_shard_02_gold = 1;
+			frag_c24_3_crystal_shard_03_gold = 2;
+			frag_c24_3_crystal_shard_04_gold = 3;
+			frag_c24_3_crystal_shard_05_gold = 3;
+		}
+	}
+  	[common]
+    {
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("crystal_light_yellow(sgx)");
+			}
+		}
+    }
+	[inventory]
+	{
+		[other] { il_active_primary_spell = c24_3_spell_shard_zap_gold; }
+	}
+}

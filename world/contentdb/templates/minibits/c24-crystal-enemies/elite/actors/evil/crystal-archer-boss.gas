@@ -1,25 +1,25 @@
-[t:template,n:ice_archer_boss_01_base]  // = ice_archer_boss_01
+[t:template,n:3W_ice_archer_boss_01_base]  // = 3W_ice_archer_boss_01
 {
-	category_name = "1W_evil_d";
-	doc = "ice_archer boss";
+	category_name = "3W_evil_d";
+	doc = "3W_ice_archer boss";
 	specializes = actor_evil;
 	[actor]
 	{
 		[skills]
 		{
-			strength 	=  13, 0;
-			intelligence =  5, 0;
-			dexterity 	=  17, 0;
-            ranged 		=  11,  0;
+			strength 	=  49.5, 0;
+			intelligence =  8.4, 0;
+			dexterity 	=  45.1, 0;
+            ranged 		=  97,  0;
 		}
 	}
 	[aspect]
 	{
-		experience_value = 500;
-		life = 285;
-        max_life = 285;
-        mana = 10;
-		max_mana = 10;
+		experience_value = 1621500;
+		life = 1919;
+        max_life = 1919;
+        mana = 67.3;
+		max_mana = 67.3;
 		model = m_c_edm_ia_pos_1;
 		textures:0 = b_c_edm_iw-03;
 		material = ice;
@@ -31,8 +31,10 @@
 	[attack]
 	{
 		attack_range = 0.5;
-		damage_max = 51;
-		damage_min = 48;
+		damage_max = 614.8;
+		damage_min = 457.9;
+		damage_bonus_min_ranged = 167;
+		damage_bonus_max_ranged = 237;
 	}
 	[body]
 	{
@@ -106,7 +108,7 @@
 			}
 		}
 	}
-    [defend] { defense=174; }
+    [defend] { defense=1397.2; }
 	[inventory]
 	{
 		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
@@ -117,17 +119,19 @@
                   es_shield_hand = bw_un_ice_c_m_s_r_avg;
 			}
 
-			[all*]
+			[oneof*]
 			{
 				[oneof*]
 				{
-					il_main = #armor,f/130-145;
-	                il_main = #weapon/44-48;
+					chance = 0.8;
+					il_main = #body,f/727-901;
+	                il_main = #weapon/285-311;
 				}
 				[gold*]
 				{
-					max = 484;
-					min = 241;
+					chance = 0.2;
+					max = 397740;
+					min = 198048;
 					min_pile = 35;
 					piles = 3 - 5;
 				}
@@ -176,9 +180,9 @@
 	}
 }
 
-[t:template,n:c24_3_crystal_archer_boss]
+[t:template,n:3W_c24_3_crystal_archer_boss]
 {
-    specializes = ice_archer_boss_01_base;
+    specializes = 3W_ice_archer_boss_01_base;
 
     aspect:textures:0 = b_i_cav_gems-02-static;  // purple
   	[common]
@@ -234,32 +238,35 @@
 		}
 	}
 
-    // stats from krug_guard, switched to ranged, edited
+    // stats from 3W_krug_guard, switched to ranged, edited
 	[actor]
 	{
 		[skills]
 		{
-			strength = 11, 0;  // swapped with dex
-			dexterity = 13,  0;  // swapped with str
-			intelligence = 7,  0;
-			ranged = 12,  0;  // was 4
+			  strength = 31.8,  0;  // swapped with dex
+			  dexterity = 58.9, 0;  // swapped with str
+			  intelligence = 12.1,  0;
+			  ranged = 91,  0;  // unchanged (from melee)
 		}
 	}
 	[aspect]
 	{
-		experience_value = 61;
-		life = 200;  // was 55
-		max_life = 200;  // was 55
-		mana = 14;
-		max_mana = 14;
+		  experience_value = 789645;
+		  life = 1500;  // was 586.7
+		  max_life = 1500;  // was 586.7
+		  mana = 149.3;
+		  max_mana = 149.3;
 	}
 	[attack]
 	{
-		damage_max = 26;
-		damage_min = 22;
+		  damage_max = 487.5;
+		  damage_min = 331.6;
+          // ADDED from 3W_krug_throw
+		  damage_bonus_min_ranged = 126;
+		  damage_bonus_max_ranged = 172;
 	}
 	[defend]
 	{
-		defense = 57;
+		  defense = 741.3;
 	}
 }
