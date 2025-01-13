@@ -26,9 +26,6 @@ if not "%gaspy%"=="" (
   if not "%mode%"=="light" (
     pushd %gaspy%
     set checks=standard
-    if "%mode%"=="release" (
-      set checks=all
-    )
     venv\Scripts\python -m build.pre_build_checks %map% --check !checks! --bits "%bits%"
     if !errorlevel! neq 0 pause
     popd
@@ -43,9 +40,6 @@ setlocal EnableDelayedExpansion
 if not "%gaspy%"=="" (
   pushd %gaspy%
   set dev_only=--dev-only-false
-  if "%mode%"=="release" (
-    set dev_only=
-  )
   venv\Scripts\python -m build.fix_start_positions_required_levels %map% !dev_only! --bits "%tmp%\Bits"
   if !errorlevel! neq 0 pause
 
