@@ -1,0 +1,92 @@
+[t:template,n:2W_c24_3_underling_shop_mage]
+{
+    specializes = 2W_npc_shortling_d07_base;
+
+    // general shop stuff
+	category_name = "2W_shopkeep";
+	[aspect]
+	{
+		draw_selection_indicator = TRUE;
+		use_range = 1.0;
+		is_ghost_usable = TRUE;
+	}
+	[common]
+	{
+		screen_name = "Underling Mage Shop";
+	}
+	[conversation]
+	{
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\minibits\generic-talk-skrits\job_talk_npc.skrit;
+	}
+	[respawn_shrine]
+	{
+	}
+	[store]
+	{
+		item_markup = 2;
+	}
+
+    // shop content from 2W_bodrus - mage only
+	[inventory]
+	{
+		[store_pcontent]
+		{
+			full_ratio = 0;
+			[magic]
+			{
+				[all*]
+				{
+					il_main = #spell/23-93;
+					max = 25;
+					min = 25;
+				}
+				[all*]
+				{
+					il_main = #spell/0-16;
+					max = 5;
+					min = 5;
+				}
+			}
+			[misc]
+			{
+				[all*]
+				{
+					il_main = book_glb_magic_01;
+					max = 3;
+					min = 3;
+				}
+			}
+		}
+	}
+	[store]
+	{
+		[item_restock]
+		{
+			potion_health_small = 19;
+			potion_mana_small = 19;
+			potion_rejuvenation_small = 2;
+
+			scroll_resurrect = 2;
+            spell_resurrect = 2;
+            spell_revive = 2;
+            spell_healing_hands = 2;
+
+            spell_zap = 2;
+            spell_fireshot = 2;
+		}
+	}
+
+    // equipment
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_ro_m_g_c_avg_elbead_c24;
+			es_feet = bo_bo_sc_m_g_c_avg_beaded_c24;
+			es_head = he_vi_pl_m_beaded_headdress_c24;
+		}
+	}
+}

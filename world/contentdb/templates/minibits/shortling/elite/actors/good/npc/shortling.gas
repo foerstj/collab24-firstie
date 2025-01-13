@@ -1,0 +1,302 @@
+[t:template,n:3W_base_npc_shortling]
+{
+    specializes = 3W_base_npc_fb;
+
+	category_name = "3W_townsperson";
+	doc = "3W_shortling";
+	[actor]
+	{
+		portrait_icon = b_gui_ig_i_ic_c_hg;
+	}
+	[aspect]
+	{
+		model = m_c_gan_hg_pos_a1;
+        scale_base = 0.8;
+	}
+	[body]
+	{
+		armor_version = gan_hg;
+    }
+    [common]
+    {
+        screen_name = "Shortling";
+    }
+    [conversation]
+    {
+    }
+	[inventory]
+	{
+		[equipment]
+		{
+			//es_feet = bo_bo_le_light;
+		}
+	}
+	[mind]
+	{
+		actor_may_attack = false;
+        actor_may_be_attacked = false;
+    }
+}
+
+[t:template,n:3W_npc_shortling_01] { specializes = 3W_npc_shortling_01_base; }
+[t:template,n:3W_npc_shortling_01_base]
+{
+    specializes = 3W_base_npc_shortling;
+
+	[actor]
+	{
+		portrait_icon = b_gui_ig_i_ic_c_wym;
+	}
+    [aspect]
+    {
+		[textures]
+		{
+			0 = b_c_gan_hg_skin_01;
+			1 = b_c_pos_a1_100;
+		}
+    }
+}
+
+[t:template,n:3W_npc_shortling_02] { specializes = 3W_npc_shortling_02_base; }
+[t:template,n:3W_npc_shortling_02_base]
+{
+    specializes = 3W_base_npc_shortling;
+
+	[actor]
+	{
+		portrait_icon = b_gui_ig_i_ic_c_acha;
+	}
+    [aspect]
+    {
+		[textures]
+		{
+			0 = b_c_gan_hg_skin_02;
+			1 = b_c_pos_a1_200;
+		}
+    }
+}
+
+[t:template,n:3W_npc_shortling_03] { specializes = 3W_npc_shortling_03_base; }
+[t:template,n:3W_npc_shortling_03_base]
+{
+    specializes = 3W_base_npc_shortling;
+
+	[actor]
+	{
+	}
+    [aspect]
+    {
+		[textures]
+		{
+			0 = b_c_gan_hg_skin_03;
+			1 = b_c_pos_a1_300;
+		}
+    }
+}
+
+[t:template,n:3W_npc_shortling_04] { specializes = 3W_npc_shortling_04_base; }
+[t:template,n:3W_npc_shortling_04_base]
+{
+    specializes = 3W_base_npc_shortling;
+
+	[actor]
+	{
+		portrait_icon = b_gui_ig_i_ic_c_tass;
+	}
+    [aspect]
+    {
+		[textures]
+		{
+			0 = b_c_gan_hg_skin_04;
+			1 = b_c_pos_a1_100;
+		}
+    }
+}
+
+[t:template,n:3W_npc_shortling_05] { specializes = 3W_npc_shortling_05_base; }
+[t:template,n:3W_npc_shortling_05_base]
+{
+    specializes = 3W_base_npc_shortling;
+
+	[actor]
+	{
+	}
+    [aspect]
+    {
+		[textures]
+		{
+			0 = b_c_gan_hg_skin_05;
+			1 = b_c_pos_a1_100;
+		}
+    }
+}
+
+[t:template,n:3W_npc_shortling_06] { specializes = 3W_npc_shortling_06_base; }
+[t:template,n:3W_npc_shortling_06_base]
+{
+    specializes = 3W_base_npc_shortling;
+
+	[actor]
+	{
+	}
+    [aspect]
+    {
+		[textures]
+		{
+			0 = b_c_gan_hg_skin_06;
+			1 = b_c_pos_a1_100;
+		}
+    }
+}
+
+[t:template,n:3W_npc_shortling_07] { specializes = 3W_npc_shortling_07_base; }
+[t:template,n:3W_npc_shortling_07_base]
+{
+    specializes = 3W_base_npc_shortling;
+
+	[actor]
+	{
+		portrait_icon = b_gui_ig_i_ic_c_najj;
+	}
+    [aspect]
+    {
+		[textures]
+		{
+			0 = b_c_gan_hg_skin_07;
+			1 = b_c_pos_a1_102;
+		}
+    }
+}
+
+[t:template,n:3W_npc_shortling_d01] { specializes = 3W_npc_shortling_d01_base; }
+[t:template,n:3W_npc_shortling_d01_base]
+{
+    specializes = 3W_base_npc_shortling;
+
+	[actor]
+	{
+		portrait_icon = b_gui_ig_i_ic_c_wym-d;
+	}
+    [aspect]
+    {
+		[textures]
+		{
+			0 = b_c_gan_sh_skin_01;
+			1 = b_c_pos_a1_shd100;
+		}
+    }
+}
+
+[t:template,n:3W_npc_shortling_d02] { specializes = 3W_npc_shortling_d02_base; }
+[t:template,n:3W_npc_shortling_d02_base]
+{
+    specializes = 3W_base_npc_shortling;
+
+	[actor]
+	{
+		portrait_icon = b_gui_ig_i_ic_c_acha-d;
+	}
+    [aspect]
+    {
+		[textures]
+		{
+			0 = b_c_gan_sh_skin_02;
+			1 = b_c_pos_a1_shd200;
+		}
+    }
+}
+
+[t:template,n:3W_npc_shortling_d03] { specializes = 3W_npc_shortling_d03_base; }
+[t:template,n:3W_npc_shortling_d03_base]
+{
+    specializes = 3W_base_npc_shortling;
+
+	[actor]
+	{
+		portrait_icon = b_gui_ig_i_ic_c_hg-d;
+	}
+    [aspect]
+    {
+		[textures]
+		{
+			0 = b_c_gan_sh_skin_03;
+			1 = b_c_pos_a1_shd300;
+		}
+    }
+}
+
+[t:template,n:3W_npc_shortling_d04] { specializes = 3W_npc_shortling_d04_base; }
+[t:template,n:3W_npc_shortling_d04_base]
+{
+    specializes = 3W_base_npc_shortling;
+
+	[actor]
+	{
+		portrait_icon = b_gui_ig_i_ic_c_tass-d;
+	}
+    [aspect]
+    {
+		[textures]
+		{
+			0 = b_c_gan_sh_skin_04;
+			1 = b_c_pos_a1_shd100;
+		}
+    }
+}
+
+[t:template,n:3W_npc_shortling_d05] { specializes = 3W_npc_shortling_d05_base; }
+[t:template,n:3W_npc_shortling_d05_base]
+{
+    specializes = 3W_base_npc_shortling;
+
+	[actor]
+	{
+		portrait_icon = b_gui_ig_i_ic_c_hg-d;
+	}
+    [aspect]
+    {
+		[textures]
+		{
+			0 = b_c_gan_sh_skin_05;
+			1 = b_c_pos_a1_shd100;
+		}
+    }
+}
+
+[t:template,n:3W_npc_shortling_d06] { specializes = 3W_npc_shortling_d06_base; }
+[t:template,n:3W_npc_shortling_d06_base]
+{
+    specializes = 3W_base_npc_shortling;
+
+	[actor]
+	{
+		portrait_icon = b_gui_ig_i_ic_c_hg-d;
+	}
+    [aspect]
+    {
+		[textures]
+		{
+			0 = b_c_gan_sh_skin_06;
+			1 = b_c_pos_a1_shd100;
+		}
+    }
+}
+
+[t:template,n:3W_npc_shortling_d07] { specializes = 3W_npc_shortling_d07_base; }
+[t:template,n:3W_npc_shortling_d07_base]
+{
+    specializes = 3W_base_npc_shortling;
+
+	[actor]
+	{
+		portrait_icon = b_gui_ig_i_ic_c_najj-d;
+	}
+    [aspect]
+    {
+		[textures]
+		{
+			0 = b_c_gan_sh_skin_07;
+			1 = b_c_pos_a1_shd102;
+		}
+    }
+}

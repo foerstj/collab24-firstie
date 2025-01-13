@@ -1,0 +1,216 @@
+[t:template,n:2W_c24_3_underling_shop_smith]
+{
+    specializes = 2W_npc_shortling_d04_base;
+
+    // general shop stuff
+	category_name = "2W_shopkeep";
+	[aspect]
+	{
+		draw_selection_indicator = TRUE;
+		use_range = 1.0;
+		is_ghost_usable = TRUE;
+	}
+	[common]
+	{
+		screen_name = "Underling Smith Shop";
+	}
+	[conversation]
+	{
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\minibits\generic-talk-skrits\job_talk_npc.skrit;
+	}
+	[respawn_shrine]
+	{
+	}
+	[store]
+	{
+		item_markup = 2;
+	}
+
+    // shop content from 2W_bodrus - smith only
+	[inventory]
+	{
+		[store_pcontent]
+		{
+			full_ratio = 0;
+			[armor]
+			{
+				[all*]
+				{
+					il_main = #body,ro/124-566;
+					max = 4;
+					min = 4;
+				}
+
+				[all*]
+				{
+					il_main = #body/124-171;
+					max = 7;
+					min = 7;
+				}
+				[all*]
+				{
+					il_main = #body/178-419;
+					max = 16;
+					min = 16;
+				}
+				[all*]
+				{
+					il_main = #body/426-566;
+					max = 3;
+					min = 3;
+				}
+
+
+				[all*]
+				{
+					il_main = #gloves/16-171;
+					max = 8;
+					min = 8;
+				}
+				[all*]
+				{
+					il_main = #gloves/178-419;
+					max = 8;
+					min = 8;
+				}
+				[all*]
+				{
+					il_main = #gloves/426-566;
+					max = 4;
+					min = 4;
+				}
+
+
+				[all*]
+				{
+					il_main = #helm/16-171;
+					max = 8;
+					min = 8;
+				}
+				[all*]
+				{
+					il_main = #helm/178-419;
+					max = 8;
+					min = 8;
+				}
+				[all*]
+				{
+					il_main = #helm/426-566;
+					max = 4;
+					min = 4;
+				}
+
+				[all*]
+				{
+					il_main = #boots/16-171;
+					max = 8;
+					min = 8;
+				}
+				[all*]
+				{
+					il_main = #boots/178-419;
+					max = 8;
+					min = 8;
+				}
+				[all*]
+				{
+					il_main = #boots/426-566;
+					max = 4;
+					min = 4;
+				}
+			}
+			[shields]
+			{
+				[all*]
+				{
+					il_main = #shield/16-171;
+					max = 5;
+					min = 5;
+				}
+				[all*]
+				{
+					il_main = #shield/178-419;
+					max = 6;
+					min = 6;
+				}
+				[all*]
+				{
+					il_main = #shield/426-566;
+					max = 4;
+					min = 4;
+				}
+			}
+			[weapons]
+			{
+				[all*]
+				{
+					il_main = #melee/72-79;
+					max = 8;
+					min = 8;
+				}
+				[all*]
+				{
+					il_main = #melee/86-194;
+					max = 18;
+					min = 18;
+				}
+				[all*]
+				{
+					il_main = #melee/202-252;
+					max = 6;
+					min = 6;
+				}
+				[all*]
+				{
+					il_main = #ranged/72-79;
+					max = 8;
+					min = 8;
+				}
+				[all*]
+				{
+					il_main = #ranged/86-194;
+					max = 18;
+					min = 18;
+				}
+				[all*]
+				{
+					il_main = #ranged/202-252;
+					max = 6;
+					min = 6;
+				}
+			}
+		}
+	}
+    // EXTENDED with Underling equipment
+	[store]
+	{
+		[item_restock]
+		{
+			bw_g_c_c24_nat_avg = 4;
+
+            bd_le_m_g_c_avg_ceramic_c24 = 2;
+            bo_bo_sc_m_g_c_avg_ceramic_c24 = 2;
+            he_vi_pl_m_ceramic_headband_c24 = 2;
+            he_vi_pl_m_ceramic_headdress_c24 = 1;
+
+            bd_le_m_g_c_avg_beaded_c24 = 4;
+            bo_bo_sc_m_g_c_avg_beaded_c24 = 4;
+            he_vi_pl_m_beaded_headband_c24 = 3;
+            bd_ro_m_g_c_avg_elbead_c24 = 1;
+		}
+	}
+
+    // equipment
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_le_m_g_c_avg_beaded_c24;
+			es_feet = bo_bo_sc_m_g_c_avg_beaded_c24;
+            es_head = he_vi_pl_m_beaded_headband_c24;
+		}
+	}
+}
