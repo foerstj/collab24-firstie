@@ -1,0 +1,45 @@
+[t:template,n:barrel_glb_floating_03_base]  // = barrel_glb_floating_03
+{
+	specializes		= base_container_barrel;
+	doc				= "barrel_floating_vertical";
+	category_name	= "container";
+
+	aspect:model		= m_i_glb_barrel-03;
+	aspect:textures:0	= b_i_glb_barrel;
+	[body]
+	{
+		initial_chore =	chore_default;
+		[chore_dictionary]
+		{
+			chore_prefix = a_i_glb;
+			[chore_default]
+			{
+				skrit =	infinite_loop;
+				[anim_files] { 00=barrel-03-float; }
+			}
+		}
+	}
+}
+
+[t:template,n:barrel_glb_floating_04_base]  // = barrel_glb_floating_04
+{
+	specializes		= base_container_barrel;
+	doc				= "barrel_floating_horiz";
+	category_name	= "container";
+
+	aspect:model		= m_i_glb_barrel-04;
+	aspect:textures:0	= b_i_glb_barrel;
+	[body]
+	{
+		initial_chore =	chore_default;
+		[chore_dictionary]
+		{
+			chore_prefix = a_i_glb;
+			[chore_default]
+			{
+				skrit =	infinite_loop;
+				[anim_files] { 00=barrel-04-float; }
+			}
+		}
+	}
+}
