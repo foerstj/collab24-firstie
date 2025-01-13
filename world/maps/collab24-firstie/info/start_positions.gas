@@ -339,6 +339,14 @@
 			{
 			  i required_level = 5;
 			}
+			[veteran]
+			{
+			  i required_level = 58;
+			}
+			[elite]
+			{
+			  i required_level = 87;
+			}
 		}
 	}
 	[t:start_group,n:3_underland_town]
@@ -449,6 +457,14 @@
 			[regular]
 			{
 			  i required_level = 6;
+			}
+			[veteran]
+			{
+			  i required_level = 59;
+			}
+			[elite]
+			{
+			  i required_level = 88;
 			}
 		}
 	}
