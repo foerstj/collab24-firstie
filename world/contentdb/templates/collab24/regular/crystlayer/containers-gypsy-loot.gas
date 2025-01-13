@@ -11,12 +11,13 @@
 			{
 				[gold*]
 				{
-					chance = 0.5;
+					chance = 0.5;  // was 0.2
 					max = 100;
 					min = 75;
 				}
 				[oneof*]
 				{
+                    //chance = 0.3;
 					il_main = #weapon/12-28;
 					il_main = #armor/19-60;
 					il_main = #*/12-28;
@@ -41,12 +42,13 @@
 			{
 				[gold*]
 				{
-					chance = 0.5;
+					chance = 0.5;  // was 0.2
 					max = 100;
 					min = 75;
 				}
 				[oneof*]
 				{
+                    //chance = 0.3;
 					il_main = #weapon/12-28;
 					il_main = #armor/19-60;
 					il_main = #*/12-28;
