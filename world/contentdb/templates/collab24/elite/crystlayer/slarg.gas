@@ -1,0 +1,70 @@
+[t:template,n:3W_slarg_base]  // = 3W_slarg
+{
+	category_name = "3W_evil_d";
+	doc = "3W_slarg";
+	specializes = 3W_base_slarg;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  29.1, 0;
+			intelligence =  6.7, 0;
+			dexterity =  20.7, 0;
+            melee =  100,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 1295567;
+		life = 1654.1;
+        max_life = 1654.1;
+        mana = 48.5;
+		max_mana = 48.5;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 359.9;
+		damage_min = 272.6;
+	}
+	[common] { screen_name="Slarg"; }
+    [defend] { defense=434.2; }
+    [mind]
+    {
+		jat_fidget	= world\ai\jobs\common\job_fidget.skrit
+			?social		= 0.35
+			&meander	= false
+			&still		= false;
+	}
+}
+
+[t:template,n:3W_c24_3_slarg]
+{
+    specializes = 3W_slarg_base;
+
+    // stats from 3W_spider_adolescent, edited/unchanged
+	[actor]
+	{
+		[skills]
+		{
+			strength =  30.1, 0;
+			intelligence =  3.5, 0;
+			dexterity =  21.2, 0;
+			melee =  90, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 608157;
+		life = 704;
+		max_life = 704;
+		mana = 62;
+		max_mana = 62;
+	}
+	[attack]
+	{
+		damage_max = 249.9;
+		damage_min = 169.3;
+	}
+	[defend] { defense=423.7; }
+}

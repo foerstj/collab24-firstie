@@ -1,0 +1,166 @@
+[t:template,n:2W_coil_gob_01_base]  // = 2W_coil_glb_01
+{
+	category_name = "2W_evil_d";
+	doc = "2W_coil_glb_01";
+	specializes = actor_evil;
+
+	[actor]
+	{
+		drops_spellbook = false;
+		[skills]
+		{
+			  combat_magic = 0, 0;
+		}
+	}
+		damage_bonus_min_cmagic = 3;
+		damage_bonus_max_cmagic = 5;
+	[attack] {}
+	[defend] {}
+
+	[aspect]
+	{
+		model=m_i_gob_tesla-coil-01;
+		is_usable	= false;
+		is_selectable	= true;
+		life_state	= LS_ALIVE_CONSCIOUS;
+		max_life	= 621;
+		life		= 621;
+		is_collidable				= true;
+		draw_selection_indicator	= false;
+		material = steel;
+		[voice]	{ [die]			{ priority = high; * = s_e_die_tesla_coil;  } }
+	}
+
+	[common]
+	{
+		screen_name	= "Tesla Coil";
+		rollover_display = true;
+	}
+
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=spell_tesla_bolt; }
+	}
+	[generator_in_object]
+	{
+		spawn_chance = 1.0;
+		child_template_name = coil_gob_broken_01;
+	}
+	[physics]
+	{
+		break_effect = coil_explosion;
+		explode_when_killed = true;
+		explosion_magnitude = 1.75;
+		gib_gore_good = true;
+		[break_particulate]
+		{
+			frag_gob_tesla_coil_01 = 4;
+			frag_gob_tesla_coil_02 = 2;
+			frag_gob_tesla_coil_03 = 1;
+			frag_gob_tesla_coil_04 = ;
+			frag_gob_tesla_coil_05 = 2;
+			frag_gob_tesla_coil_06 = 1;
+			frag_glb_metal_05 =	5;
+			frag_glb_metal_06 = 5;
+		}
+	}
+	[mind]
+	{
+		actor_weapon_preference			= WP_MAGIC;
+		actor_auto_switches_to_magic	= true;
+
+		jat_cast	    				= world\ai\jobs\common\job_cast.skrit;
+
+		movement_orders					= mo_hold;
+
+
+		jat_flee_from_object		= jat_none;
+		jat_guard         			= jat_none;
+		jat_move          			= jat_none;
+		jat_patrol         			= jat_none;
+
+		melee_engage_range = 2;
+		personal_space_range = .5;
+		ranged_engage_range = 10.0;
+		sight_range = 10.0;
+	}
+
+	[body]
+	{
+		initial_chore = chore_default;
+		[chore_dictionary]
+		{
+			chore_prefix = a_i_gob;
+			[chore_default]
+			{
+				skrit = coil_spin?speed=0.0;
+				[anim_files]
+				{
+					00=tesla-coil-01-rotate;
+				}
+			}
+			[chore_die]
+			{
+				skrit = coil_spin?speed=0.0;
+				[anim_files]
+				{
+					00=tesla-coil-01-rotate;
+				}
+			}
+			[chore_fidget]
+			{
+				skrit = coil_spin?speed=0.0;
+				[anim_files]
+				{
+					00=tesla-coil-01-rotate;
+				}
+			}
+			[chore_magic]
+			{
+				skrit = coil_spin;
+				[anim_files]
+				{
+					00=tesla-coil-01-rotate;
+				}
+			}
+		}
+	}
+}
+
+[t:template,n:2W_c24_3_coil_gob_01]
+{
+    specializes = 2W_coil_gob_01_base;
+
+    // stats (but not loot) from 2W_krug_shaman_boss_01
+	[actor]
+	{
+		[skills]
+		{
+			  combat_magic = 56, 0;
+			  dexterity = 13.4, 0;
+			  intelligence = 14.5, 0;
+			  melee = 54, 0;
+			  strength = 35.2, 0;
+		}
+	}
+	[aspect]
+	{
+		  experience_value = 29665;
+		  life = 501.6;
+		  mana = 5700;
+		  max_life = 501.6;
+		  max_mana = 5700;
+	}
+	[attack]
+	{
+		  damage_max = 150.5;
+		  damage_min = 82.1;
+		damage_bonus_min_cmagic = 123;
+		damage_bonus_max_cmagic = 184;
+	}
+	[defend]
+	{
+		  defense = 820.8;
+	}
+}

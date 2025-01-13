@@ -1,0 +1,61 @@
+[t:template,n:3W_c24_3_barrel_glb_floating_03_gypsy_loot]
+{
+    specializes = barrel_glb_floating_03_base;
+
+    // from 3W_crate_ice_01_path2nt, increased
+	[inventory]
+	{
+		[pcontent]
+		{
+			[all*]
+			{
+				[gold*]
+				{
+					chance = 0.5;  // was 0.2
+					max = 68288;
+					min = 34144;
+				}
+				[oneof*]
+				{
+                    //chance = 0.3;
+					il_main = #weapon/102-238;
+					il_main = #armor/171-540;
+					il_main = #*/102-238;
+					il_main = potion_mana_super;
+					il_main = potion_health_super;
+				}
+			}
+		}
+	}
+}
+
+[t:template,n:3W_c24_3_barrel_glb_floating_04_gypsy_loot]
+{
+    specializes = barrel_glb_floating_04_base;
+
+    // from 3W_crate_ice_01_path2nt, increased
+	[inventory]
+	{
+		[pcontent]
+		{
+			[all*]
+			{
+				[gold*]
+				{
+					chance = 0.5;  // was 0.2
+					max = 68288;
+					min = 34144;
+				}
+				[oneof*]
+				{
+                    //chance = 0.3;
+					il_main = #weapon/102-238;
+					il_main = #armor/171-540;
+					il_main = #*/102-238;
+					il_main = potion_mana_super;
+					il_main = potion_health_super;
+				}
+			}
+		}
+	}
+}
