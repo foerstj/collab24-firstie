@@ -4,7 +4,7 @@
 	{
 	  b is_visible = false;
 	}
-	[dsxp_experience_award]
+	[c24_skill_item]
 	{
 	  x scroll_scid_1 = 0x03000005;
 	  x scroll_scid_2 = 0x03000006;
@@ -22,7 +22,7 @@
 	{
 	  b is_visible = false;
 	}
-	[dsxp_experience_award]
+	[c24_skill_item]
 	{
 	  x scroll_scid_1 = 0x03000004;
 	  x scroll_scid_2 = 0x03000006;
@@ -40,7 +40,7 @@
 	{
 	  b is_visible = false;
 	}
-	[dsxp_experience_award]
+	[c24_skill_item]
 	{
 	  x scroll_scid_1 = 0x03000004;
 	  x scroll_scid_2 = 0x03000005;
@@ -58,7 +58,7 @@
 	{
 	  b is_visible = false;
 	}
-	[dsxp_experience_award]
+	[c24_skill_item]
 	{
 	  x scroll_scid_1 = 0x03000004;
 	  x scroll_scid_2 = 0x03000005;
