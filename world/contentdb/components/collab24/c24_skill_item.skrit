@@ -50,9 +50,6 @@ startup state Waiting$
 				// set combat magic level
 				Rules.RSSetNaturalSkillLevel(player$, "combat magic", cmagic_stat$);
 
-				// update quest status for the player
-				Victory.RSActivateQuest("xp_king", 2, player$);
-
 				// and remove myself from the world
 				GoDb.SMarkForDeletion( owner.goid );
 			}
