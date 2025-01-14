@@ -1,4 +1,4 @@
-[t:xp_combatm_exp_item,n:0x03000004]
+[t:c24_3_skill_item_cmagic,n:0x03000004]
 {
 	[aspect]
 	{
@@ -16,7 +16,7 @@
 	  p position = -1.82133,0.2426,-2.42761,0x5eab80d7;
 	}
 }
-[t:xp_melee_exp_item,n:0x03000005]
+[t:c24_3_skill_item_melee,n:0x03000005]
 {
 	[aspect]
 	{
@@ -34,7 +34,7 @@
 	  p position = -0.315367,0.171501,-2.17321,0x5eab80d7;
 	}
 }
-[t:xp_naturem_exp_item,n:0x03000006]
+[t:c24_3_skill_item_nmagic,n:0x03000006]
 {
 	[aspect]
 	{
@@ -52,7 +52,7 @@
 	  p position = 1.15688,0.133101,-2.13367,0x5eab80d7;
 	}
 }
-[t:xp_ranged_exp_item,n:0x03000007]
+[t:c24_3_skill_item_ranged,n:0x03000007]
 {
 	[aspect]
 	{
