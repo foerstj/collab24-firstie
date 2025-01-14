@@ -335,6 +335,10 @@
 		}
 		[world_levels]
 		{
+			[elite]
+			{
+			  i required_level = 87;
+			}
 			[regular]
 			{
 			  i required_level = 5;
@@ -342,10 +346,6 @@
 			[veteran]
 			{
 			  i required_level = 58;
-			}
-			[elite]
-			{
-			  i required_level = 87;
 			}
 		}
 	}
@@ -454,6 +454,10 @@
 		}
 		[world_levels]
 		{
+			[elite]
+			{
+			  i required_level = 88;
+			}
 			[regular]
 			{
 			  i required_level = 6;
@@ -461,10 +465,6 @@
 			[veteran]
 			{
 			  i required_level = 59;
-			}
-			[elite]
-			{
-			  i required_level = 88;
 			}
 		}
 	}
