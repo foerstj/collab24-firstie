@@ -1,39 +1,10 @@
-[t:template,n:c24_3_base_skill_item]
-{
-	specializes = xp_base_expitem;
-
-	[common]
-	{
-		[template_triggers]
-		{
-			[*]
-			{
-				action* = call_sfx_script( "combat_spell_sparkle" );
-				condition* = receive_world_message("WE_REQ_ACTIVATE");
-			}
-		}
-	}
-}
-
 [t:template,n:c24_3_skill_item_melee]
 {
-	specializes = c24_3_base_skill_item;
+	specializes = c24_3_base_skill_item_melee;
 
-	doc = "Melee Experience giving item";
-	[common]
-	{
-		screen_name = "Melee Award";
-	}
-	[aspect]
-	{
-		textures:0 = b_i_glb_book-lore-02;
-	}
-	[attack]
-	{
-		skill_class = melee;		
-	}
 	[dsxp_experience_award]
 	{
+		experience_amount = 17100;
 		melee_stat	= 10;
 		ranged_stat	= 0;
 		cmagic_stat	= 0;
@@ -46,23 +17,11 @@
 
 [t:template,n:c24_3_skill_item_ranged]
 {
-	specializes = c24_3_base_skill_item;
+	specializes = c24_3_base_skill_item_ranged;
 
-	doc = "Ranged Experience giving item";
-	[common]
-	{
-		screen_name = "Ranged Award";
-	}
-	[aspect]
-	{
-		textures:0 = b_i_glb_book-lore;
-	}
-	[attack]
-	{
-		skill_class = ranged;		
-	}
 	[dsxp_experience_award]
 	{
+		experience_amount = 17100;
 		melee_stat	= 0;
 		ranged_stat	= 10;
 		cmagic_stat	= 0;
@@ -75,24 +34,11 @@
 
 [t:template,n:c24_3_skill_item_cmagic]
 {
-	specializes = c24_3_base_skill_item;
+	specializes = c24_3_base_skill_item_cmagic;
 
-	doc = "Combat Magic Experience giving item";
-	[common]
-	{
-		screen_name = "Combat Magic Award";
-	}
-	[aspect]
-	{
-		textures:0 = b_i_glb_book-xpcombat;
-	}
-	[magic]
-	{
-		magic_class = mc_combat_magic;
-		skill_class = "Combat Magic";
-	}
 	[dsxp_experience_award]
 	{
+		experience_amount = 17100;
 		melee_stat	= 0;
 		ranged_stat	= 0;
 		cmagic_stat	= 10;
@@ -105,24 +51,11 @@
 
 [t:template,n:c24_3_skill_item_nmagic]
 {
-	specializes = c24_3_base_skill_item;
+	specializes = c24_3_base_skill_item_nmagic;
 
-	doc = "Ranged Experience giving item";
-	[common]
-	{
-		screen_name = "Nature Magic Award";
-	}
-	[aspect]
-	{
-		textures:0 = b_i_glb_book-xpnature;
-	}
-	[magic]
-	{
-		magic_class = mc_nature_magic;
-		skill_class = "Nature Magic";
-	}
 	[dsxp_experience_award]
 	{
+		experience_amount = 17100;
 		melee_stat	= 0;
 		ranged_stat	= 0;
 		cmagic_stat	= 0;

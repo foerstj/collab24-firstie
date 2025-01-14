@@ -1,0 +1,125 @@
+[t:template,n:c24_3_base_skill_item]
+{
+	specializes = treasure;
+
+	doc = "base experience giving item";
+	category_name = "lorebook";
+	[aspect]
+	{
+		gold_value = 0;
+		model = m_i_glb_book-magic;
+		[textures]
+		{
+			0 = b_i_glb_book-lore;
+		}
+		[voice]
+		{
+			[put_down]
+			{
+				* = s_e_gui_put_down_book;
+			}
+		}		
+	}
+	[common]
+	{
+		screen_name = "Base Experience Item";
+
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script( "combat_spell_sparkle" );
+				condition* = receive_world_message("WE_REQ_ACTIVATE");
+			}
+		}
+	}
+	[gui]
+	{
+		inventory_icon = b_gui_ig_i_it_scroll;
+		inventory_height = 1;
+		inventory_width = 2;
+	}	
+	// skrit component to award experience on pickup
+	[dsxp_experience_award]
+	{
+	}	
+}
+
+
+[t:template,n:c24_3_base_skill_item_melee]
+{
+	specializes = c24_3_base_skill_item;
+
+	doc = "Melee Experience giving item";
+	[common]
+	{
+		screen_name = "Melee Award";
+	}
+	[aspect]
+	{
+		textures:0 = b_i_glb_book-lore-02;
+	}
+	[attack]
+	{
+		skill_class = melee;
+	}
+}
+
+[t:template,n:c24_3_base_skill_item_ranged]
+{
+	specializes = c24_3_base_skill_item;
+
+	doc = "Ranged Experience giving item";
+	[common]
+	{
+		screen_name = "Ranged Award";
+	}
+	[aspect]
+	{
+		textures:0 = b_i_glb_book-lore;
+	}
+	[attack]
+	{
+		skill_class = ranged;
+	}
+}
+
+[t:template,n:c24_3_base_skill_item_cmagic]
+{
+	specializes = c24_3_base_skill_item;
+
+	doc = "Combat Magic Experience giving item";
+	[common]
+	{
+		screen_name = "Combat Magic Award";
+	}
+	[aspect]
+	{
+		textures:0 = b_i_glb_book-xpcombat;
+	}
+	[magic]
+	{
+		magic_class = mc_combat_magic;
+		skill_class = "Combat Magic";
+	}
+}
+
+[t:template,n:c24_3_base_skill_item_nmagic]
+{
+	specializes = c24_3_base_skill_item;
+
+	doc = "Ranged Experience giving item";
+	[common]
+	{
+		screen_name = "Nature Magic Award";
+	}
+	[aspect]
+	{
+		textures:0 = b_i_glb_book-xpnature;
+	}
+	[magic]
+	{
+		magic_class = mc_nature_magic;
+		skill_class = "Nature Magic";
+	}
+}
