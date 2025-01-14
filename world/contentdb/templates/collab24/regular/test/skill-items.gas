@@ -2,7 +2,7 @@
 {
 	specializes = c24_3_base_skill_item_melee;
 
-	[dsxp_experience_award]
+	[c24_skill_item]
 	{
 		experience_amount = 17100;
 		melee_stat	= 10;
@@ -19,7 +19,7 @@
 {
 	specializes = c24_3_base_skill_item_ranged;
 
-	[dsxp_experience_award]
+	[c24_skill_item]
 	{
 		experience_amount = 17100;
 		melee_stat	= 0;
@@ -36,7 +36,7 @@
 {
 	specializes = c24_3_base_skill_item_cmagic;
 
-	[dsxp_experience_award]
+	[c24_skill_item]
 	{
 		experience_amount = 17100;
 		melee_stat	= 0;
@@ -53,7 +53,7 @@
 {
 	specializes = c24_3_base_skill_item_nmagic;
 
-	[dsxp_experience_award]
+	[c24_skill_item]
 	{
 		experience_amount = 17100;
 		melee_stat	= 0;
