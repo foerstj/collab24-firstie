@@ -1,9 +1,5 @@
 [t:c24_3_skill_item_cmagic,n:0x03000004]
 {
-	[aspect]
-	{
-	  b is_visible = false;
-	}
 	[c24_skill_item]
 	{
 	  x scroll_scid_1 = 0x03000005;
@@ -18,10 +14,6 @@
 }
 [t:c24_3_skill_item_melee,n:0x03000005]
 {
-	[aspect]
-	{
-	  b is_visible = false;
-	}
 	[c24_skill_item]
 	{
 	  x scroll_scid_1 = 0x03000004;
@@ -36,10 +28,6 @@
 }
 [t:c24_3_skill_item_nmagic,n:0x03000006]
 {
-	[aspect]
-	{
-	  b is_visible = false;
-	}
 	[c24_skill_item]
 	{
 	  x scroll_scid_1 = 0x03000004;
@@ -54,10 +42,6 @@
 }
 [t:c24_3_skill_item_ranged,n:0x03000007]
 {
-	[aspect]
-	{
-	  b is_visible = false;
-	}
 	[c24_skill_item]
 	{
 	  x scroll_scid_1 = 0x03000004;
