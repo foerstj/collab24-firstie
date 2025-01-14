@@ -1,0 +1,67 @@
+[t:template,n:3W_c24_3_skill_item_melee]
+{
+	specializes = c24_3_base_skill_item_melee;
+
+	[c24_skill_item]
+	{
+		uber_stat	= 87;
+		melee_stat	= 87;
+		ranged_stat	= 0;
+		cmagic_stat	= 0;
+		nmagic_stat	= 0;
+		int_stat	=  7.83;
+		dex_stat	= 23.49;
+		str_stat	= 55.68;
+	}
+}
+
+[t:template,n:3W_c24_3_skill_item_ranged]
+{
+	specializes = c24_3_base_skill_item_ranged;
+
+	[c24_skill_item]
+	{
+		uber_stat	= 87;
+		melee_stat	= 0;
+		ranged_stat	= 87;
+		cmagic_stat	= 0;
+		nmagic_stat	= 0;
+		int_stat	= 11.31;
+		dex_stat	= 53.94;
+		str_stat	= 21.75;
+	}	
+}
+
+[t:template,n:3W_c24_3_skill_item_cmagic]
+{
+	specializes = c24_3_base_skill_item_cmagic;
+
+	[c24_skill_item]
+	{
+		uber_stat	= 87;
+		melee_stat	= 0;
+		ranged_stat	= 0;
+		cmagic_stat	= 87;
+		nmagic_stat	= 0;
+		int_stat	= 60.90;
+		dex_stat	= 14.79;
+		str_stat	= 11.31;
+	}
+}
+
+[t:template,n:3W_c24_3_skill_item_nmagic]
+{
+	specializes = c24_3_base_skill_item_nmagic;
+
+	[c24_skill_item]
+	{
+		uber_stat	= 87;
+		melee_stat	= 0;
+		ranged_stat	= 0;
+		cmagic_stat	= 0;
+		nmagic_stat	= 87;
+		int_stat	= 63.51;
+		dex_stat	= 15.66;
+		str_stat	=  7.83;
+	}
+}
