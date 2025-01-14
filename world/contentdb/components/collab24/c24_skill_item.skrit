@@ -6,8 +6,7 @@
 property string _doc$                = "Gives an award to a person, using itself as the weapon for award type purposes";
 
 // exported properties
-property float experience_amount$	= 500	doc = "Amount to award the actor.";
-// the stat values that we push the character to
+property float uber_stat$ 		= 0	doc = "value player's uber level is pushed to";
 property float melee_stat$ 		= 0	doc = "value player's melee is pushed to";
 property float ranged_stat$		= 0	doc = "value player's ranged is pushed to";
 property float cmagic_stat$		= 0	doc = "value player's combat magic is pushed to";
@@ -36,8 +35,8 @@ startup state Waiting$
 			// make sure that player is not computer controlled
 			if ( player$.Go.Player.Controller != PC_COMPUTER )
 			{
-				// give experience
-				Rules.AwardExperience( player$, owner.goid, experience_amount$ );
+				// set uber level
+				Rules.RSSetNaturalSkillLevel(player$, "uber", uber_stat$);
 
 				// now set the player's base statistic levels
 				player$.Go.Actor.RCSetSkillLevels(str_stat$, int_stat$, dex_stat$);

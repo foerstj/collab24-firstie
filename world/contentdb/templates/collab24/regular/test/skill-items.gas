@@ -4,7 +4,7 @@
 
 	[c24_skill_item]
 	{
-		experience_amount = 17100;
+		uber_stat = 10;
 		melee_stat	= 10;
 		ranged_stat	= 0;
 		cmagic_stat	= 0;
@@ -21,7 +21,7 @@
 
 	[c24_skill_item]
 	{
-		experience_amount = 17100;
+		uber_stat = 10;
 		melee_stat	= 0;
 		ranged_stat	= 10;
 		cmagic_stat	= 0;
@@ -38,7 +38,7 @@
 
 	[c24_skill_item]
 	{
-		experience_amount = 17100;
+		uber_stat = 10;
 		melee_stat	= 0;
 		ranged_stat	= 0;
 		cmagic_stat	= 10;
@@ -55,7 +55,7 @@
 
 	[c24_skill_item]
 	{
-		experience_amount = 17100;
+		uber_stat = 10;
 		melee_stat	= 0;
 		ranged_stat	= 0;
 		cmagic_stat	= 0;
