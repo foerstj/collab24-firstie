@@ -7,9 +7,6 @@ property string _doc$                = "Gives an award to a person, using itself
 
 // exported properties
 property float experience_amount$	= 500	doc = "Amount to award the actor.";
-property scid scroll_scid_1$ 			doc = "Scid of other scroll to delete 1";
-property scid scroll_scid_2$ 			doc = "Scid of other scroll to delete 2";
-property scid scroll_scid_3$ 			doc = "Scid of other scroll to delete 3";
 // the stat values that we push the character to
 property float melee_stat$ 		= 0	doc = "value player's melee is pushed to";
 property float ranged_stat$		= 0	doc = "value player's ranged is pushed to";
@@ -27,22 +24,21 @@ startup state Waiting$
 	// look at events that this objects recieve.
 	event OnGoHandleMessage$( eWorldEvent e$, WorldMessage msg$ )
 	{
-		// if we receive the picked_up world event then look to see if the person that picked us up is allowed to have us.
 		if ( e$ == WE_PICKED_UP )
 		{
 			Goid player$ = msg$.SendFrom;
-			
+
 			if( !player$.IsValid )
 			{
 				report.Error( "Bad player when trying to award experience.\n" );
 			}
-			
+
 			// make sure that player is not computer controlled
 			if ( player$.Go.Player.Controller != PC_COMPUTER )
 			{
 				// give experience
 				Rules.AwardExperience( player$, owner.goid, experience_amount$ );
-				
+
 				// now set the player's base statistic levels
 				player$.Go.Actor.RCSetSkillLevels(str_stat$, int_stat$, dex_stat$);
 				// set melee level
@@ -53,27 +49,12 @@ startup state Waiting$
 				Rules.RSSetNaturalSkillLevel(player$, "nature magic", nmagic_stat$);
 				// set combat magic level
 				Rules.RSSetNaturalSkillLevel(player$, "combat magic", cmagic_stat$);
-				
+
 				// update quest status for the player
 				Victory.RSActivateQuest("xp_king", 2, player$);
-				
+
 				// and remove myself from the world
 				GoDb.SMarkForDeletion( owner.goid );
-				
-				// and delete 3 other scids
-				if ( scroll_scid_1$.goid.isvalid() )
-				{
-					GoDb.SMarkForDeletion( scroll_scid_1$.goid );
-				}
-				if ( scroll_scid_2$.goid.isvalid() )
-				{
-					GoDb.SMarkForDeletion( scroll_scid_2$.goid );
-				}
-				if ( scroll_scid_3$.goid.isvalid() )
-				{
-					GoDb.SMarkForDeletion( scroll_scid_3$.goid );
-				}								
-				
 			}
 		}
 	}

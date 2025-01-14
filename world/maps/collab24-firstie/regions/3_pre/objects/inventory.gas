@@ -1,11 +1,5 @@
 [t:c24_3_skill_item_cmagic,n:0x03000004]
 {
-	[c24_skill_item]
-	{
-	  x scroll_scid_1 = 0x03000005;
-	  x scroll_scid_2 = 0x03000006;
-	  x scroll_scid_3 = 0x03000007;
-	}
 	[placement]
 	{
 	  q orientation = 0,1,0,0;
@@ -14,12 +8,6 @@
 }
 [t:c24_3_skill_item_melee,n:0x03000005]
 {
-	[c24_skill_item]
-	{
-	  x scroll_scid_1 = 0x03000004;
-	  x scroll_scid_2 = 0x03000006;
-	  x scroll_scid_3 = 0x03000007;
-	}
 	[placement]
 	{
 	  q orientation = 0,1,0,0;
@@ -28,12 +16,6 @@
 }
 [t:c24_3_skill_item_nmagic,n:0x03000006]
 {
-	[c24_skill_item]
-	{
-	  x scroll_scid_1 = 0x03000004;
-	  x scroll_scid_2 = 0x03000005;
-	  x scroll_scid_3 = 0x03000007;
-	}
 	[placement]
 	{
 	  q orientation = 0,1,0,0;
@@ -42,12 +24,6 @@
 }
 [t:c24_3_skill_item_ranged,n:0x03000007]
 {
-	[c24_skill_item]
-	{
-	  x scroll_scid_1 = 0x03000004;
-	  x scroll_scid_2 = 0x03000005;
-	  x scroll_scid_3 = 0x03000006;
-	}
 	[placement]
 	{
 	  q orientation = 0,1,0,0;
