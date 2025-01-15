@@ -34,13 +34,13 @@
 		{
 			screen_name = "Veteran";
 			description = "Must be level 54 or higher to accept this challenge.";
-			required_level = 54;
+			required_level = 0;
 		}
 		[elite]
 		{
 			screen_name = "Elite";
 			description = "You must be level 83 or higher to attempt this feat.";
-			required_level = 83;
+			required_level = 0;
 		}
 	}
 }
