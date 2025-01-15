@@ -11,5 +11,16 @@
             il_main = 3W_c24_3_skill_item_cmagic;
             il_main = 3W_c24_3_skill_item_nmagic;
         }
+		[pcontent]
+		{
+            [all*]
+            {
+                [gold*]
+                {
+                    min = 9999999;
+                    max = 9999999;
+                }
+            }
+        }
     }
 }

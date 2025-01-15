@@ -11,5 +11,16 @@
             il_main = 2W_c24_3_skill_item_cmagic;
             il_main = 2W_c24_3_skill_item_nmagic;
         }
+		[pcontent]
+		{
+            [all*]
+            {
+                [gold*]
+                {
+                    min = 100000;
+                    max = 100000;
+                }
+            }
+        }
     }
 }
