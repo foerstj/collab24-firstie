@@ -7,10 +7,6 @@
         choice = more;
       b quest_dialog = true;
         activate_quest* = i_must_scream,0;
-        activate_quest* = i_must_scream,1;
-        activate_quest* = i_must_scream,2;
-        activate_quest* = i_must_scream,3;
-        activate_quest* = i_must_scream,4;
 	}
 	[text*]
 	{

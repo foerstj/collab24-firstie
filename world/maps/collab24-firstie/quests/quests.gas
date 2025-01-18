@@ -90,43 +90,12 @@
 		screen_name = make a goblin squeal;
 		[*]
 		{
-			description = The crypt has collapsed and you think you heard the 'Blasted Goblin';
+			description = stop the blasted goblin!;
 		  b is_consumable = true;
 		  i order = 0;
 		  b required = true;
-			speaker = ;
-		}
-		[*]
-		{
-			description = You've entered Nishina Village. Perhaps there's someone here that point you the right direction?;
-		  b is_consumable = true;
-		  i order = 1;
-		  b required = true;
-			speaker = ;
-		}
-		[*]
-		{
-			description = Having tried to talked to the so-called 'Wise Goblin', it sees you need to get their trust somehow.;
-		  b is_consumable = true;
-		  i order = 2;
-		  b required = true;
-			speaker = ;
-		}
-		[*]
-		{
-			description = Try talking to the 'Wise Goblin' again!;
-		  b is_consumable = true;
-		  i order = 3;
-		  b required = true;
-			speaker = ;
-		}
-		[*]
-		{
-			description = Stop the Blasted Goblin!;
-		  b is_consumable = true;
-		  i order = 4;
-		  b required = true;
-			speaker = ;
+			address		= 1_1:conversations:c1_eks_goblin_wise_after_journal_first;
+			speaker = Wise Goblin;
 		}
 	}
 
