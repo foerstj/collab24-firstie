@@ -1,7 +1,0 @@
-[t:template,n:c24_3_base_skill_items_container]
-{
-    specializes = barrel_glb_floating_03_base;
-
-    aspect:does_block_path = false;
-    common:screen_name = "Skill Awards";
-}

@@ -1,6 +1,7 @@
 characters\shortling
 creatures\elementals\c24-crystal-enemies
 dev\generic-talk-skrits
+dev\skill-runes
 items\lightings-unlit
 landscape\c24-crystals
 landscape\dgn-ele-stackable

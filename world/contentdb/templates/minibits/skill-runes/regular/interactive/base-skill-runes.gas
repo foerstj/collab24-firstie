@@ -1,4 +1,4 @@
-[t:template,n:c24_3_base_skill_item]
+[t:template,n:base_skill_rune]
 {
 	specializes = base_rune;
 
@@ -9,14 +9,14 @@
 	}
 	[common]
 	{
-		screen_name = "Base Experience Item";
+		screen_name = "Base Skill Rune";
 	}
 }
 
 
-[t:template,n:c24_3_base_skill_item_melee]
+[t:template,n:base_skill_rune_melee]
 {
-	specializes = c24_3_base_skill_item;
+	specializes = base_skill_rune;
 
 	doc = "Melee Experience giving item";
 	[attack]
@@ -26,7 +26,7 @@
 
 	[common]
 	{
-		screen_name = "Melee Award";
+		screen_name = "Melee Rune";
 	}
     // triangle
 	[aspect]
@@ -39,9 +39,9 @@
 	}
 }
 
-[t:template,n:c24_3_base_skill_item_ranged]
+[t:template,n:base_skill_rune_ranged]
 {
-	specializes = c24_3_base_skill_item;
+	specializes = base_skill_rune;
 
 	doc = "Ranged Experience giving item";
 	[attack]
@@ -51,7 +51,7 @@
 
 	[common]
 	{
-		screen_name = "Ranged Award";
+		screen_name = "Ranged Rune";
 	}
     // hourglass
 	[aspect]
@@ -64,9 +64,9 @@
 	}
 }
 
-[t:template,n:c24_3_base_skill_item_cmagic]
+[t:template,n:base_skill_rune_cmagic]
 {
-	specializes = c24_3_base_skill_item;
+	specializes = base_skill_rune;
 
 	doc = "Combat Magic Experience giving item";
 	[magic]
@@ -77,7 +77,7 @@
 
 	[common]
 	{
-		screen_name = "Combat Magic Award";
+		screen_name = "Combat Magic Rune";
 	}
     // square
 	[aspect]
@@ -90,9 +90,9 @@
 	}
 }
 
-[t:template,n:c24_3_base_skill_item_nmagic]
+[t:template,n:base_skill_rune_nmagic]
 {
-	specializes = c24_3_base_skill_item;
+	specializes = base_skill_rune;
 
 	doc = "Ranged Experience giving item";
 	[magic]
@@ -103,7 +103,7 @@
 
 	[common]
 	{
-		screen_name = "Nature Magic Award";
+		screen_name = "Nature Magic Rune";
 	}
     // round
 	[aspect]

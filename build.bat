@@ -59,6 +59,7 @@ robocopy "%bits%\art" "%tmp%\Bits\art" /S /xd git-ignore
 robocopy "%bits%\ui" "%tmp%\Bits\ui" /S
 robocopy "%bits%\world\ai\jobs\minibits" "%tmp%\Bits\world\ai\jobs\minibits" /S
 robocopy "%bits%\world\ai\jobs\%res%" "%tmp%\Bits\world\ai\jobs\%res%" /S
+robocopy "%bits%\world\contentdb\components\minibits" "%tmp%\Bits\world\contentdb\components\minibits" /S
 robocopy "%bits%\world\contentdb\components\%res%" "%tmp%\Bits\world\contentdb\components\%res%" /S
 robocopy "%bits%\world\contentdb\templates\minibits" "%tmp%\Bits\world\contentdb\templates\minibits" /S
 robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" /S
