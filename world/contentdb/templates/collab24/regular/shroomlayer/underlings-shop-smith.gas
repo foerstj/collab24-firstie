@@ -182,6 +182,17 @@
 					min = 6;
 				}
 			}
+
+			// ADDED - provide some backpacks
+			[misc]
+			{
+                [all*]
+                {
+                    il_main = DSX_backpack_empty;
+                    max = 3;
+                    min = 2;
+                }
+			}
 		}
 	}
     // EXTENDED with Underling equipment
