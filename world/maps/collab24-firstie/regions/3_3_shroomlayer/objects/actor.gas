@@ -1065,6 +1065,10 @@
 }
 [t:c24_3_underling_npc_01,n:0x03300c00]
 {
+	[common]
+	{
+		screen_name = "Dingdong";
+	}
 	[conversation]
 	{
 		[conversations]
@@ -1093,6 +1097,10 @@
 }
 [t:c24_3_underling_npc_01,n:0x03300bff]
 {
+	[common]
+	{
+		screen_name = "Jaja";
+	}
 	[conversation]
 	{
 		[conversations]
