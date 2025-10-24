@@ -99,7 +99,7 @@
 		{
 			es_chest = bd_le_m_g_c_avg_beaded_c24;
 			es_feet = bo_bo_sc_m_g_c_avg_beaded_c24;
-			es_head = he_vi_pl_m_beaded_headband_c24;
+			es_head = he_fl_pl_m_beaded_wrap_c24;
 		}
 	}
 	[placement]
@@ -323,6 +323,7 @@
 		{
 			es_chest = bd_le_m_g_c_avg_beaded_c24;
 			es_feet = bo_bo_sc_m_g_c_avg_beaded_c24;
+			es_head = he_fl_pl_m_beaded_wrap_c24;
 		}
 	}
 	[placement]
