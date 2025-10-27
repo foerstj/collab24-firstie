@@ -182,6 +182,17 @@
 					min = 6;
 				}
 			}
+
+			// ADDED - provide some backpacks
+			[misc]
+			{
+                [all*]
+                {
+                    il_main = DSX_backpack_empty;
+                    max = 3;
+                    min = 2;
+                }
+			}
 		}
 	}
     // EXTENDED with Underling equipment
@@ -189,17 +200,20 @@
 	{
 		[item_restock]
 		{
-			bw_g_c_c24_nat_avg = 4;
+			bw_g_c_c24_nat_avg = 4;  // bow
 
-            bd_le_m_g_c_avg_ceramic_c24 = 2;
-            bo_bo_sc_m_g_c_avg_ceramic_c24 = 2;
-            he_vi_pl_m_ceramic_headband_c24 = 2;
-            he_vi_pl_m_ceramic_headdress_c24 = 1;
+			// guard
+			bd_le_m_g_c_avg_ceramic_c24 = 2;
+			bo_bo_sc_m_g_c_avg_ceramic_c24 = 2;
+			he_vi_pl_m_ceramic_headband_c24 = 2;
+			he_vi_pl_m_ceramic_headdress_c24 = 1;
 
-            bd_le_m_g_c_avg_beaded_c24 = 4;
-            bo_bo_sc_m_g_c_avg_beaded_c24 = 4;
-            he_vi_pl_m_beaded_headband_c24 = 3;
-            bd_ro_m_g_c_avg_elbead_c24 = 1;
+			// civil
+			bd_le_m_g_c_avg_beaded_c24 = 4;
+			bo_bo_sc_m_g_c_avg_beaded_c24 = 4;
+			he_vi_pl_m_beaded_headband_c24 = 2;
+			he_fl_pl_m_beaded_wrap_c24 = 2;
+			bd_ro_m_g_c_avg_elbead_c24 = 1;
 		}
 	}
 
