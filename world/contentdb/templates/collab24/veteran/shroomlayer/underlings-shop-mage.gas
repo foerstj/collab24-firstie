@@ -65,8 +65,13 @@
 	{
 		[item_restock]
 		{
-			potion_health_small = 19;
-			potion_mana_small = 19;
+			// EDITED: larger potions
+			potion_health_large = 8;
+			potion_mana_large = 8;
+			potion_health_medium = 8;
+			potion_mana_medium = 8;
+			potion_health_small = 3;
+			potion_mana_small = 3;
 			potion_rejuvenation_small = 2;
 
 			scroll_resurrect = 2;
