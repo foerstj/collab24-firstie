@@ -1,0 +1,71 @@
+[t:template,n:skill_rune_melee_60]
+{
+	specializes = base_skill_rune_melee;
+
+    common:screen_name = "Melee Level 60";
+	[skill_rune]
+	{
+		uber_stat	= 60;
+		melee_stat	= 60;
+		ranged_stat	= 0;
+		cmagic_stat	= 0;
+		nmagic_stat	= 0;
+		int_stat	= 5.40;
+		dex_stat	= 16.20;
+		str_stat	= 38.40;
+	}
+}
+
+[t:template,n:skill_rune_ranged_60]
+{
+	specializes = base_skill_rune_ranged;
+
+    common:screen_name = "Ranged Level 60";
+	[skill_rune]
+	{
+		uber_stat	= 60;
+		melee_stat	= 0;
+		ranged_stat	= 60;
+		cmagic_stat	= 0;
+		nmagic_stat	= 0;
+		int_stat	= 7.80;
+		dex_stat	= 37.20;
+		str_stat	= 15.00;
+	}	
+}
+
+[t:template,n:skill_rune_cmagic_60]
+{
+	specializes = base_skill_rune_cmagic;
+
+    common:screen_name = "Combat Magic Level 60";
+	[skill_rune]
+	{
+		uber_stat	= 60;
+		melee_stat	= 0;
+		ranged_stat	= 0;
+		cmagic_stat	= 60;
+		nmagic_stat	= 0;
+		int_stat	= 42.00;
+		dex_stat	= 10.20;
+		str_stat	= 7.80;
+	}
+}
+
+[t:template,n:skill_rune_nmagic_60]
+{
+	specializes = base_skill_rune_nmagic;
+
+    common:screen_name = "Nature Magic Level 60";
+	[skill_rune]
+	{
+		uber_stat	= 60;
+		melee_stat	= 0;
+		ranged_stat	= 0;
+		cmagic_stat	= 0;
+		nmagic_stat	= 60;
+		int_stat	= 43.80;
+		dex_stat	= 10.80;
+		str_stat	= 5.40;
+	}
+}
