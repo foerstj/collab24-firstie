@@ -1,0 +1,19 @@
+[t:template,n:3W_c24_3_base_crystal_beast]
+{
+    specializes = 3W_rock_beast_base;
+
+    common:screen_name = "Crystal Beast";
+    aspect:material = ice;
+    //aspect:experience_value = 150;  // 113 in base
+	[actor]
+	{
+		[skills]
+		{
+			strength =  96.7, 0;
+			intelligence =  5.2, 0;
+			dexterity =  25.6, 0;
+            melee =  	92,  0;  // unchanged
+            combat_magic = 92, 0;  // added
+		}
+	}
+}

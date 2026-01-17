@@ -1,10 +1,83 @@
+// Crystal Beast blast effects
+
+
+[effect_script*]
+{
+	name	=crystal_beast_blast_c24_3_teal;
+
+	script	=[[
+			sfx create fireb #SOURCE
+				"must_update()dur(1)offset(0,0,.5)color0(0.0,0.1,0.1)dark()velocity(0,3,150)
+				accel(0,-30,-10)cvel(1)ts(.6)light_freq(0)alphafade(1)
+				lower_r0(0)lower_r1(12)upper_r0(30)upper_r1(200)count(50)
+				flamesize(6)";
+			sfx friendly party #PEEK;
+			sfx start #POP;
+			
+			call crystal_beast_blast_c24_3_teal_base s<bip01_r_finger0>;
+			call crystal_beast_blast_c24_3_teal_base s<bip01_l_finger0>; 
+			call rock_beast_blast_yell;
+
+			pause 3;
+
+			worldmsg WE_SPELL_SYNC_END #INVALID_GOID #OWNER_GOID #TARGET_GOID;
+
+		]];
+}
+
+[effect_script*]
+{
+	name	=crystal_beast_blast_c24_3_teal_base;
+
+	script	=[[
+			sfx create fireb #SOURCE
+				"must_update()dur(.8)offset(0,0,.5)color0(0.0,0.2,0.2)dark()velocity(0,3,100)
+				accel(0,-30,-10)cvel(1)ts(.6)light_freq(0)alphafade(1)
+				lower_r0(0)lower_r1(6)upper_r0(10)upper_r1(200)count(50)
+				flamesize(2)";
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+
+			sfx create fire #SOURCE
+				"must_update()offset(0,0,0)dur(1)alphafade(2)count(5)flamesize(10)
+				color0(0.0,0.4,0.4)color1(0,0,0)velocity(0,1,20)accel(0,0,0)
+				max_radius(8)max_displace(0)dark()grey_tex()";
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+
+			sfx create spawn #SOURCE
+				"must_update()model(frag_c24_3_crystal_rock_beast_06_teal)lvel(0,0,15)lvel_var(0,4,0)
+				spawn_int(0.15)count(5)";
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+
+			sfx create spawn #SOURCE
+				"must_update()model(frag_c24_3_crystal_rock_beast_07_teal)lvel(0,0,15)lvel_var(0,4,0)
+				spawn_int(0.15)count(5)";
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+            
+			sfx create spawn #SOURCE
+				"must_update()model(frag_c24_3_crystal_rock_beast_08_teal)lvel(0,0,15)lvel_var(0,4,0)
+				spawn_int(0.15)count(5)";	
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+		]];
+}
+
+
 [effect_script*]
 {
 	name	=crystal_beast_blast_c24_3_purple;
 
 	script	=[[
 			sfx create fireb #SOURCE
-				"must_update()dur(1)offset(0,0,.5)color0(.1,0,.1)dark()velocity(0,3,150)
+				"must_update()dur(1)offset(0,0,.5)color0(0.1,0.0,0.1)dark()velocity(0,3,150)
 				accel(0,-30,-10)cvel(1)ts(.6)light_freq(0)alphafade(1)
 				lower_r0(0)lower_r1(12)upper_r0(30)upper_r1(200)count(50)
 				flamesize(6)";
@@ -28,7 +101,7 @@
 
 	script	=[[
 			sfx create fireb #SOURCE
-				"must_update()dur(.8)offset(0,0,.5)color0(.2,0,.2)dark()velocity(0,3,100)
+				"must_update()dur(.8)offset(0,0,.5)color0(0.2,0.0,0.2)dark()velocity(0,3,100)
 				accel(0,-30,-10)cvel(1)ts(.6)light_freq(0)alphafade(1)
 				lower_r0(0)lower_r1(6)upper_r0(10)upper_r1(200)count(50)
 				flamesize(2)";
@@ -38,7 +111,7 @@
 
 			sfx create fire #SOURCE
 				"must_update()offset(0,0,0)dur(1)alphafade(2)count(5)flamesize(10)
-				color0(.4,0,.4)color1(0,0,0)velocity(0,1,20)accel(0,0,0)
+				color0(0.4,0.0,0.4)color1(0,0,0)velocity(0,1,20)accel(0,0,0)
 				max_radius(8)max_displace(0)dark()grey_tex()";
 			sfx attach_point #PEEK [0] target;
 			sfx friendly party #PEEK;
@@ -70,11 +143,151 @@
 
 [effect_script*]
 {
+	name	=crystal_beast_blast_c24_3_green;
+
+	script	=[[
+			sfx create fireb #SOURCE
+				"must_update()dur(1)offset(0,0,.5)color0(0.0,0.1,0.0)dark()velocity(0,3,150)
+				accel(0,-30,-10)cvel(1)ts(.6)light_freq(0)alphafade(1)
+				lower_r0(0)lower_r1(12)upper_r0(30)upper_r1(200)count(50)
+				flamesize(6)";
+			sfx friendly party #PEEK;
+			sfx start #POP;
+			
+			call crystal_beast_blast_c24_3_green_base s<bip01_r_finger0>;
+			call crystal_beast_blast_c24_3_green_base s<bip01_l_finger0>; 
+			call rock_beast_blast_yell;
+
+			pause 3;
+
+			worldmsg WE_SPELL_SYNC_END #INVALID_GOID #OWNER_GOID #TARGET_GOID;
+
+		]];
+}
+
+[effect_script*]
+{
+	name	=crystal_beast_blast_c24_3_green_base;
+
+	script	=[[
+			sfx create fireb #SOURCE
+				"must_update()dur(.8)offset(0,0,.5)color0(0.0,0.2,0.0)dark()velocity(0,3,100)
+				accel(0,-30,-10)cvel(1)ts(.6)light_freq(0)alphafade(1)
+				lower_r0(0)lower_r1(6)upper_r0(10)upper_r1(200)count(50)
+				flamesize(2)";
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+
+			sfx create fire #SOURCE
+				"must_update()offset(0,0,0)dur(1)alphafade(2)count(5)flamesize(10)
+				color0(0.0,0.4,0.0)color1(0,0,0)velocity(0,1,20)accel(0,0,0)
+				max_radius(8)max_displace(0)dark()grey_tex()";
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+
+			sfx create spawn #SOURCE
+				"must_update()model(frag_c24_3_crystal_rock_beast_06_green)lvel(0,0,15)lvel_var(0,4,0)
+				spawn_int(0.15)count(5)";
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+
+			sfx create spawn #SOURCE
+				"must_update()model(frag_c24_3_crystal_rock_beast_07_green)lvel(0,0,15)lvel_var(0,4,0)
+				spawn_int(0.15)count(5)";
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+            
+			sfx create spawn #SOURCE
+				"must_update()model(frag_c24_3_crystal_rock_beast_08_green)lvel(0,0,15)lvel_var(0,4,0)
+				spawn_int(0.15)count(5)";	
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+		]];
+}
+
+
+[effect_script*]
+{
+	name	=crystal_beast_blast_c24_3_blue;
+
+	script	=[[
+			sfx create fireb #SOURCE
+				"must_update()dur(1)offset(0,0,.5)color0(0.0,0.0,0.1)dark()velocity(0,3,150)
+				accel(0,-30,-10)cvel(1)ts(.6)light_freq(0)alphafade(1)
+				lower_r0(0)lower_r1(12)upper_r0(30)upper_r1(200)count(50)
+				flamesize(6)";
+			sfx friendly party #PEEK;
+			sfx start #POP;
+			
+			call crystal_beast_blast_c24_3_blue_base s<bip01_r_finger0>;
+			call crystal_beast_blast_c24_3_blue_base s<bip01_l_finger0>; 
+			call rock_beast_blast_yell;
+
+			pause 3;
+
+			worldmsg WE_SPELL_SYNC_END #INVALID_GOID #OWNER_GOID #TARGET_GOID;
+
+		]];
+}
+
+[effect_script*]
+{
+	name	=crystal_beast_blast_c24_3_blue_base;
+
+	script	=[[
+			sfx create fireb #SOURCE
+				"must_update()dur(.8)offset(0,0,.5)color0(0.0,0.0,0.2)dark()velocity(0,3,100)
+				accel(0,-30,-10)cvel(1)ts(.6)light_freq(0)alphafade(1)
+				lower_r0(0)lower_r1(6)upper_r0(10)upper_r1(200)count(50)
+				flamesize(2)";
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+
+			sfx create fire #SOURCE
+				"must_update()offset(0,0,0)dur(1)alphafade(2)count(5)flamesize(10)
+				color0(0.0,0.0,0.4)color1(0,0,0)velocity(0,1,20)accel(0,0,0)
+				max_radius(8)max_displace(0)dark()grey_tex()";
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+
+			sfx create spawn #SOURCE
+				"must_update()model(frag_c24_3_crystal_rock_beast_06_blue)lvel(0,0,15)lvel_var(0,4,0)
+				spawn_int(0.15)count(5)";
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+
+			sfx create spawn #SOURCE
+				"must_update()model(frag_c24_3_crystal_rock_beast_07_blue)lvel(0,0,15)lvel_var(0,4,0)
+				spawn_int(0.15)count(5)";
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+            
+			sfx create spawn #SOURCE
+				"must_update()model(frag_c24_3_crystal_rock_beast_08_blue)lvel(0,0,15)lvel_var(0,4,0)
+				spawn_int(0.15)count(5)";	
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+		]];
+}
+
+
+[effect_script*]
+{
 	name	=crystal_beast_blast_c24_3_red;
 
 	script	=[[
 			sfx create fireb #SOURCE
-				"must_update()dur(1)offset(0,0,.5)color0(.1,0,0)dark()velocity(0,3,150)
+				"must_update()dur(1)offset(0,0,.5)color0(0.1,0.0,0.0)dark()velocity(0,3,150)
 				accel(0,-30,-10)cvel(1)ts(.6)light_freq(0)alphafade(1)
 				lower_r0(0)lower_r1(12)upper_r0(30)upper_r1(200)count(50)
 				flamesize(6)";
@@ -98,7 +311,7 @@
 
 	script	=[[
 			sfx create fireb #SOURCE
-				"must_update()dur(.8)offset(0,0,.5)color0(.2,0,0)dark()velocity(0,3,100)
+				"must_update()dur(.8)offset(0,0,.5)color0(0.2,0.0,0.0)dark()velocity(0,3,100)
 				accel(0,-30,-10)cvel(1)ts(.6)light_freq(0)alphafade(1)
 				lower_r0(0)lower_r1(6)upper_r0(10)upper_r1(200)count(50)
 				flamesize(2)";
@@ -108,7 +321,7 @@
 
 			sfx create fire #SOURCE
 				"must_update()offset(0,0,0)dur(1)alphafade(2)count(5)flamesize(10)
-				color0(.4,0,0)color1(0,0,0)velocity(0,1,20)accel(0,0,0)
+				color0(0.4,0.0,0.0)color1(0,0,0)velocity(0,1,20)accel(0,0,0)
 				max_radius(8)max_displace(0)dark()grey_tex()";
 			sfx attach_point #PEEK [0] target;
 			sfx friendly party #PEEK;
@@ -144,7 +357,7 @@
 
 	script	=[[
 			sfx create fireb #SOURCE
-				"must_update()dur(1)offset(0,0,.5)color0(.1,.1,0)dark()velocity(0,3,150)
+				"must_update()dur(1)offset(0,0,.5)color0(0.1,0.1,0.0)dark()velocity(0,3,150)
 				accel(0,-30,-10)cvel(1)ts(.6)light_freq(0)alphafade(1)
 				lower_r0(0)lower_r1(12)upper_r0(30)upper_r1(200)count(50)
 				flamesize(6)";
@@ -168,7 +381,7 @@
 
 	script	=[[
 			sfx create fireb #SOURCE
-				"must_update()dur(.8)offset(0,0,.5)color0(.2,.2,0)dark()velocity(0,3,100)
+				"must_update()dur(.8)offset(0,0,.5)color0(0.2,0.2,0.0)dark()velocity(0,3,100)
 				accel(0,-30,-10)cvel(1)ts(.6)light_freq(0)alphafade(1)
 				lower_r0(0)lower_r1(6)upper_r0(10)upper_r1(200)count(50)
 				flamesize(2)";
@@ -178,7 +391,7 @@
 
 			sfx create fire #SOURCE
 				"must_update()offset(0,0,0)dur(1)alphafade(2)count(5)flamesize(10)
-				color0(.4,.4,.0)color1(0,0,0)velocity(0,1,20)accel(0,0,0)
+				color0(0.4,0.4,0.0)color1(0,0,0)velocity(0,1,20)accel(0,0,0)
 				max_radius(8)max_displace(0)dark()grey_tex()";
 			sfx attach_point #PEEK [0] target;
 			sfx friendly party #PEEK;

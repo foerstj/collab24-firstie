@@ -1,23 +1,84 @@
-[t:template,n:c24_3_base_crystal_beast]
+[t:template,n:c24_3_crystal_beast_teal]
 {
-    specializes = rock_beast_base;
+    specializes = c24_3_base_crystal_beast;
 
-    common:screen_name = "Crystal Beast";
-    aspect:material = ice;
-    aspect:experience_value = 150;  // 113 in base
-	[actor]
-	{
-		[skills]
+    aspect:textures:0 = b_i_cav_gems-01-static;  // teal
+  	[common]
+    {
+		[template_triggers]
 		{
-			strength =  22, 0;
-			intelligence =  3, 0;
-			dexterity =  9, 0;
-            melee =  	13,  0;  // 5 in base
-            combat_magic = 13, 0;  // added
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				action* = call_sfx_script("rock_beast_eye_glow");
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_dust","bip01_r_foot");
+				condition* = receive_world_message("we_anim_other",'rfdn');
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_dust","bip01_l_foot");
+				condition* = receive_world_message("we_anim_other",'lfdn');
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_smash");
+				condition* = receive_world_message("we_anim_sfx",1);
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_yell");
+				condition* = receive_world_message("we_anim_sfx",2);
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_dust_hands");
+				condition* = receive_world_message("we_anim_sfx",3);
+			}
+            // ADDED:
+			[*]
+			{
+				action* = call_sfx_script("ice_warrior");
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+			}
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("crystal_light_cyan(sgx)");
+			}
+		}
+    }
+	[inventory]
+	{
+		[other] { il_active_primary_spell = c24_3_spell_beast_blast_teal; }
+    }
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_c24_3_crystal_rock_beast_01_teal = 1;
+			frag_c24_3_crystal_rock_beast_02_teal = 1;
+			frag_c24_3_crystal_rock_beast_03_teal = 1;
+			frag_c24_3_crystal_rock_beast_04_teal = 1;
+			frag_c24_3_crystal_rock_beast_05_teal = 1;
+			frag_c24_3_crystal_rock_beast_06_teal = 2;
+			frag_c24_3_crystal_rock_beast_07_teal = 3;
+			frag_c24_3_crystal_rock_beast_08_teal = 4;
+			frag_c24_3_crystal_stone_01_teal = 6;
+			frag_c24_3_crystal_stone_02_teal = 4;
+			frag_c24_3_crystal_stone_03_teal = 3;
+			frag_c24_3_crystal_stone_04_teal = 6;
+			frag_c24_3_crystal_stone_05_teal = 9;
+			frag_c24_3_crystal_stone_06_teal = 5;
 		}
 	}
 }
-
 [t:template,n:c24_3_crystal_beast_purple]
 {
     specializes = c24_3_base_crystal_beast;
@@ -99,7 +160,168 @@
 		}
 	}
 }
+[t:template,n:c24_3_crystal_beast_green]
+{
+    specializes = c24_3_base_crystal_beast;
 
+    aspect:textures:0 = b_i_cav_gems-03-static;  // green
+  	[common]
+    {
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				action* = call_sfx_script("rock_beast_eye_glow");
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_dust","bip01_r_foot");
+				condition* = receive_world_message("we_anim_other",'rfdn');
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_dust","bip01_l_foot");
+				condition* = receive_world_message("we_anim_other",'lfdn');
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_smash");
+				condition* = receive_world_message("we_anim_sfx",1);
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_yell");
+				condition* = receive_world_message("we_anim_sfx",2);
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_dust_hands");
+				condition* = receive_world_message("we_anim_sfx",3);
+			}
+            // ADDED:
+			[*]
+			{
+				action* = call_sfx_script("ice_warrior");
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+			}
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("crystal_light_green(sgx)");
+			}
+		}
+    }
+	[inventory]
+	{
+		[other] { il_active_primary_spell = c24_3_spell_beast_blast_green; }
+    }
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_c24_3_crystal_rock_beast_01_green = 1;
+			frag_c24_3_crystal_rock_beast_02_green = 1;
+			frag_c24_3_crystal_rock_beast_03_green = 1;
+			frag_c24_3_crystal_rock_beast_04_green = 1;
+			frag_c24_3_crystal_rock_beast_05_green = 1;
+			frag_c24_3_crystal_rock_beast_06_green = 2;
+			frag_c24_3_crystal_rock_beast_07_green = 3;
+			frag_c24_3_crystal_rock_beast_08_green = 4;
+			frag_c24_3_crystal_stone_01_green = 6;
+			frag_c24_3_crystal_stone_02_green = 4;
+			frag_c24_3_crystal_stone_03_green = 3;
+			frag_c24_3_crystal_stone_04_green = 6;
+			frag_c24_3_crystal_stone_05_green = 9;
+			frag_c24_3_crystal_stone_06_green = 5;
+		}
+	}
+}
+[t:template,n:c24_3_crystal_beast_blue]
+{
+    specializes = c24_3_base_crystal_beast;
+
+    aspect:textures:0 = b_i_cav_gems-04-static;  // blue
+  	[common]
+    {
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				action* = call_sfx_script("rock_beast_eye_glow");
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_dust","bip01_r_foot");
+				condition* = receive_world_message("we_anim_other",'rfdn');
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_dust","bip01_l_foot");
+				condition* = receive_world_message("we_anim_other",'lfdn');
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_smash");
+				condition* = receive_world_message("we_anim_sfx",1);
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_yell");
+				condition* = receive_world_message("we_anim_sfx",2);
+			}
+			[*]
+			{
+				action* = call_sfx_script("rock_beast_dust_hands");
+				condition* = receive_world_message("we_anim_sfx",3);
+			}
+            // ADDED:
+			[*]
+			{
+				action* = call_sfx_script("ice_warrior");
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+			}
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("crystal_light_blue(sgx)");
+			}
+		}
+    }
+	[inventory]
+	{
+		[other] { il_active_primary_spell = c24_3_spell_beast_blast_blue; }
+    }
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_c24_3_crystal_rock_beast_01_blue = 1;
+			frag_c24_3_crystal_rock_beast_02_blue = 1;
+			frag_c24_3_crystal_rock_beast_03_blue = 1;
+			frag_c24_3_crystal_rock_beast_04_blue = 1;
+			frag_c24_3_crystal_rock_beast_05_blue = 1;
+			frag_c24_3_crystal_rock_beast_06_blue = 2;
+			frag_c24_3_crystal_rock_beast_07_blue = 3;
+			frag_c24_3_crystal_rock_beast_08_blue = 4;
+			frag_c24_3_crystal_stone_01_blue = 6;
+			frag_c24_3_crystal_stone_02_blue = 4;
+			frag_c24_3_crystal_stone_03_blue = 3;
+			frag_c24_3_crystal_stone_04_blue = 6;
+			frag_c24_3_crystal_stone_05_blue = 9;
+			frag_c24_3_crystal_stone_06_blue = 5;
+		}
+	}
+}
 [t:template,n:c24_3_crystal_beast_red]
 {
     specializes = c24_3_base_crystal_beast;
@@ -181,7 +403,6 @@
 		}
 	}
 }
-
 [t:template,n:c24_3_crystal_beast_gold]
 {
     specializes = c24_3_base_crystal_beast;

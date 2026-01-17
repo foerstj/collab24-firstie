@@ -1,0 +1,11 @@
+// Crystal frags based on the rock-beast models
+
+// base
+[t:template,n:base_frag_glb_rock_beast_01] { specializes = fragment; doc = "misc"; [aspect] { model = m_i_glb_frag-rock-beast-01; } }
+[t:template,n:base_frag_glb_rock_beast_02] { specializes = fragment; doc = "misc"; [aspect] { model = m_i_glb_frag-rock-beast-02; } }
+[t:template,n:base_frag_glb_rock_beast_03] { specializes = fragment; doc = "misc"; [aspect] { model = m_i_glb_frag-rock-beast-03; } }
+[t:template,n:base_frag_glb_rock_beast_04] { specializes = fragment; doc = "misc"; [aspect] { model = m_i_glb_frag-rock-beast-04; } }
+[t:template,n:base_frag_glb_rock_beast_05] { specializes = fragment; doc = "misc"; [aspect] { model = m_i_glb_frag-rock-beast-05; } }
+[t:template,n:base_frag_glb_rock_beast_06] { specializes = fragment; doc = "misc"; [aspect] { model = m_i_glb_frag-rock-beast-06; scale_base = 1.2; } physics:sim_duration = 2; }
+[t:template,n:base_frag_glb_rock_beast_07] { specializes = fragment; doc = "misc"; [aspect] { model = m_i_glb_frag-rock-beast-07; scale_base = 1.4; } physics:sim_duration = 2; }
+[t:template,n:base_frag_glb_rock_beast_08] { specializes = fragment; doc = "misc"; [aspect] { model = m_i_glb_frag-rock-beast-08; scale_base = 2.0; } physics:sim_duration = 2; }

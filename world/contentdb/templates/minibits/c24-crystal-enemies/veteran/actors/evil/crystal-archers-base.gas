@@ -1,0 +1,41 @@
+[t:template,n:2W_c24_3_base_crystal_archer]
+{
+    specializes = 2W_ice_archer_base;
+
+    common:screen_name = "Crystal Archer";
+    [inventory]
+    {
+        spew_equipped_kill_count = 7;
+    }
+
+    // stats from 2W_krug_throw, edited/unchanged
+	[actor]
+	{
+		[skills]
+		{
+			  dexterity = 22.8, 0;
+			  intelligence = 10.3, 0;
+			  ranged = 56,  0;
+			  strength = 25.3, 0;
+		}
+	}
+	[aspect]
+	{
+		  experience_value = 22005;
+		  life = 211.4;
+		  mana = 70.8;
+		  max_life = 211.4;
+		  max_mana = 70.8;
+	}
+	[attack]
+	{
+		  damage_bonus_min_ranged = 76;
+		  damage_bonus_max_ranged = 112;
+		  damage_max = 260.6;
+		  damage_min = 180.2;
+	}
+	[defend]
+	{
+		  defense = 275.8;
+	}
+}

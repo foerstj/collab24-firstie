@@ -1,5 +1,15 @@
 // Crystal frags based on the stone models
 
+// teal
+[t:template,n:frag_c24_3_crystal_stone_01_teal]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-01; textures:0 = b_i_cav_gems-01-static; } }
+[t:template,n:frag_c24_3_crystal_stone_02_teal]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-02; textures:0 = b_i_cav_gems-01-static; } }
+[t:template,n:frag_c24_3_crystal_stone_03_teal]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-03; textures:0 = b_i_cav_gems-01-static; } }
+[t:template,n:frag_c24_3_crystal_stone_04_teal]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-04; textures:0 = b_i_cav_gems-01-static; } }
+[t:template,n:frag_c24_3_crystal_stone_05_teal]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-05; textures:0 = b_i_cav_gems-01-static; } }
+[t:template,n:frag_c24_3_crystal_stone_06_teal]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-06; textures:0 = b_i_cav_gems-01-static; } }
+[t:template,n:frag_c24_3_crystal_stone_07_teal]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-07; textures:0 = b_i_cav_gems-01-static; } }
+[t:template,n:frag_c24_3_crystal_stone_08_teal]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-08; textures:0 = b_i_cav_gems-01-static; } }
+
 // purple
 [t:template,n:frag_c24_3_crystal_stone_01_purple]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-01; textures:0 = b_i_cav_gems-02-static; } }
 [t:template,n:frag_c24_3_crystal_stone_02_purple]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-02; textures:0 = b_i_cav_gems-02-static; } }
@@ -9,6 +19,26 @@
 [t:template,n:frag_c24_3_crystal_stone_06_purple]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-06; textures:0 = b_i_cav_gems-02-static; } }
 [t:template,n:frag_c24_3_crystal_stone_07_purple]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-07; textures:0 = b_i_cav_gems-02-static; } }
 [t:template,n:frag_c24_3_crystal_stone_08_purple]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-08; textures:0 = b_i_cav_gems-02-static; } }
+
+// green
+[t:template,n:frag_c24_3_crystal_stone_01_green]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-01; textures:0 = b_i_cav_gems-03-static; } }
+[t:template,n:frag_c24_3_crystal_stone_02_green]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-02; textures:0 = b_i_cav_gems-03-static; } }
+[t:template,n:frag_c24_3_crystal_stone_03_green]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-03; textures:0 = b_i_cav_gems-03-static; } }
+[t:template,n:frag_c24_3_crystal_stone_04_green]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-04; textures:0 = b_i_cav_gems-03-static; } }
+[t:template,n:frag_c24_3_crystal_stone_05_green]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-05; textures:0 = b_i_cav_gems-03-static; } }
+[t:template,n:frag_c24_3_crystal_stone_06_green]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-06; textures:0 = b_i_cav_gems-03-static; } }
+[t:template,n:frag_c24_3_crystal_stone_07_green]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-07; textures:0 = b_i_cav_gems-03-static; } }
+[t:template,n:frag_c24_3_crystal_stone_08_green]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-08; textures:0 = b_i_cav_gems-03-static; } }
+
+// blue
+[t:template,n:frag_c24_3_crystal_stone_01_blue]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-01; textures:0 = b_i_cav_gems-04-static; } }
+[t:template,n:frag_c24_3_crystal_stone_02_blue]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-02; textures:0 = b_i_cav_gems-04-static; } }
+[t:template,n:frag_c24_3_crystal_stone_03_blue]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-03; textures:0 = b_i_cav_gems-04-static; } }
+[t:template,n:frag_c24_3_crystal_stone_04_blue]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-04; textures:0 = b_i_cav_gems-04-static; } }
+[t:template,n:frag_c24_3_crystal_stone_05_blue]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-05; textures:0 = b_i_cav_gems-04-static; } }
+[t:template,n:frag_c24_3_crystal_stone_06_blue]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-06; textures:0 = b_i_cav_gems-04-static; } }
+[t:template,n:frag_c24_3_crystal_stone_07_blue]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-07; textures:0 = b_i_cav_gems-04-static; } }
+[t:template,n:frag_c24_3_crystal_stone_08_blue]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-08; textures:0 = b_i_cav_gems-04-static; } }
 
 // red
 [t:template,n:frag_c24_3_crystal_stone_01_red]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-01; textures:0 = b_i_cav_gems-05-static; } }
@@ -21,11 +51,11 @@
 [t:template,n:frag_c24_3_crystal_stone_08_red]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-08; textures:0 = b_i_cav_gems-05-static; } }
 
 // gold
-[t:template,n:frag_c24_3_crystal_stone_01_gold] { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-01; textures:0 = b_i_cav_gems-06-static; } }
-[t:template,n:frag_c24_3_crystal_stone_02_gold] { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-02; textures:0 = b_i_cav_gems-06-static; } }
-[t:template,n:frag_c24_3_crystal_stone_03_gold] { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-03; textures:0 = b_i_cav_gems-06-static; } }
-[t:template,n:frag_c24_3_crystal_stone_04_gold] { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-04; textures:0 = b_i_cav_gems-06-static; } }
-[t:template,n:frag_c24_3_crystal_stone_05_gold] { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-05; textures:0 = b_i_cav_gems-06-static; } }
-[t:template,n:frag_c24_3_crystal_stone_06_gold] { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-06; textures:0 = b_i_cav_gems-06-static; } }
-[t:template,n:frag_c24_3_crystal_stone_07_gold] { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-07; textures:0 = b_i_cav_gems-06-static; } }
-[t:template,n:frag_c24_3_crystal_stone_08_gold] { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-08; textures:0 = b_i_cav_gems-06-static; } }
+[t:template,n:frag_c24_3_crystal_stone_01_gold]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-01; textures:0 = b_i_cav_gems-06-static; } }
+[t:template,n:frag_c24_3_crystal_stone_02_gold]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-02; textures:0 = b_i_cav_gems-06-static; } }
+[t:template,n:frag_c24_3_crystal_stone_03_gold]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-03; textures:0 = b_i_cav_gems-06-static; } }
+[t:template,n:frag_c24_3_crystal_stone_04_gold]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-04; textures:0 = b_i_cav_gems-06-static; } }
+[t:template,n:frag_c24_3_crystal_stone_05_gold]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-05; textures:0 = b_i_cav_gems-06-static; } }
+[t:template,n:frag_c24_3_crystal_stone_06_gold]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-06; textures:0 = b_i_cav_gems-06-static; } }
+[t:template,n:frag_c24_3_crystal_stone_07_gold]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-07; textures:0 = b_i_cav_gems-06-static; } }
+[t:template,n:frag_c24_3_crystal_stone_08_gold]  { specializes = fragment; [aspect] { model = m_i_glb_frag-stone-08; textures:0 = b_i_cav_gems-06-static; } }

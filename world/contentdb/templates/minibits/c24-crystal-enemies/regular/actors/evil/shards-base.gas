@@ -1,0 +1,43 @@
+[t:template,n:c24_3_base_shard]
+{
+    specializes = base_shard;
+
+    [aspect]
+    {
+        scale_base = 0.2;
+    }
+    [common]
+    {
+        screen_name = "Crystal Shard";
+    }
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+	}
+
+    // stats from mucosa_small, edited
+	[actor]
+	{
+		[skills]
+		{
+			strength =  8, 0;
+			intelligence =  6, 0;
+			dexterity =  13, 0;
+            combat_magic = 10, 0;  // added
+		}
+	}
+	[aspect]
+	{
+		experience_value = 20;  // was 39
+		life = 47;
+        max_life = 47;
+        mana = 10;
+		max_mana = 10;
+	}
+	[attack]
+	{
+		damage_max = 4;
+		damage_min = 2;
+	}
+	[defend] { defense=27; }
+}

@@ -3,57 +3,52 @@
 	name	=shard_zap_c24_3_teal;
 
 	script	=[[
-			call shard_zap_base s<color0(.5,1,1)> s<model(frag_c24_3_crystal_shard_03_teal)>;
+			call shard_zap_base s<color0(0.5,1.0,1.0)> s<model(frag_c24_3_crystal_shard_03_teal)>;
 			worldmsg WE_SPELL_SYNC_END #INVALID_GOID #OWNER_GOID #TARGET_GOID;
 			]];
 }
-
-[effect_script*]
-{
-	name	=shard_zap_c24_3_green;
-
-	script	=[[
-			call shard_zap_base s<color0(.5,1,.5)> s<model(frag_c24_3_crystal_shard_03_green)>;
-			worldmsg WE_SPELL_SYNC_END #INVALID_GOID #OWNER_GOID #TARGET_GOID;
-			]];
-}
-
-[effect_script*]
-{
-	name	=shard_zap_c24_3_blue;
-
-	script	=[[
-			call shard_zap_base s<color0(.5,.5,1)> s<model(frag_c24_3_crystal_shard_03_blue)>;
-			worldmsg WE_SPELL_SYNC_END #INVALID_GOID #OWNER_GOID #TARGET_GOID;
-			]];
-}
-
 [effect_script*]
 {
 	name	=shard_zap_c24_3_purple;
 
 	script	=[[
-			call shard_zap_base s<color0(1,.5,1)> s<model(frag_c24_3_crystal_shard_03_purple)>;
+			call shard_zap_base s<color0(1.0,0.5,1.0)> s<model(frag_c24_3_crystal_shard_03_purple)>;
 			worldmsg WE_SPELL_SYNC_END #INVALID_GOID #OWNER_GOID #TARGET_GOID;
 			]];
 }
+[effect_script*]
+{
+	name	=shard_zap_c24_3_green;
 
+	script	=[[
+			call shard_zap_base s<color0(0.5,1.0,0.5)> s<model(frag_c24_3_crystal_shard_03_green)>;
+			worldmsg WE_SPELL_SYNC_END #INVALID_GOID #OWNER_GOID #TARGET_GOID;
+			]];
+}
+[effect_script*]
+{
+	name	=shard_zap_c24_3_blue;
+
+	script	=[[
+			call shard_zap_base s<color0(0.5,0.5,1.0)> s<model(frag_c24_3_crystal_shard_03_blue)>;
+			worldmsg WE_SPELL_SYNC_END #INVALID_GOID #OWNER_GOID #TARGET_GOID;
+			]];
+}
 [effect_script*]
 {
 	name	=shard_zap_c24_3_red;
 
 	script	=[[
-			call shard_zap_base s<color0(1,.5,.5)> s<model(frag_c24_3_crystal_shard_03_red)>;
+			call shard_zap_base s<color0(1.0,0.5,0.5)> s<model(frag_c24_3_crystal_shard_03_red)>;
 			worldmsg WE_SPELL_SYNC_END #INVALID_GOID #OWNER_GOID #TARGET_GOID;
 			]];
 }
-
 [effect_script*]
 {
 	name	=shard_zap_c24_3_gold;
 
 	script	=[[
-			call shard_zap_base s<color0(1,1,.5)> s<model(frag_c24_3_crystal_shard_03_gold)>;
+			call shard_zap_base s<color0(1.0,1.0,0.5)> s<model(frag_c24_3_crystal_shard_03_gold)>;
 			worldmsg WE_SPELL_SYNC_END #INVALID_GOID #OWNER_GOID #TARGET_GOID;
 			]];
 }

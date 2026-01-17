@@ -1,43 +1,3 @@
-[t:template,n:c24_3_base_crystal_archer]
-{
-    specializes = ice_archer_base;
-
-    common:screen_name = "Crystal Archer";
-    [inventory]
-    {
-        spew_equipped_kill_count = 7;
-    }
-
-    // stats from krug_throw, edited
-	[actor]
-	{
-		[skills]
-		{
-			  dexterity = 10, 0;
-			  intelligence = 7, 0;
-			  ranged = 10,  0;  // was 2
-			  strength = 7, 0;
-		}
-	}
-	[aspect]
-	{
-		  experience_value = 25;  // was 27
-		  life = 50;  // was 23
-		  max_life = 50;  // was 23
-		  mana = 6;
-		  max_mana = 6;
-	}
-	[attack]
-	{
-		  damage_max = 9;
-		  damage_min = 7;
-	}
-	[defend]
-	{
-		  defense = 22;
-	}
-}
-
 [t:template,n:c24_3_crystal_archer_teal]
 {
     specializes = c24_3_base_crystal_archer;
@@ -88,7 +48,6 @@
 		}
 	}
 }
-
 [t:template,n:c24_3_crystal_archer_purple]
 {
     specializes = c24_3_base_crystal_archer;
@@ -139,7 +98,6 @@
 		}
 	}
 }
-
 [t:template,n:c24_3_crystal_archer_green]
 {
     specializes = c24_3_base_crystal_archer;
@@ -190,7 +148,6 @@
 		}
 	}
 }
-
 [t:template,n:c24_3_crystal_archer_blue]
 {
     specializes = c24_3_base_crystal_archer;
@@ -241,7 +198,6 @@
 		}
 	}
 }
-
 [t:template,n:c24_3_crystal_archer_red]
 {
     specializes = c24_3_base_crystal_archer;
@@ -292,7 +248,6 @@
 		}
 	}
 }
-
 [t:template,n:c24_3_crystal_archer_gold]
 {
     specializes = c24_3_base_crystal_archer;

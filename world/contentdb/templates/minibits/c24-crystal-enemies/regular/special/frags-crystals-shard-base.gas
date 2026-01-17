@@ -1,0 +1,9 @@
+// Crystal frags based on the shard models
+
+// base
+[t:template,n:base_frag_c24_3_crystal_shard] { specializes = fragment; aspect:scale_base = 0.2; }
+[t:template,n:base_frag_c24_3_crystal_shard_01] { specializes = base_frag_c24_3_crystal_shard; aspect:model = m_i_glb_frag-shard-01; }
+[t:template,n:base_frag_c24_3_crystal_shard_02] { specializes = base_frag_c24_3_crystal_shard; aspect:model = m_i_glb_frag-shard-02; }
+[t:template,n:base_frag_c24_3_crystal_shard_03] { specializes = base_frag_c24_3_crystal_shard; aspect:model = m_i_glb_frag-shard-03; }
+[t:template,n:base_frag_c24_3_crystal_shard_04] { specializes = base_frag_c24_3_crystal_shard; aspect:model = m_i_glb_frag-shard-04; }
+[t:template,n:base_frag_c24_3_crystal_shard_05] { specializes = base_frag_c24_3_crystal_shard; aspect:model = m_i_glb_frag-shard-05; }

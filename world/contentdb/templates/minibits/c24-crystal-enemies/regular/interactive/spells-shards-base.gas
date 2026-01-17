@@ -1,0 +1,24 @@
+[t:template,n:c24_3_base_spell_shard_zap]
+{
+	specializes = base_spell_monster;
+
+	category_name = "magic";
+	[magic]
+	{
+		cast_range = 12;
+		cast_reload_delay = 1;
+		mana_cost = 0;
+		requires_line_of_sight = true;
+		speed_bias = 1;
+		target_type_flags = tt_conscious_enemy;
+		usage_context_flags = uc_offensive;
+	}
+	[spell_default] {}
+
+    // stats from spell_mucosa_poison, DOUBLED because the mucosa poison effect deals damage twice (trackball + fire)
+	[attack]
+	{
+		damage_max = 30;
+		damage_min = 20;
+	}
+}

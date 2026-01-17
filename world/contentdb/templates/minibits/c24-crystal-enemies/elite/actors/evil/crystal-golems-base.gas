@@ -1,0 +1,220 @@
+[t:template,n:3W_dsx_golem_frost_ranged_base]  // = 3W_dsx_golem_frost_ranged
+{
+	category_name = "3W_evil_d";
+	doc = "3W_dsx_golem_frost_ranged";
+	specializes = actor_evil;
+	[actor]
+	{
+		[skills]
+		{
+			strength = 	39.8, 0;
+			intelligence = 	11.3, 0;
+			dexterity =	19.6, 0;
+			melee =         72, 0;
+			nature_magic = 	73, 0;
+			combat_magic = 	73, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 659568;
+		life = 1116;
+		max_life = 1116;
+		mana = 360;
+		max_mana = 3600;
+		model=m_c_edm_mg_pos_1;
+		textures:0 = b_c_edm_rg-02;
+		material = ice;
+		[voice]
+		{
+			[die]		{ priority = high;	* = s_e_die_frost_golem_SED;		}
+			[enemy_spotted]	{ priority = high; * = s_e_attack_rock_beast; }
+				damage_bonus_min_cmagic = 473;
+				damage_bonus_max_cmagic = 193;
+			[attack]	{ * = s_e_swing_01_SED;}
+		}	
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_min = 162;
+		damage_max = 594;
+		reload_delay = 0;
+		damage_bonus_min_cmagic = 473;
+		damage_bonus_max_cmagic = 193;
+	}
+	[body]
+	{
+		avg_move_velocity = 2.220000;
+		[bone_translator]
+		{
+			body_anterior = bip01_head;
+			body_mid = bip01_spine2;
+			body_posterior = bip01_pelvis;
+			kill_bone = bip01_spine2;
+			shield_bone = Bip01_L_Hand;
+			weapon_bone = Bip01_R_Hand;
+		}
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_edm_mg_fs;
+			[chore_attack]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files]
+				{
+					00 = at;
+					01 = at-02;
+				}
+			}
+			[chore_magic]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files]
+				{
+					00 = mg;
+				}
+			}
+			[chore_default]
+			{
+				chore_stances = 0;
+				skrit = infinite_loop;
+				[anim_files] { 00=ds; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=di; }
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0;
+				skrit = select_fidget;
+				[anim_files] { 00=dff; }
+			}
+			[chore_walk]
+			{
+				chore_stances = 0;
+				skrit = select_walk;
+				[anim_files] { 00=wl; }
+			}
+		}
+	}
+	[common] 
+	{ 
+		screen_name="Frost Golem";
+		membership = ice, monster; 
+	}
+	[defend] { defense = 804; }
+	[inventory] 
+	{	
+		drop_at_use_point = true;
+		selected_active_location = il_active_primary_spell;
+		[other] 
+		{ 
+			il_active_primary_spell=dsx_spell_golem_frost_blast; 
+		}
+		[pcontent]
+		{
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 90243;
+					max = 180486;
+				}
+	
+				[oneof*]
+				{
+					chance = 0.088888888888889;
+					il_main = potion_mana_super;
+					il_main = potion_health_super;
+				}
+	
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = #weapon/161;
+					il_main = #armor/0-216;
+					il_main = #*/161;
+				}
+			}
+		}
+	}
+	[mind]
+	{
+		actor_weapon_preference			= WP_MAGIC;
+		actor_auto_switches_to_magic	= true;
+		actor_auto_switches_to_karate	= true;
+		actor_auto_switches_to_melee	= true;
+
+		on_enemy_entered_icz_switch_to_melee = true;
+
+		jat_die = world\ai\jobs\actors\evil\job_die_explode.skrit;
+		jat_fidget	= world\ai\jobs\common\job_fidget.skrit;
+
+		jat_attack_object_melee	 		= world\ai\jobs\common\job_attack_object_melee.skrit
+			?persistence				= 0.0
+			&hit_multiple				= true;
+					
+		on_enemy_spotted_alert_friends 		= true;
+
+		jat_brain 				= world\ai\jobs\common\brain_hero.skrit
+		?actor_joins_existing_party		= true
+		&actor_creates_own_party		= true
+		&party_template				= "party_dsx_ice";
+
+		com_channels				= dyn_party, ice;
+		com_range				= 14.0;
+		melee_engage_range			= 4.1;
+		ranged_engage_range	 		= 14.0;
+		personal_space_range 			= 2.0;
+		sight_range				= 14.0;
+		inner_comfort_zone_range 		= 4.0;
+		outer_comfort_zone_range  		= 9.0;
+	}
+
+	[physics]
+	{
+		explode_when_killed = true;
+		explosion_magnitude = 3.0;
+		gib_gore_good = true;
+		[break_particulate]
+		{
+			frag_glb_frost_golem_01 = 1;
+			frag_glb_frost_golem_02 = 6;
+			frag_glb_frost_golem_03 = 1;
+			frag_glb_frost_golem_04 = 2;
+			frag_glb_frost_golem_05 = 1;
+		}
+	}
+}
+
+[t:template,n:3W_c24_3_base_crystal_golem]
+{
+    specializes = 3W_dsx_golem_frost_ranged_base;
+
+    common:screen_name = "Crystal Golem";
+    //aspect:experience_value = 35;  // 24 in base
+	//[actor]
+	//{
+	//	[skills]
+	//	{
+	//		strength = 	8, 0;
+	//		intelligence = 	7, 0;
+	//		dexterity =	7, 0;
+	//		melee =         9, 0;  // 2 in base
+	//		nature_magic = 	3, 0;
+	//		combat_magic = 	8, 0;  // 3 in base
+	//	}
+	//}
+	//[aspect]
+	//{
+	//	life = 50;  // was 31
+	//	max_life = 50;  // was 31
+    //}
+}

@@ -1,0 +1,97 @@
+[t:template,n:2W_c24_3_base_crystal_mage]
+{
+	specializes = 2W_ice_mage_base;
+
+	common:screen_name = "Crystal Mage";
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+	}
+
+	// reveal
+	[mind]
+	{
+		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible = true;
+		sight_origin_height = 1;
+		actor_auto_fidgets = false;
+	}
+	[common]
+	{
+		[template_triggers]
+		{
+			[*]
+			{
+				single_shot = true;
+				action* = call_sfx_script("ice_mage_reveal");
+				condition* = receive_world_message("we_enemy_spotted");
+			}
+		}
+	}
+
+	// stats & loot from 2W_krug_shaman, edited/unchanged
+	[actor]
+	{
+		[skills]
+		{
+			  combat_magic = 55, 0;
+			  dexterity = 9.3, 0;
+			  intelligence = 11.7, 0;
+			  melee = 56, 0;
+			  strength = 31.6, 0;
+		}
+	}
+	[aspect]
+	{
+		  experience_value = 17648;
+		  life = 313;
+		  mana = 2187;
+		  max_life = 313;
+		  max_mana = 2187;
+	}
+	[attack]
+	{
+		  damage_max = 216.4;
+		  damage_min = 174.4;
+		damage_bonus_min_cmagic = 148;
+		damage_bonus_max_cmagic = 163;
+	}
+	[defend]
+	{
+		  defense = 530;
+	}
+	[inventory]
+	{
+		[pcontent]
+		{
+			[oneof*]
+			{
+				[gold*]
+				{
+					  chance = 0.3;
+					  max = 33117;
+					  min = 30233;
+				}
+				[oneof*]
+				{
+					  il_main = potion_mana_large;
+					  il_main = potion_health_large;
+					  max = 2;
+					  min = 1;
+                      chance = 0.3;
+				}
+				[all*]
+				{
+					  chance = 0.3;
+					  il_main = #spell/50-60;  // EDITED was hard-coded spell_fireshot
+				}
+				[oneof*]
+				{
+					  chance = 0.1;
+					  il_main = book_glb_magic_01;
+   					  il_main = #body,ro/205-293;
+				}
+             }
+		}
+	}
+}

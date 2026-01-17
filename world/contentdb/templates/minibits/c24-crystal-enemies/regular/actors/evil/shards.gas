@@ -1,85 +1,3 @@
-[t:template,n:c24_3_base_shard]
-{
-    specializes = base_shard;
-
-    [aspect]
-    {
-        scale_base = 0.2;
-    }
-    [common]
-    {
-        screen_name = "Crystal Shard";
-    }
-	[inventory]
-	{
-		selected_active_location = il_active_primary_spell;
-	}
-
-    // stats from mucosa_small, edited
-	[actor]
-	{
-		[skills]
-		{
-			strength =  8, 0;
-			intelligence =  6, 0;
-			dexterity =  13, 0;
-            combat_magic = 10, 0;  // added
-		}
-	}
-	[aspect]
-	{
-		experience_value = 20;  // was 39
-		life = 47;
-        max_life = 47;
-        mana = 10;
-		max_mana = 10;
-	}
-	[attack]
-	{
-		damage_max = 4;
-		damage_min = 2;
-	}
-	[defend] { defense=27; }
-}
-
-[t:template,n:c24_3_shard_green]
-{
-    specializes = c24_3_base_shard;
-
-    [aspect]
-    {
-		[textures] { 0 = b_i_cav_gems-03-static; }  // green
-    }
-	[physics]
-	{
-		[break_particulate]
-		{
-			frag_c24_3_crystal_shard_01_green = 1;
-			frag_c24_3_crystal_shard_02_green = 1;
-			frag_c24_3_crystal_shard_03_green = 2;
-			frag_c24_3_crystal_shard_04_green = 3;
-			frag_c24_3_crystal_shard_05_green = 3;
-		}
-	}
-  	[common]
-    {
-		[template_triggers]
-		{
-			[*]
-			{
-				condition* = receive_world_message("WE_ENTERED_WORLD");
-				single_shot = true;
-				no_trig_bits = true;
-				action* = call_sfx_script("crystal_light_green(sgx)");
-			}
-		}
-    }
-	[inventory]
-	{
-		[other] { il_active_primary_spell = c24_3_spell_shard_zap_green; }
-	}
-}
-
 [t:template,n:c24_3_shard_teal]
 {
     specializes = c24_3_base_shard;
@@ -117,45 +35,6 @@
 		[other] { il_active_primary_spell = c24_3_spell_shard_zap_teal; }
 	}
 }
-
-[t:template,n:c24_3_shard_blue]
-{
-    specializes = c24_3_base_shard;
-
-    [aspect]
-    {
-		[textures] { 0 = b_i_cav_gems-04-static; }  // blue
-    }
-	[physics]
-	{
-		[break_particulate]
-		{
-			frag_c24_3_crystal_shard_01_blue = 1;
-			frag_c24_3_crystal_shard_02_blue = 1;
-			frag_c24_3_crystal_shard_03_blue = 2;
-			frag_c24_3_crystal_shard_04_blue = 3;
-			frag_c24_3_crystal_shard_05_blue = 3;
-		}
-	}
-  	[common]
-    {
-		[template_triggers]
-		{
-			[*]
-			{
-				condition* = receive_world_message("WE_ENTERED_WORLD");
-				single_shot = true;
-				no_trig_bits = true;
-				action* = call_sfx_script("crystal_light_blue(sgx)");
-			}
-		}
-    }
-	[inventory]
-	{
-		[other] { il_active_primary_spell = c24_3_spell_shard_zap_blue; }
-	}
-}
-
 [t:template,n:c24_3_shard_purple]
 {
     specializes = c24_3_base_shard;
@@ -193,7 +72,80 @@
 		[other] { il_active_primary_spell = c24_3_spell_shard_zap_purple; }
 	}
 }
+[t:template,n:c24_3_shard_green]
+{
+    specializes = c24_3_base_shard;
 
+    [aspect]
+    {
+		[textures] { 0 = b_i_cav_gems-03-static; }  // green
+    }
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_c24_3_crystal_shard_01_green = 1;
+			frag_c24_3_crystal_shard_02_green = 1;
+			frag_c24_3_crystal_shard_03_green = 2;
+			frag_c24_3_crystal_shard_04_green = 3;
+			frag_c24_3_crystal_shard_05_green = 3;
+		}
+	}
+  	[common]
+    {
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("crystal_light_green(sgx)");
+			}
+		}
+    }
+	[inventory]
+	{
+		[other] { il_active_primary_spell = c24_3_spell_shard_zap_green; }
+	}
+}
+[t:template,n:c24_3_shard_blue]
+{
+    specializes = c24_3_base_shard;
+
+    [aspect]
+    {
+		[textures] { 0 = b_i_cav_gems-04-static; }  // blue
+    }
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_c24_3_crystal_shard_01_blue = 1;
+			frag_c24_3_crystal_shard_02_blue = 1;
+			frag_c24_3_crystal_shard_03_blue = 2;
+			frag_c24_3_crystal_shard_04_blue = 3;
+			frag_c24_3_crystal_shard_05_blue = 3;
+		}
+	}
+  	[common]
+    {
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("crystal_light_blue(sgx)");
+			}
+		}
+    }
+	[inventory]
+	{
+		[other] { il_active_primary_spell = c24_3_spell_shard_zap_blue; }
+	}
+}
 [t:template,n:c24_3_shard_red]
 {
     specializes = c24_3_base_shard;
@@ -231,7 +183,6 @@
 		[other] { il_active_primary_spell = c24_3_spell_shard_zap_red; }
 	}
 }
-
 [t:template,n:c24_3_shard_gold]
 {
     specializes = c24_3_base_shard;

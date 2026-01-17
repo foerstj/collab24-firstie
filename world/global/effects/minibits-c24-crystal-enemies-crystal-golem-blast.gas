@@ -1,3 +1,60 @@
+// Crystal Golem blast effects
+
+
+[effect_script*]
+{
+	name	=crystal_golem_blast_c24_3_teal_base;
+
+	script	=[[
+			sfx create spawn #SOURCE
+				"must_update()model(frag_c24_3_crystal_ice_01_teal)lvel(0,0,15)lvel_var(0,4,0)
+				spawn_int(0.15)count(5)";
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+
+			sfx create spawn #SOURCE
+				"must_update()model(frag_c24_3_crystal_ice_05_teal)lvel(0,0,15)lvel_var(0,4,0)
+				spawn_int(0.15)count(5)";
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+            
+			sfx create spawn #SOURCE
+				"must_update()model(frag_c24_3_crystal_ice_02_teal)lvel(0,0,15)lvel_var(0,4,0)
+				spawn_int(0.15)count(5)";	
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+		]];
+}
+
+[effect_script*]
+{
+	name	=crystal_golem_blast_c24_3_teal;
+
+	script	=[[
+			sound play s_e_attack_frost_golem_SED at #TARGET_POSITION dist 3 25;
+
+			sfx create fireb #SOURCE
+				"must_update()dur(.5)offset(0,0,0)color0(.1,.1,.1)dark()velocity(0,3,150)scale(.1)
+				accel(0,-30,-10)cvel(1)ts(.6)light_freq(0)alphafade(1)
+				lower_r0(0)lower_r1(1.5)upper_r0(3)upper_r1(20)count(25)
+				flamesize(1)";
+			sfx friendly party #PEEK;
+			sfx start #POP;
+			
+			call crystal_golem_blast_c24_3_teal_base s<Bip01_L_Hand>;
+			call crystal_golem_blast_c24_3_teal_base s<Bip01_R_Hand>; 
+
+			pause 3;
+
+			worldmsg WE_SPELL_SYNC_END #INVALID_GOID #OWNER_GOID #TARGET_GOID;
+
+		]];
+}
+
+
 [effect_script*]
 {
 	name	=crystal_golem_blast_c24_3_purple_base;
@@ -43,6 +100,114 @@
 			
 			call crystal_golem_blast_c24_3_purple_base s<Bip01_L_Hand>;
 			call crystal_golem_blast_c24_3_purple_base s<Bip01_R_Hand>; 
+
+			pause 3;
+
+			worldmsg WE_SPELL_SYNC_END #INVALID_GOID #OWNER_GOID #TARGET_GOID;
+
+		]];
+}
+
+
+[effect_script*]
+{
+	name	=crystal_golem_blast_c24_3_green_base;
+
+	script	=[[
+			sfx create spawn #SOURCE
+				"must_update()model(frag_c24_3_crystal_ice_01_green)lvel(0,0,15)lvel_var(0,4,0)
+				spawn_int(0.15)count(5)";
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+
+			sfx create spawn #SOURCE
+				"must_update()model(frag_c24_3_crystal_ice_05_green)lvel(0,0,15)lvel_var(0,4,0)
+				spawn_int(0.15)count(5)";
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+            
+			sfx create spawn #SOURCE
+				"must_update()model(frag_c24_3_crystal_ice_02_green)lvel(0,0,15)lvel_var(0,4,0)
+				spawn_int(0.15)count(5)";	
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+		]];
+}
+
+[effect_script*]
+{
+	name	=crystal_golem_blast_c24_3_green;
+
+	script	=[[
+			sound play s_e_attack_frost_golem_SED at #TARGET_POSITION dist 3 25;
+
+			sfx create fireb #SOURCE
+				"must_update()dur(.5)offset(0,0,0)color0(.1,.1,.1)dark()velocity(0,3,150)scale(.1)
+				accel(0,-30,-10)cvel(1)ts(.6)light_freq(0)alphafade(1)
+				lower_r0(0)lower_r1(1.5)upper_r0(3)upper_r1(20)count(25)
+				flamesize(1)";
+			sfx friendly party #PEEK;
+			sfx start #POP;
+			
+			call crystal_golem_blast_c24_3_green_base s<Bip01_L_Hand>;
+			call crystal_golem_blast_c24_3_green_base s<Bip01_R_Hand>; 
+
+			pause 3;
+
+			worldmsg WE_SPELL_SYNC_END #INVALID_GOID #OWNER_GOID #TARGET_GOID;
+
+		]];
+}
+
+
+[effect_script*]
+{
+	name	=crystal_golem_blast_c24_3_blue_base;
+
+	script	=[[
+			sfx create spawn #SOURCE
+				"must_update()model(frag_c24_3_crystal_ice_01_blue)lvel(0,0,15)lvel_var(0,4,0)
+				spawn_int(0.15)count(5)";
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+
+			sfx create spawn #SOURCE
+				"must_update()model(frag_c24_3_crystal_ice_05_blue)lvel(0,0,15)lvel_var(0,4,0)
+				spawn_int(0.15)count(5)";
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+            
+			sfx create spawn #SOURCE
+				"must_update()model(frag_c24_3_crystal_ice_02_blue)lvel(0,0,15)lvel_var(0,4,0)
+				spawn_int(0.15)count(5)";	
+			sfx attach_point #PEEK [0] target;
+			sfx friendly party #PEEK;
+			sfx start #POP;
+		]];
+}
+
+[effect_script*]
+{
+	name	=crystal_golem_blast_c24_3_blue;
+
+	script	=[[
+			sound play s_e_attack_frost_golem_SED at #TARGET_POSITION dist 3 25;
+
+			sfx create fireb #SOURCE
+				"must_update()dur(.5)offset(0,0,0)color0(.1,.1,.1)dark()velocity(0,3,150)scale(.1)
+				accel(0,-30,-10)cvel(1)ts(.6)light_freq(0)alphafade(1)
+				lower_r0(0)lower_r1(1.5)upper_r0(3)upper_r1(20)count(25)
+				flamesize(1)";
+			sfx friendly party #PEEK;
+			sfx start #POP;
+			
+			call crystal_golem_blast_c24_3_blue_base s<Bip01_L_Hand>;
+			call crystal_golem_blast_c24_3_blue_base s<Bip01_R_Hand>; 
 
 			pause 3;
 

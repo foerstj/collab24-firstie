@@ -1,14 +1,14 @@
 // Crystal frags based on the rock-beast models
 
-// base
-[t:template,n:base_frag_glb_rock_beast_01] { specializes = fragment; doc = "misc"; [aspect] { model = m_i_glb_frag-rock-beast-01; } }
-[t:template,n:base_frag_glb_rock_beast_02] { specializes = fragment; doc = "misc"; [aspect] { model = m_i_glb_frag-rock-beast-02; } }
-[t:template,n:base_frag_glb_rock_beast_03] { specializes = fragment; doc = "misc"; [aspect] { model = m_i_glb_frag-rock-beast-03; } }
-[t:template,n:base_frag_glb_rock_beast_04] { specializes = fragment; doc = "misc"; [aspect] { model = m_i_glb_frag-rock-beast-04; } }
-[t:template,n:base_frag_glb_rock_beast_05] { specializes = fragment; doc = "misc"; [aspect] { model = m_i_glb_frag-rock-beast-05; } }
-[t:template,n:base_frag_glb_rock_beast_06] { specializes = fragment; doc = "misc"; [aspect] { model = m_i_glb_frag-rock-beast-06; scale_base = 1.2; } physics:sim_duration = 2; }
-[t:template,n:base_frag_glb_rock_beast_07] { specializes = fragment; doc = "misc"; [aspect] { model = m_i_glb_frag-rock-beast-07; scale_base = 1.4; } physics:sim_duration = 2; }
-[t:template,n:base_frag_glb_rock_beast_08] { specializes = fragment; doc = "misc"; [aspect] { model = m_i_glb_frag-rock-beast-08; scale_base = 2.0; } physics:sim_duration = 2; }
+// teal
+[t:template,n:frag_c24_3_crystal_rock_beast_01_teal]  { specializes = base_frag_glb_rock_beast_01; aspect:textures:0 = b_i_cav_gems-01-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_02_teal]  { specializes = base_frag_glb_rock_beast_02; aspect:textures:0 = b_i_cav_gems-01-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_03_teal]  { specializes = base_frag_glb_rock_beast_03; aspect:textures:0 = b_i_cav_gems-01-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_04_teal]  { specializes = base_frag_glb_rock_beast_04; aspect:textures:0 = b_i_cav_gems-01-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_05_teal]  { specializes = base_frag_glb_rock_beast_05; aspect:textures:0 = b_i_cav_gems-01-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_06_teal]  { specializes = base_frag_glb_rock_beast_06; aspect:textures:0 = b_i_cav_gems-01-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_07_teal]  { specializes = base_frag_glb_rock_beast_07; aspect:textures:0 = b_i_cav_gems-01-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_08_teal]  { specializes = base_frag_glb_rock_beast_08; aspect:textures:0 = b_i_cav_gems-01-static; }
 
 // purple
 [t:template,n:frag_c24_3_crystal_rock_beast_01_purple]  { specializes = base_frag_glb_rock_beast_01; aspect:textures:0 = b_i_cav_gems-02-static; }
@@ -19,6 +19,26 @@
 [t:template,n:frag_c24_3_crystal_rock_beast_06_purple]  { specializes = base_frag_glb_rock_beast_06; aspect:textures:0 = b_i_cav_gems-02-static; }
 [t:template,n:frag_c24_3_crystal_rock_beast_07_purple]  { specializes = base_frag_glb_rock_beast_07; aspect:textures:0 = b_i_cav_gems-02-static; }
 [t:template,n:frag_c24_3_crystal_rock_beast_08_purple]  { specializes = base_frag_glb_rock_beast_08; aspect:textures:0 = b_i_cav_gems-02-static; }
+
+// green
+[t:template,n:frag_c24_3_crystal_rock_beast_01_green]  { specializes = base_frag_glb_rock_beast_01; aspect:textures:0 = b_i_cav_gems-03-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_02_green]  { specializes = base_frag_glb_rock_beast_02; aspect:textures:0 = b_i_cav_gems-03-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_03_green]  { specializes = base_frag_glb_rock_beast_03; aspect:textures:0 = b_i_cav_gems-03-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_04_green]  { specializes = base_frag_glb_rock_beast_04; aspect:textures:0 = b_i_cav_gems-03-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_05_green]  { specializes = base_frag_glb_rock_beast_05; aspect:textures:0 = b_i_cav_gems-03-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_06_green]  { specializes = base_frag_glb_rock_beast_06; aspect:textures:0 = b_i_cav_gems-03-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_07_green]  { specializes = base_frag_glb_rock_beast_07; aspect:textures:0 = b_i_cav_gems-03-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_08_green]  { specializes = base_frag_glb_rock_beast_08; aspect:textures:0 = b_i_cav_gems-03-static; }
+
+// blue
+[t:template,n:frag_c24_3_crystal_rock_beast_01_blue]  { specializes = base_frag_glb_rock_beast_01; aspect:textures:0 = b_i_cav_gems-04-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_02_blue]  { specializes = base_frag_glb_rock_beast_02; aspect:textures:0 = b_i_cav_gems-04-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_03_blue]  { specializes = base_frag_glb_rock_beast_03; aspect:textures:0 = b_i_cav_gems-04-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_04_blue]  { specializes = base_frag_glb_rock_beast_04; aspect:textures:0 = b_i_cav_gems-04-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_05_blue]  { specializes = base_frag_glb_rock_beast_05; aspect:textures:0 = b_i_cav_gems-04-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_06_blue]  { specializes = base_frag_glb_rock_beast_06; aspect:textures:0 = b_i_cav_gems-04-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_07_blue]  { specializes = base_frag_glb_rock_beast_07; aspect:textures:0 = b_i_cav_gems-04-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_08_blue]  { specializes = base_frag_glb_rock_beast_08; aspect:textures:0 = b_i_cav_gems-04-static; }
 
 // red
 [t:template,n:frag_c24_3_crystal_rock_beast_01_red]  { specializes = base_frag_glb_rock_beast_01; aspect:textures:0 = b_i_cav_gems-05-static; }
@@ -31,11 +51,11 @@
 [t:template,n:frag_c24_3_crystal_rock_beast_08_red]  { specializes = base_frag_glb_rock_beast_08; aspect:textures:0 = b_i_cav_gems-05-static; }
 
 // gold
-[t:template,n:frag_c24_3_crystal_rock_beast_01_gold] { specializes = base_frag_glb_rock_beast_01; aspect:textures:0 = b_i_cav_gems-06-static; }
-[t:template,n:frag_c24_3_crystal_rock_beast_02_gold] { specializes = base_frag_glb_rock_beast_02; aspect:textures:0 = b_i_cav_gems-06-static; }
-[t:template,n:frag_c24_3_crystal_rock_beast_03_gold] { specializes = base_frag_glb_rock_beast_03; aspect:textures:0 = b_i_cav_gems-06-static; }
-[t:template,n:frag_c24_3_crystal_rock_beast_04_gold] { specializes = base_frag_glb_rock_beast_04; aspect:textures:0 = b_i_cav_gems-06-static; }
-[t:template,n:frag_c24_3_crystal_rock_beast_05_gold] { specializes = base_frag_glb_rock_beast_05; aspect:textures:0 = b_i_cav_gems-06-static; }
-[t:template,n:frag_c24_3_crystal_rock_beast_06_gold] { specializes = base_frag_glb_rock_beast_06; aspect:textures:0 = b_i_cav_gems-06-static; }
-[t:template,n:frag_c24_3_crystal_rock_beast_07_gold] { specializes = base_frag_glb_rock_beast_07; aspect:textures:0 = b_i_cav_gems-06-static; }
-[t:template,n:frag_c24_3_crystal_rock_beast_08_gold] { specializes = base_frag_glb_rock_beast_08; aspect:textures:0 = b_i_cav_gems-06-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_01_gold]  { specializes = base_frag_glb_rock_beast_01; aspect:textures:0 = b_i_cav_gems-06-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_02_gold]  { specializes = base_frag_glb_rock_beast_02; aspect:textures:0 = b_i_cav_gems-06-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_03_gold]  { specializes = base_frag_glb_rock_beast_03; aspect:textures:0 = b_i_cav_gems-06-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_04_gold]  { specializes = base_frag_glb_rock_beast_04; aspect:textures:0 = b_i_cav_gems-06-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_05_gold]  { specializes = base_frag_glb_rock_beast_05; aspect:textures:0 = b_i_cav_gems-06-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_06_gold]  { specializes = base_frag_glb_rock_beast_06; aspect:textures:0 = b_i_cav_gems-06-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_07_gold]  { specializes = base_frag_glb_rock_beast_07; aspect:textures:0 = b_i_cav_gems-06-static; }
+[t:template,n:frag_c24_3_crystal_rock_beast_08_gold]  { specializes = base_frag_glb_rock_beast_08; aspect:textures:0 = b_i_cav_gems-06-static; }

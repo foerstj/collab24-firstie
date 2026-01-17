@@ -1,0 +1,39 @@
+[t:template,n:3W_c24_3_base_crystal_warrior]
+{
+    specializes = 3W_ice_warrior_base;
+
+    common:screen_name = "Crystal Warrior";
+    [inventory]
+    {
+        spew_equipped_kill_count = 7;
+    }
+
+    // stats from 3W_krug_raider, edited/unchanged
+	[actor]
+	{
+		[skills]
+		{
+			  dexterity = 24.4,  0;
+			  intelligence = 10.4,  0;
+			  melee = 89,  0;
+			  strength = 56.9, 0;
+		}
+	}
+	[aspect]
+	{
+		  experience_value = 663444;
+		  life = 446;
+		  mana = 218.4;
+		  max_life = 446;
+		  max_mana = 18.2;
+	}
+	[attack]
+	{
+		  damage_max = 643.7;
+		  damage_min = 411.9;
+	}
+	[defend]
+	{
+		  defense = 812.9;
+	}
+}

@@ -1,10 +1,21 @@
 [effect_script*]
 {
-	name	=crystal_light_red;
+	name	=crystal_light_cyan;
 
 	script	=[[
 			sfx create lightsource #TARGET 
-				"color0(1,0,0)color1(1,0,0)frequency(1)iradius(1)radius(4)";
+				"color0(0,1,1)color1(0,1,1)frequency(1)iradius(1)radius(4)";
+			sfx start #POP;
+			]];
+}
+
+[effect_script*]
+{
+	name	=crystal_light_purple;
+
+	script	=[[
+			sfx create lightsource #TARGET 
+				"color0(1,0,1)color1(1,0,1)frequency(1)iradius(1)radius(4)";
 			sfx start #POP;
 			]];
 }
@@ -33,33 +44,22 @@
 
 [effect_script*]
 {
+	name	=crystal_light_red;
+
+	script	=[[
+			sfx create lightsource #TARGET 
+				"color0(1,0,0)color1(1,0,0)frequency(1)iradius(1)radius(4)";
+			sfx start #POP;
+			]];
+}
+
+[effect_script*]
+{
 	name	=crystal_light_yellow;
 
 	script	=[[
 			sfx create lightsource #TARGET 
 				"color0(1,.5,0)color1(1,.5,0)frequency(1)iradius(1)radius(4)";
-			sfx start #POP;
-			]];
-}
-
-[effect_script*]
-{
-	name	=crystal_light_cyan;
-
-	script	=[[
-			sfx create lightsource #TARGET 
-				"color0(0,1,1)color1(0,1,1)frequency(1)iradius(1)radius(4)";
-			sfx start #POP;
-			]];
-}
-
-[effect_script*]
-{
-	name	=crystal_light_purple;
-
-	script	=[[
-			sfx create lightsource #TARGET 
-				"color0(1,0,1)color1(1,0,1)frequency(1)iradius(1)radius(4)";
 			sfx start #POP;
 			]];
 }

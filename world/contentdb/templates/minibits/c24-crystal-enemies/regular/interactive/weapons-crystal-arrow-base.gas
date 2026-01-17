@@ -1,0 +1,12 @@
+[t:template,n:arrow_ice_base]  // = arrow_ice
+{
+	doc = "Ice arrow";
+	specializes = base_arrow;
+	[aspect] { model=m_w_arw_003; }
+	[common] { screen_name="Ice Arrow"; }
+}
+
+[t:template,n:base_arrow_crystal]
+{
+    specializes = arrow_ice_base;
+}

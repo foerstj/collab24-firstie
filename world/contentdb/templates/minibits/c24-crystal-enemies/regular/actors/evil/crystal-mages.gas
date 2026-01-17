@@ -1,99 +1,3 @@
-[t:template,n:c24_3_base_crystal_mage]
-{
-	specializes = ice_mage_base;
-
-	common:screen_name = "Crystal Mage";
-	[inventory]
-	{
-		selected_active_location = il_active_primary_spell;
-	}
-
-	// reveal
-	[mind]
-	{
-		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
-			?invisible = true;
-		sight_origin_height = 1;
-		actor_auto_fidgets = false;
-	}
-	[common]
-	{
-		[template_triggers]
-		{
-			[*]
-			{
-				single_shot = true;
-				action* = call_sfx_script("ice_mage_reveal");
-				condition* = receive_world_message("we_enemy_spotted");
-			}
-		}
-	}
-
-	// stats & loot from krug_shaman, edited
-	[actor]
-	{
-		[skills]
-		{
-			strength = 8, 0;
-			dexterity = 4, 0;
-			intelligence = 8, 0;
-			melee = 1, 0;
-			combat_magic = 12, 0;  // was 3
-		}
-	}
-	[aspect]
-	{
-		experience_value = 16;
-		life = 50;  // was 19
-		max_life = 50;  // was 19
-		mana = 81;
-		max_mana = 81;
-	}
-	[attack]
-	{
-		damage_max = 12;
-		damage_min = 8;
-	}
-	[defend]
-	{
-		defense = 22;
-	}
-	[inventory]
-	{
-		[pcontent]
-		{
-			[oneof*]
-			{
-				[gold*]
-				{
-					  chance = 0.3;
-					  max = 41;
-					  min = 24;
-				}
-				[oneof*]
-				{
-					  il_main = potion_mana_small;
-					  il_main = potion_health_small;
-					  max = 2;
-					  min = 1;
-					  chance = 0.3;
-				}
-				[all*]
-				{
-					  chance = 0.3;
-					  il_main = #spell/0-10;  // EDITED was hard-coded spell_fireshot
-				}
-				[oneof*]
-				{
-					  chance = 0.1;
-					  il_main = book_glb_magic_01;
-					  il_main = #body,ro/12-17;
-				}
-			}
-		}
-	}
-}
-
 [t:template,n:c24_3_crystal_mage_teal] { specializes = c24_3_crystal_mage_teal_base; }
 [t:template,n:c24_3_crystal_mage_teal_base]
 {
@@ -115,7 +19,6 @@
 			&spells						= "c24_3_spell_crystal_mage_iceblast, c24_3_spell_summon_crystal_warriors_monster_teal";
     }
 }
-
 [t:template,n:c24_3_crystal_mage_purple] { specializes = c24_3_crystal_mage_purple_base; }
 [t:template,n:c24_3_crystal_mage_purple_base]
 {
@@ -137,7 +40,6 @@
 			&spells						= "c24_3_spell_crystal_mage_iceblast, c24_3_spell_summon_crystal_warriors_monster_purple";
     }
 }
-
 [t:template,n:c24_3_crystal_mage_green] { specializes = c24_3_crystal_mage_green_base; }
 [t:template,n:c24_3_crystal_mage_green_base]
 {
@@ -159,7 +61,6 @@
 			&spells						= "c24_3_spell_crystal_mage_iceblast, c24_3_spell_summon_crystal_warriors_monster_green";
     }
 }
-
 [t:template,n:c24_3_crystal_mage_blue] { specializes = c24_3_crystal_mage_blue_base; }
 [t:template,n:c24_3_crystal_mage_blue_base]
 {
@@ -181,7 +82,6 @@
 			&spells						= "c24_3_spell_crystal_mage_iceblast, c24_3_spell_summon_crystal_warriors_monster_blue";
     }
 }
-
 [t:template,n:c24_3_crystal_mage_red] { specializes = c24_3_crystal_mage_red_base; }
 [t:template,n:c24_3_crystal_mage_red_base]
 {
@@ -203,7 +103,6 @@
 			&spells						= "c24_3_spell_crystal_mage_iceblast, c24_3_spell_summon_crystal_warriors_monster_red";
     }
 }
-
 [t:template,n:c24_3_crystal_mage_gold] { specializes = c24_3_crystal_mage_gold_base; }
 [t:template,n:c24_3_crystal_mage_gold_base]
 {
@@ -226,9 +125,69 @@
     }
 }
 
+[t:template,n:c24_3_crystal_mage_teal_ar]
+{
+    specializes = c24_3_crystal_mage_teal_base;
+
+    // auto-reveal
+	[mind]
+	{
+		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible = true
+            &auto_reveal = true;
+	}
+}
 [t:template,n:c24_3_crystal_mage_purple_ar]
 {
     specializes = c24_3_crystal_mage_purple_base;
+
+    // auto-reveal
+	[mind]
+	{
+		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible = true
+            &auto_reveal = true;
+	}
+}
+[t:template,n:c24_3_crystal_mage_green_ar]
+{
+    specializes = c24_3_crystal_mage_green_base;
+
+    // auto-reveal
+	[mind]
+	{
+		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible = true
+            &auto_reveal = true;
+	}
+}
+[t:template,n:c24_3_crystal_mage_blue_ar]
+{
+    specializes = c24_3_crystal_mage_blue_base;
+
+    // auto-reveal
+	[mind]
+	{
+		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible = true
+            &auto_reveal = true;
+	}
+}
+[t:template,n:c24_3_crystal_mage_red_ar]
+{
+    specializes = c24_3_crystal_mage_red_base;
+
+    // auto-reveal
+	[mind]
+	{
+		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible = true
+            &auto_reveal = true;
+	}
+}
+[t:template,n:c24_3_crystal_mage_gold_ar]
+{
+    specializes = c24_3_crystal_mage_gold_base;
 
     // auto-reveal
 	[mind]
