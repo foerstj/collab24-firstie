@@ -1,6 +1,6 @@
 [t:template,n:c24_3_spell_summon_crystal_warriors_monster_teal]
 {
-    specializes = c24_3_base_spell_summon_crystal_warriors_monster;
+	specializes = c24_3_base_spell_summon_crystal_warriors_monster;
 
 	[inventory]
 	{
@@ -24,7 +24,7 @@
 }
 [t:template,n:c24_3_spell_summon_crystal_warriors_monster_purple]
 {
-    specializes = c24_3_base_spell_summon_crystal_warriors_monster;
+	specializes = c24_3_base_spell_summon_crystal_warriors_monster;
 
 	[inventory]
 	{
@@ -48,7 +48,7 @@
 }
 [t:template,n:c24_3_spell_summon_crystal_warriors_monster_green]
 {
-    specializes = c24_3_base_spell_summon_crystal_warriors_monster;
+	specializes = c24_3_base_spell_summon_crystal_warriors_monster;
 
 	[inventory]
 	{
@@ -72,7 +72,7 @@
 }
 [t:template,n:c24_3_spell_summon_crystal_warriors_monster_blue]
 {
-    specializes = c24_3_base_spell_summon_crystal_warriors_monster;
+	specializes = c24_3_base_spell_summon_crystal_warriors_monster;
 
 	[inventory]
 	{
@@ -96,7 +96,7 @@
 }
 [t:template,n:c24_3_spell_summon_crystal_warriors_monster_red]
 {
-    specializes = c24_3_base_spell_summon_crystal_warriors_monster;
+	specializes = c24_3_base_spell_summon_crystal_warriors_monster;
 
 	[inventory]
 	{
@@ -120,7 +120,7 @@
 }
 [t:template,n:c24_3_spell_summon_crystal_warriors_monster_gold]
 {
-    specializes = c24_3_base_spell_summon_crystal_warriors_monster;
+	specializes = c24_3_base_spell_summon_crystal_warriors_monster;
 
 	[inventory]
 	{

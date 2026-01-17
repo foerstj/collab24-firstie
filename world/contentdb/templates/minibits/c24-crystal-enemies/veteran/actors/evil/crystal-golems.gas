@@ -1,10 +1,11 @@
-[t:template,n:2W_c24_3_crystal_golem_teal]
+[t:template,n:2W_c24_3_crystal_golem_teal] { specializes = 2W_c24_3_crystal_golem_teal_base; }
+[t:template,n:2W_c24_3_crystal_golem_teal_base]
 {
-    specializes = 2W_c24_3_base_crystal_golem;
+	specializes = 2W_c24_3_base_crystal_golem;
 
-    aspect:textures:0 = b_i_cav_gems-01-static;  // teal
-  	[common]
-    {
+	aspect:textures:0 = b_i_cav_gems-01-static;  // teal
+	[common]
+	{
 		[template_triggers]
 		{
 			[*]
@@ -21,14 +22,14 @@
 				action* = call_sfx_script("crystal_light_cyan(sgx)");
 			}
 		}
-    }
-    [inventory]
-    {
+	}
+	[inventory]
+	{
 		[other] 
 		{ 
 			il_active_primary_spell = c24_3_spell_golem_blast_teal; 
 		}
-    }
+	}
 	[physics]
 	{
 		[break_particulate]
@@ -41,13 +42,14 @@
 		}
 	}
 }
-[t:template,n:2W_c24_3_crystal_golem_purple]
+[t:template,n:2W_c24_3_crystal_golem_purple] { specializes = 2W_c24_3_crystal_golem_purple_base; }
+[t:template,n:2W_c24_3_crystal_golem_purple_base]
 {
-    specializes = 2W_c24_3_base_crystal_golem;
+	specializes = 2W_c24_3_base_crystal_golem;
 
-    aspect:textures:0 = b_i_cav_gems-02-static;  // purple
-  	[common]
-    {
+	aspect:textures:0 = b_i_cav_gems-02-static;  // purple
+	[common]
+	{
 		[template_triggers]
 		{
 			[*]
@@ -64,14 +66,14 @@
 				action* = call_sfx_script("crystal_light_purple(sgx)");
 			}
 		}
-    }
-    [inventory]
-    {
+	}
+	[inventory]
+	{
 		[other] 
 		{ 
 			il_active_primary_spell = c24_3_spell_golem_blast_purple; 
 		}
-    }
+	}
 	[physics]
 	{
 		[break_particulate]
@@ -84,13 +86,14 @@
 		}
 	}
 }
-[t:template,n:2W_c24_3_crystal_golem_green]
+[t:template,n:2W_c24_3_crystal_golem_green] { specializes = 2W_c24_3_crystal_golem_green_base; }
+[t:template,n:2W_c24_3_crystal_golem_green_base]
 {
-    specializes = 2W_c24_3_base_crystal_golem;
+	specializes = 2W_c24_3_base_crystal_golem;
 
-    aspect:textures:0 = b_i_cav_gems-03-static;  // green
-  	[common]
-    {
+	aspect:textures:0 = b_i_cav_gems-03-static;  // green
+	[common]
+	{
 		[template_triggers]
 		{
 			[*]
@@ -107,14 +110,14 @@
 				action* = call_sfx_script("crystal_light_green(sgx)");
 			}
 		}
-    }
-    [inventory]
-    {
+	}
+	[inventory]
+	{
 		[other] 
 		{ 
 			il_active_primary_spell = c24_3_spell_golem_blast_green; 
 		}
-    }
+	}
 	[physics]
 	{
 		[break_particulate]
@@ -127,13 +130,14 @@
 		}
 	}
 }
-[t:template,n:2W_c24_3_crystal_golem_blue]
+[t:template,n:2W_c24_3_crystal_golem_blue] { specializes = 2W_c24_3_crystal_golem_blue_base; }
+[t:template,n:2W_c24_3_crystal_golem_blue_base]
 {
-    specializes = 2W_c24_3_base_crystal_golem;
+	specializes = 2W_c24_3_base_crystal_golem;
 
-    aspect:textures:0 = b_i_cav_gems-04-static;  // blue
-  	[common]
-    {
+	aspect:textures:0 = b_i_cav_gems-04-static;  // blue
+	[common]
+	{
 		[template_triggers]
 		{
 			[*]
@@ -150,14 +154,14 @@
 				action* = call_sfx_script("crystal_light_blue(sgx)");
 			}
 		}
-    }
-    [inventory]
-    {
+	}
+	[inventory]
+	{
 		[other] 
 		{ 
 			il_active_primary_spell = c24_3_spell_golem_blast_blue; 
 		}
-    }
+	}
 	[physics]
 	{
 		[break_particulate]
@@ -170,13 +174,14 @@
 		}
 	}
 }
-[t:template,n:2W_c24_3_crystal_golem_red]
+[t:template,n:2W_c24_3_crystal_golem_red] { specializes = 2W_c24_3_crystal_golem_red_base; }
+[t:template,n:2W_c24_3_crystal_golem_red_base]
 {
-    specializes = 2W_c24_3_base_crystal_golem;
+	specializes = 2W_c24_3_base_crystal_golem;
 
-    aspect:textures:0 = b_i_cav_gems-05-static;  // red
-  	[common]
-    {
+	aspect:textures:0 = b_i_cav_gems-05-static;  // red
+	[common]
+	{
 		[template_triggers]
 		{
 			[*]
@@ -193,14 +198,14 @@
 				action* = call_sfx_script("crystal_light_red(sgx)");
 			}
 		}
-    }
-    [inventory]
-    {
+	}
+	[inventory]
+	{
 		[other] 
 		{ 
 			il_active_primary_spell = c24_3_spell_golem_blast_red; 
 		}
-    }
+	}
 	[physics]
 	{
 		[break_particulate]
@@ -213,13 +218,14 @@
 		}
 	}
 }
-[t:template,n:2W_c24_3_crystal_golem_gold]
+[t:template,n:2W_c24_3_crystal_golem_gold] { specializes = 2W_c24_3_crystal_golem_gold_base; }
+[t:template,n:2W_c24_3_crystal_golem_gold_base]
 {
-    specializes = 2W_c24_3_base_crystal_golem;
+	specializes = 2W_c24_3_base_crystal_golem;
 
-    aspect:textures:0 = b_i_cav_gems-06-static;  // gold
-  	[common]
-    {
+	aspect:textures:0 = b_i_cav_gems-06-static;  // gold
+	[common]
+	{
 		[template_triggers]
 		{
 			[*]
@@ -236,14 +242,14 @@
 				action* = call_sfx_script("crystal_light_yellow(sgx)");
 			}
 		}
-    }
-    [inventory]
-    {
+	}
+	[inventory]
+	{
 		[other] 
 		{ 
 			il_active_primary_spell = c24_3_spell_golem_blast_gold; 
 		}
-    }
+	}
 	[physics]
 	{
 		[break_particulate]

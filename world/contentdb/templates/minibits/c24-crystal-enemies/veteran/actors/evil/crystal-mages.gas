@@ -1,7 +1,7 @@
 [t:template,n:2W_c24_3_crystal_mage_teal] { specializes = 2W_c24_3_crystal_mage_teal_base; }
 [t:template,n:2W_c24_3_crystal_mage_teal_base]
 {
-    specializes = 2W_c24_3_base_crystal_mage;
+	specializes = 2W_c24_3_base_crystal_mage;
 
 	[inventory]
 	{
@@ -11,18 +11,18 @@
 			il_spell_1 = 2W_c24_3_spell_summon_crystal_warriors_monster_teal;
 		}
 	}
-    [mind]
-    {
+	[mind]
+	{
 		jat_cast 						= world\ai\jobs\common\job_cast.skrit
 			?rand_spell					= true
-			&spell_chances				= "0.5,                     0.5"
+			&spell_chances				= "0.5,					 0.5"
 			&spells						= "c24_3_spell_crystal_mage_iceblast, 2W_c24_3_spell_summon_crystal_warriors_monster_teal";
-    }
+	}
 }
 [t:template,n:2W_c24_3_crystal_mage_purple] { specializes = 2W_c24_3_crystal_mage_purple_base; }
 [t:template,n:2W_c24_3_crystal_mage_purple_base]
 {
-    specializes = 2W_c24_3_base_crystal_mage;
+	specializes = 2W_c24_3_base_crystal_mage;
 
 	[inventory]
 	{
@@ -32,18 +32,18 @@
 			il_spell_1 = 2W_c24_3_spell_summon_crystal_warriors_monster_purple;
 		}
 	}
-    [mind]
-    {
+	[mind]
+	{
 		jat_cast 						= world\ai\jobs\common\job_cast.skrit
 			?rand_spell					= true
-			&spell_chances				= "0.5,                     0.5"
+			&spell_chances				= "0.5,					 0.5"
 			&spells						= "c24_3_spell_crystal_mage_iceblast, 2W_c24_3_spell_summon_crystal_warriors_monster_purple";
-    }
+	}
 }
 [t:template,n:2W_c24_3_crystal_mage_green] { specializes = 2W_c24_3_crystal_mage_green_base; }
 [t:template,n:2W_c24_3_crystal_mage_green_base]
 {
-    specializes = 2W_c24_3_base_crystal_mage;
+	specializes = 2W_c24_3_base_crystal_mage;
 
 	[inventory]
 	{
@@ -53,18 +53,18 @@
 			il_spell_1 = 2W_c24_3_spell_summon_crystal_warriors_monster_green;
 		}
 	}
-    [mind]
-    {
+	[mind]
+	{
 		jat_cast 						= world\ai\jobs\common\job_cast.skrit
 			?rand_spell					= true
-			&spell_chances				= "0.5,                     0.5"
+			&spell_chances				= "0.5,					 0.5"
 			&spells						= "c24_3_spell_crystal_mage_iceblast, 2W_c24_3_spell_summon_crystal_warriors_monster_green";
-    }
+	}
 }
 [t:template,n:2W_c24_3_crystal_mage_blue] { specializes = 2W_c24_3_crystal_mage_blue_base; }
 [t:template,n:2W_c24_3_crystal_mage_blue_base]
 {
-    specializes = 2W_c24_3_base_crystal_mage;
+	specializes = 2W_c24_3_base_crystal_mage;
 
 	[inventory]
 	{
@@ -74,18 +74,18 @@
 			il_spell_1 = 2W_c24_3_spell_summon_crystal_warriors_monster_blue;
 		}
 	}
-    [mind]
-    {
+	[mind]
+	{
 		jat_cast 						= world\ai\jobs\common\job_cast.skrit
 			?rand_spell					= true
-			&spell_chances				= "0.5,                     0.5"
+			&spell_chances				= "0.5,					 0.5"
 			&spells						= "c24_3_spell_crystal_mage_iceblast, 2W_c24_3_spell_summon_crystal_warriors_monster_blue";
-    }
+	}
 }
 [t:template,n:2W_c24_3_crystal_mage_red] { specializes = 2W_c24_3_crystal_mage_red_base; }
 [t:template,n:2W_c24_3_crystal_mage_red_base]
 {
-    specializes = 2W_c24_3_base_crystal_mage;
+	specializes = 2W_c24_3_base_crystal_mage;
 
 	[inventory]
 	{
@@ -95,18 +95,18 @@
 			il_spell_1 = 2W_c24_3_spell_summon_crystal_warriors_monster_red;
 		}
 	}
-    [mind]
-    {
+	[mind]
+	{
 		jat_cast 						= world\ai\jobs\common\job_cast.skrit
 			?rand_spell					= true
-			&spell_chances				= "0.5,                     0.5"
+			&spell_chances				= "0.5,					 0.5"
 			&spells						= "c24_3_spell_crystal_mage_iceblast, 2W_c24_3_spell_summon_crystal_warriors_monster_red";
-    }
+	}
 }
 [t:template,n:2W_c24_3_crystal_mage_gold] { specializes = 2W_c24_3_crystal_mage_gold_base; }
 [t:template,n:2W_c24_3_crystal_mage_gold_base]
 {
-    specializes = 2W_c24_3_base_crystal_mage;
+	specializes = 2W_c24_3_base_crystal_mage;
 
 	[inventory]
 	{
@@ -116,84 +116,84 @@
 			il_spell_1 = 2W_c24_3_spell_summon_crystal_warriors_monster_gold;
 		}
 	}
-    [mind]
-    {
+	[mind]
+	{
 		jat_cast 						= world\ai\jobs\common\job_cast.skrit
 			?rand_spell					= true
-			&spell_chances				= "0.5,                     0.5"
+			&spell_chances				= "0.5,					 0.5"
 			&spells						= "c24_3_spell_crystal_mage_iceblast, 2W_c24_3_spell_summon_crystal_warriors_monster_gold";
-    }
+	}
 }
 
 [t:template,n:2W_c24_3_crystal_mage_teal_ar]
 {
-    specializes = 2W_c24_3_crystal_mage_teal_base;
+	specializes = 2W_c24_3_crystal_mage_teal_base;
 
-    // auto-reveal
+	// auto-reveal
 	[mind]
 	{
 		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
 			?invisible = true
-            &auto_reveal = true;
+			&auto_reveal = true;
 	}
 }
 [t:template,n:2W_c24_3_crystal_mage_purple_ar]
 {
-    specializes = 2W_c24_3_crystal_mage_purple_base;
+	specializes = 2W_c24_3_crystal_mage_purple_base;
 
-    // auto-reveal
+	// auto-reveal
 	[mind]
 	{
 		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
 			?invisible = true
-            &auto_reveal = true;
+			&auto_reveal = true;
 	}
 }
 [t:template,n:2W_c24_3_crystal_mage_green_ar]
 {
-    specializes = 2W_c24_3_crystal_mage_green_base;
+	specializes = 2W_c24_3_crystal_mage_green_base;
 
-    // auto-reveal
+	// auto-reveal
 	[mind]
 	{
 		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
 			?invisible = true
-            &auto_reveal = true;
+			&auto_reveal = true;
 	}
 }
 [t:template,n:2W_c24_3_crystal_mage_blue_ar]
 {
-    specializes = 2W_c24_3_crystal_mage_blue_base;
+	specializes = 2W_c24_3_crystal_mage_blue_base;
 
-    // auto-reveal
+	// auto-reveal
 	[mind]
 	{
 		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
 			?invisible = true
-            &auto_reveal = true;
+			&auto_reveal = true;
 	}
 }
 [t:template,n:2W_c24_3_crystal_mage_red_ar]
 {
-    specializes = 2W_c24_3_crystal_mage_red_base;
+	specializes = 2W_c24_3_crystal_mage_red_base;
 
-    // auto-reveal
+	// auto-reveal
 	[mind]
 	{
 		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
 			?invisible = true
-            &auto_reveal = true;
+			&auto_reveal = true;
 	}
 }
 [t:template,n:2W_c24_3_crystal_mage_gold_ar]
 {
-    specializes = 2W_c24_3_crystal_mage_gold_base;
+	specializes = 2W_c24_3_crystal_mage_gold_base;
 
-    // auto-reveal
+	// auto-reveal
 	[mind]
 	{
 		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
 			?invisible = true
-            &auto_reveal = true;
+			&auto_reveal = true;
 	}
 }

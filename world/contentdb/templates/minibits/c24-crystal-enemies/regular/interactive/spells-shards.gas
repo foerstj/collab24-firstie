@@ -1,6 +1,6 @@
 [t:template,n:c24_3_spell_shard_zap_teal]
 {
-    specializes = c24_3_base_spell_shard_zap;
+	specializes = c24_3_base_spell_shard_zap;
 
 	[common]
 	{
@@ -16,7 +16,7 @@
 }
 [t:template,n:c24_3_spell_shard_zap_purple]
 {
-    specializes = c24_3_base_spell_shard_zap;
+	specializes = c24_3_base_spell_shard_zap;
 
 	[common]
 	{
@@ -32,7 +32,7 @@
 }
 [t:template,n:c24_3_spell_shard_zap_green]
 {
-    specializes = c24_3_base_spell_shard_zap;
+	specializes = c24_3_base_spell_shard_zap;
 
 	[common]
 	{
@@ -48,7 +48,7 @@
 }
 [t:template,n:c24_3_spell_shard_zap_blue]
 {
-    specializes = c24_3_base_spell_shard_zap;
+	specializes = c24_3_base_spell_shard_zap;
 
 	[common]
 	{
@@ -64,7 +64,7 @@
 }
 [t:template,n:c24_3_spell_shard_zap_red]
 {
-    specializes = c24_3_base_spell_shard_zap;
+	specializes = c24_3_base_spell_shard_zap;
 
 	[common]
 	{
@@ -80,7 +80,7 @@
 }
 [t:template,n:c24_3_spell_shard_zap_gold]
 {
-    specializes = c24_3_base_spell_shard_zap;
+	specializes = c24_3_base_spell_shard_zap;
 
 	[common]
 	{

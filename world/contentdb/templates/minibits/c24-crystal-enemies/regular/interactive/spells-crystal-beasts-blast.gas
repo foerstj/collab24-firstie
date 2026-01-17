@@ -1,36 +1,36 @@
 [t:template,n:c24_3_spell_beast_blast_teal]
 {
-    specializes = spell_rock_beast_blast_base;
+	specializes = spell_rock_beast_blast_base;
 
-    spell_damage_volume:effect_script = crystal_beast_blast_c24_3_teal;
+	spell_damage_volume:effect_script = crystal_beast_blast_c24_3_teal;
 }
 [t:template,n:c24_3_spell_beast_blast_purple]
 {
-    specializes = spell_rock_beast_blast_base;
+	specializes = spell_rock_beast_blast_base;
 
-    spell_damage_volume:effect_script = crystal_beast_blast_c24_3_purple;
+	spell_damage_volume:effect_script = crystal_beast_blast_c24_3_purple;
 }
 [t:template,n:c24_3_spell_beast_blast_green]
 {
-    specializes = spell_rock_beast_blast_base;
+	specializes = spell_rock_beast_blast_base;
 
-    spell_damage_volume:effect_script = crystal_beast_blast_c24_3_green;
+	spell_damage_volume:effect_script = crystal_beast_blast_c24_3_green;
 }
 [t:template,n:c24_3_spell_beast_blast_blue]
 {
-    specializes = spell_rock_beast_blast_base;
+	specializes = spell_rock_beast_blast_base;
 
-    spell_damage_volume:effect_script = crystal_beast_blast_c24_3_blue;
+	spell_damage_volume:effect_script = crystal_beast_blast_c24_3_blue;
 }
 [t:template,n:c24_3_spell_beast_blast_red]
 {
-    specializes = spell_rock_beast_blast_base;
+	specializes = spell_rock_beast_blast_base;
 
-    spell_damage_volume:effect_script = crystal_beast_blast_c24_3_red;
+	spell_damage_volume:effect_script = crystal_beast_blast_c24_3_red;
 }
 [t:template,n:c24_3_spell_beast_blast_gold]
 {
-    specializes = spell_rock_beast_blast_base;
+	specializes = spell_rock_beast_blast_base;
 
-    spell_damage_volume:effect_script = crystal_beast_blast_c24_3_gold;
+	spell_damage_volume:effect_script = crystal_beast_blast_c24_3_gold;
 }

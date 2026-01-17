@@ -1,10 +1,11 @@
-[t:template,n:c24_3_crystal_beast_teal]
+[t:template,n:c24_3_crystal_beast_teal] { specializes = c24_3_crystal_beast_teal_base; }
+[t:template,n:c24_3_crystal_beast_teal_base]
 {
-    specializes = c24_3_base_crystal_beast;
+	specializes = c24_3_base_crystal_beast;
 
-    aspect:textures:0 = b_i_cav_gems-01-static;  // teal
-  	[common]
-    {
+	aspect:textures:0 = b_i_cav_gems-01-static;  // teal
+	[common]
+	{
 		[template_triggers]
 		{
 			[*]
@@ -38,7 +39,7 @@
 				action* = call_sfx_script("rock_beast_dust_hands");
 				condition* = receive_world_message("we_anim_sfx",3);
 			}
-            // ADDED:
+			// ADDED:
 			[*]
 			{
 				action* = call_sfx_script("ice_warrior");
@@ -53,11 +54,11 @@
 				action* = call_sfx_script("crystal_light_cyan(sgx)");
 			}
 		}
-    }
+	}
 	[inventory]
 	{
 		[other] { il_active_primary_spell = c24_3_spell_beast_blast_teal; }
-    }
+	}
 	[physics]
 	{
 		[break_particulate]
@@ -79,13 +80,14 @@
 		}
 	}
 }
-[t:template,n:c24_3_crystal_beast_purple]
+[t:template,n:c24_3_crystal_beast_purple] { specializes = c24_3_crystal_beast_purple_base; }
+[t:template,n:c24_3_crystal_beast_purple_base]
 {
-    specializes = c24_3_base_crystal_beast;
+	specializes = c24_3_base_crystal_beast;
 
-    aspect:textures:0 = b_i_cav_gems-02-static;  // purple
-  	[common]
-    {
+	aspect:textures:0 = b_i_cav_gems-02-static;  // purple
+	[common]
+	{
 		[template_triggers]
 		{
 			[*]
@@ -119,7 +121,7 @@
 				action* = call_sfx_script("rock_beast_dust_hands");
 				condition* = receive_world_message("we_anim_sfx",3);
 			}
-            // ADDED:
+			// ADDED:
 			[*]
 			{
 				action* = call_sfx_script("ice_warrior");
@@ -134,11 +136,11 @@
 				action* = call_sfx_script("crystal_light_purple(sgx)");
 			}
 		}
-    }
+	}
 	[inventory]
 	{
 		[other] { il_active_primary_spell = c24_3_spell_beast_blast_purple; }
-    }
+	}
 	[physics]
 	{
 		[break_particulate]
@@ -160,13 +162,14 @@
 		}
 	}
 }
-[t:template,n:c24_3_crystal_beast_green]
+[t:template,n:c24_3_crystal_beast_green] { specializes = c24_3_crystal_beast_green_base; }
+[t:template,n:c24_3_crystal_beast_green_base]
 {
-    specializes = c24_3_base_crystal_beast;
+	specializes = c24_3_base_crystal_beast;
 
-    aspect:textures:0 = b_i_cav_gems-03-static;  // green
-  	[common]
-    {
+	aspect:textures:0 = b_i_cav_gems-03-static;  // green
+	[common]
+	{
 		[template_triggers]
 		{
 			[*]
@@ -200,7 +203,7 @@
 				action* = call_sfx_script("rock_beast_dust_hands");
 				condition* = receive_world_message("we_anim_sfx",3);
 			}
-            // ADDED:
+			// ADDED:
 			[*]
 			{
 				action* = call_sfx_script("ice_warrior");
@@ -215,11 +218,11 @@
 				action* = call_sfx_script("crystal_light_green(sgx)");
 			}
 		}
-    }
+	}
 	[inventory]
 	{
 		[other] { il_active_primary_spell = c24_3_spell_beast_blast_green; }
-    }
+	}
 	[physics]
 	{
 		[break_particulate]
@@ -241,13 +244,14 @@
 		}
 	}
 }
-[t:template,n:c24_3_crystal_beast_blue]
+[t:template,n:c24_3_crystal_beast_blue] { specializes = c24_3_crystal_beast_blue_base; }
+[t:template,n:c24_3_crystal_beast_blue_base]
 {
-    specializes = c24_3_base_crystal_beast;
+	specializes = c24_3_base_crystal_beast;
 
-    aspect:textures:0 = b_i_cav_gems-04-static;  // blue
-  	[common]
-    {
+	aspect:textures:0 = b_i_cav_gems-04-static;  // blue
+	[common]
+	{
 		[template_triggers]
 		{
 			[*]
@@ -281,7 +285,7 @@
 				action* = call_sfx_script("rock_beast_dust_hands");
 				condition* = receive_world_message("we_anim_sfx",3);
 			}
-            // ADDED:
+			// ADDED:
 			[*]
 			{
 				action* = call_sfx_script("ice_warrior");
@@ -296,11 +300,11 @@
 				action* = call_sfx_script("crystal_light_blue(sgx)");
 			}
 		}
-    }
+	}
 	[inventory]
 	{
 		[other] { il_active_primary_spell = c24_3_spell_beast_blast_blue; }
-    }
+	}
 	[physics]
 	{
 		[break_particulate]
@@ -322,13 +326,14 @@
 		}
 	}
 }
-[t:template,n:c24_3_crystal_beast_red]
+[t:template,n:c24_3_crystal_beast_red] { specializes = c24_3_crystal_beast_red_base; }
+[t:template,n:c24_3_crystal_beast_red_base]
 {
-    specializes = c24_3_base_crystal_beast;
+	specializes = c24_3_base_crystal_beast;
 
-    aspect:textures:0 = b_i_cav_gems-05-static;  // red
-  	[common]
-    {
+	aspect:textures:0 = b_i_cav_gems-05-static;  // red
+	[common]
+	{
 		[template_triggers]
 		{
 			[*]
@@ -362,7 +367,7 @@
 				action* = call_sfx_script("rock_beast_dust_hands");
 				condition* = receive_world_message("we_anim_sfx",3);
 			}
-            // ADDED:
+			// ADDED:
 			[*]
 			{
 				action* = call_sfx_script("ice_warrior");
@@ -377,11 +382,11 @@
 				action* = call_sfx_script("crystal_light_red(sgx)");
 			}
 		}
-    }
+	}
 	[inventory]
 	{
 		[other] { il_active_primary_spell = c24_3_spell_beast_blast_red; }
-    }
+	}
 	[physics]
 	{
 		[break_particulate]
@@ -403,13 +408,14 @@
 		}
 	}
 }
-[t:template,n:c24_3_crystal_beast_gold]
+[t:template,n:c24_3_crystal_beast_gold] { specializes = c24_3_crystal_beast_gold_base; }
+[t:template,n:c24_3_crystal_beast_gold_base]
 {
-    specializes = c24_3_base_crystal_beast;
+	specializes = c24_3_base_crystal_beast;
 
-    aspect:textures:0 = b_i_cav_gems-06-static;  // gold
-  	[common]
-    {
+	aspect:textures:0 = b_i_cav_gems-06-static;  // gold
+	[common]
+	{
 		[template_triggers]
 		{
 			[*]
@@ -443,7 +449,7 @@
 				action* = call_sfx_script("rock_beast_dust_hands");
 				condition* = receive_world_message("we_anim_sfx",3);
 			}
-            // ADDED:
+			// ADDED:
 			[*]
 			{
 				action* = call_sfx_script("ice_warrior");
@@ -458,11 +464,11 @@
 				action* = call_sfx_script("crystal_light_yellow(sgx)");
 			}
 		}
-    }
+	}
 	[inventory]
 	{
 		[other] { il_active_primary_spell = c24_3_spell_beast_blast_gold; }
-    }
+	}
 	[physics]
 	{
 		[break_particulate]

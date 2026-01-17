@@ -1,11 +1,12 @@
-[t:template,n:2W_c24_3_shard_teal]
+[t:template,n:2W_c24_3_shard_teal] { specializes = 2W_c24_3_shard_teal_base; }
+[t:template,n:2W_c24_3_shard_teal_base]
 {
-    specializes = 2W_c24_3_base_shard;
+	specializes = 2W_c24_3_base_shard;
 
-    [aspect]
-    {
+	[aspect]
+	{
 		[textures] { 0 = b_i_cav_gems-01-static; }  // teal
-    }
+	}
 	[physics]
 	{
 		[break_particulate]
@@ -17,8 +18,8 @@
 			frag_c24_3_crystal_shard_05_teal = 3;
 		}
 	}
-  	[common]
-    {
+	[common]
+	{
 		[template_triggers]
 		{
 			[*]
@@ -29,20 +30,21 @@
 				action* = call_sfx_script("crystal_light_cyan(sgx)");
 			}
 		}
-    }
+	}
 	[inventory]
 	{
 		[other] { il_active_primary_spell = c24_3_spell_shard_zap_teal; }
 	}
 }
-[t:template,n:2W_c24_3_shard_purple]
+[t:template,n:2W_c24_3_shard_purple] { specializes = 2W_c24_3_shard_purple_base; }
+[t:template,n:2W_c24_3_shard_purple_base]
 {
-    specializes = 2W_c24_3_base_shard;
+	specializes = 2W_c24_3_base_shard;
 
-    [aspect]
-    {
+	[aspect]
+	{
 		[textures] { 0 = b_i_cav_gems-02-static; }  // purple
-    }
+	}
 	[physics]
 	{
 		[break_particulate]
@@ -54,8 +56,8 @@
 			frag_c24_3_crystal_shard_05_purple = 3;
 		}
 	}
-  	[common]
-    {
+	[common]
+	{
 		[template_triggers]
 		{
 			[*]
@@ -66,20 +68,21 @@
 				action* = call_sfx_script("crystal_light_purple(sgx)");
 			}
 		}
-    }
+	}
 	[inventory]
 	{
 		[other] { il_active_primary_spell = c24_3_spell_shard_zap_purple; }
 	}
 }
-[t:template,n:2W_c24_3_shard_green]
+[t:template,n:2W_c24_3_shard_green] { specializes = 2W_c24_3_shard_green_base; }
+[t:template,n:2W_c24_3_shard_green_base]
 {
-    specializes = 2W_c24_3_base_shard;
+	specializes = 2W_c24_3_base_shard;
 
-    [aspect]
-    {
+	[aspect]
+	{
 		[textures] { 0 = b_i_cav_gems-03-static; }  // green
-    }
+	}
 	[physics]
 	{
 		[break_particulate]
@@ -91,8 +94,8 @@
 			frag_c24_3_crystal_shard_05_green = 3;
 		}
 	}
-  	[common]
-    {
+	[common]
+	{
 		[template_triggers]
 		{
 			[*]
@@ -103,20 +106,21 @@
 				action* = call_sfx_script("crystal_light_green(sgx)");
 			}
 		}
-    }
+	}
 	[inventory]
 	{
 		[other] { il_active_primary_spell = c24_3_spell_shard_zap_green; }
 	}
 }
-[t:template,n:2W_c24_3_shard_blue]
+[t:template,n:2W_c24_3_shard_blue] { specializes = 2W_c24_3_shard_blue_base; }
+[t:template,n:2W_c24_3_shard_blue_base]
 {
-    specializes = 2W_c24_3_base_shard;
+	specializes = 2W_c24_3_base_shard;
 
-    [aspect]
-    {
+	[aspect]
+	{
 		[textures] { 0 = b_i_cav_gems-04-static; }  // blue
-    }
+	}
 	[physics]
 	{
 		[break_particulate]
@@ -128,8 +132,8 @@
 			frag_c24_3_crystal_shard_05_blue = 3;
 		}
 	}
-  	[common]
-    {
+	[common]
+	{
 		[template_triggers]
 		{
 			[*]
@@ -140,20 +144,21 @@
 				action* = call_sfx_script("crystal_light_blue(sgx)");
 			}
 		}
-    }
+	}
 	[inventory]
 	{
 		[other] { il_active_primary_spell = c24_3_spell_shard_zap_blue; }
 	}
 }
-[t:template,n:2W_c24_3_shard_red]
+[t:template,n:2W_c24_3_shard_red] { specializes = 2W_c24_3_shard_red_base; }
+[t:template,n:2W_c24_3_shard_red_base]
 {
-    specializes = 2W_c24_3_base_shard;
+	specializes = 2W_c24_3_base_shard;
 
-    [aspect]
-    {
+	[aspect]
+	{
 		[textures] { 0 = b_i_cav_gems-05-static; }  // red
-    }
+	}
 	[physics]
 	{
 		[break_particulate]
@@ -165,8 +170,8 @@
 			frag_c24_3_crystal_shard_05_red = 3;
 		}
 	}
-  	[common]
-    {
+	[common]
+	{
 		[template_triggers]
 		{
 			[*]
@@ -177,20 +182,21 @@
 				action* = call_sfx_script("crystal_light_red(sgx)");
 			}
 		}
-    }
+	}
 	[inventory]
 	{
 		[other] { il_active_primary_spell = c24_3_spell_shard_zap_red; }
 	}
 }
-[t:template,n:2W_c24_3_shard_gold]
+[t:template,n:2W_c24_3_shard_gold] { specializes = 2W_c24_3_shard_gold_base; }
+[t:template,n:2W_c24_3_shard_gold_base]
 {
-    specializes = 2W_c24_3_base_shard;
+	specializes = 2W_c24_3_base_shard;
 
-    [aspect]
-    {
+	[aspect]
+	{
 		[textures] { 0 = b_i_cav_gems-06-static; }  // gold
-    }
+	}
 	[physics]
 	{
 		[break_particulate]
@@ -202,8 +208,8 @@
 			frag_c24_3_crystal_shard_05_gold = 3;
 		}
 	}
-  	[common]
-    {
+	[common]
+	{
 		[template_triggers]
 		{
 			[*]
@@ -214,7 +220,7 @@
 				action* = call_sfx_script("crystal_light_yellow(sgx)");
 			}
 		}
-    }
+	}
 	[inventory]
 	{
 		[other] { il_active_primary_spell = c24_3_spell_shard_zap_gold; }
