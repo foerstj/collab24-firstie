@@ -1,0 +1,71 @@
+[t:template,n:skill_rune_melee_15]
+{
+	specializes = base_skill_rune_melee;
+
+    common:screen_name = "Melee Level 15";
+	[skill_rune]
+	{
+		uber_stat	= 15;
+		melee_stat	= 15;
+		ranged_stat	= 0;
+		cmagic_stat	= 0;
+		nmagic_stat	= 0;
+		int_stat	= 1.35;
+		dex_stat	= 4.05;
+		str_stat	= 9.60;
+	}
+}
+
+[t:template,n:skill_rune_ranged_15]
+{
+	specializes = base_skill_rune_ranged;
+
+    common:screen_name = "Ranged Level 15";
+	[skill_rune]
+	{
+		uber_stat	= 15;
+		melee_stat	= 0;
+		ranged_stat	= 15;
+		cmagic_stat	= 0;
+		nmagic_stat	= 0;
+		int_stat	= 1.95;
+		dex_stat	= 9.30;
+		str_stat	= 3.75;
+	}	
+}
+
+[t:template,n:skill_rune_cmagic_15]
+{
+	specializes = base_skill_rune_cmagic;
+
+    common:screen_name = "Combat Magic Level 15";
+	[skill_rune]
+	{
+		uber_stat	= 15;
+		melee_stat	= 0;
+		ranged_stat	= 0;
+		cmagic_stat	= 15;
+		nmagic_stat	= 0;
+		int_stat	= 10.50;
+		dex_stat	= 2.55;
+		str_stat	= 1.95;
+	}
+}
+
+[t:template,n:skill_rune_nmagic_15]
+{
+	specializes = base_skill_rune_nmagic;
+
+    common:screen_name = "Nature Magic Level 15";
+	[skill_rune]
+	{
+		uber_stat	= 15;
+		melee_stat	= 0;
+		ranged_stat	= 0;
+		cmagic_stat	= 0;
+		nmagic_stat	= 15;
+		int_stat	= 10.95;
+		dex_stat	= 2.70;
+		str_stat	= 1.35;
+	}
+}
