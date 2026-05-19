@@ -16,7 +16,7 @@
 
 	[music]
 	{
-		ambient_track		= "s_e_ambient_wind_01b";
+		//ambient_track		= "s_e_ambient_wind_01b";
 		standard_intro_delay = 5.0f;
 		standard_repeat_delay = 10.0f;
 		standard_track		= "s_m_TempleRuins_02";
@@ -67,7 +67,7 @@
 
 	[music]
 	{
-		ambient_track		= "s_e_ambient_wind_02";
+		//ambient_track		= "s_e_ambient_wind_02";
 		standard_intro_delay = 5.0f;
 		standard_repeat_delay = 10.0f;
 		standard_track		= "s_m_TempleRuins_01";
@@ -92,7 +92,7 @@
 
 	[music]
 	{
-		ambient_track		= "s_e_ambient_wind_02";
+		//ambient_track		= "s_e_ambient_wind_02";
 		standard_intro_delay = 5.0f;
 		standard_repeat_delay = 10.0f;
 		standard_track		= "s_m_TempleRuins_03";
@@ -117,7 +117,7 @@
 
 	[music]
 	{
-		ambient_track		= "s_e_ambient_wind_02";
+		//ambient_track		= "s_e_ambient_wind_02";
 		standard_intro_delay = 5.0f;
 		standard_repeat_delay = 10.0f;
 		standard_track		= "s_m_TempleRuins_04";
@@ -142,7 +142,7 @@
 
 	[music]
 	{
-		ambient_track		= "s_e_ambient_wind_02";
+		//ambient_track		= "s_e_ambient_wind_02";
 		standard_intro_delay = 5.0f;
 		standard_repeat_delay = 10.0f;
 		standard_track		= "s_m_TempleRuins_05";
@@ -229,7 +229,7 @@
 
 	[music]
 	{
-		ambient_track		= "s_e_ambient_wind_02";
+		//ambient_track		= "s_e_ambient_wind_02";
 		standard_intro_delay = 5.0f;
 		standard_repeat_delay = 10.0f;
 		standard_track		= "s_m_TempleRuins_01";
