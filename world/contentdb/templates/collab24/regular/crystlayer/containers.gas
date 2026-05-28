@@ -1,0 +1,134 @@
+[t:template,n:c24_3_ctn_01_crystlayer]
+{
+	specializes = base_pot_cav_03;
+
+	category_name = "path2dm";
+	doc = "1W_barrel_cav_01_path2dm";
+
+	// from barrel_cav_01_path2dm
+	[attack]
+	{
+		damage_max = 25;
+		damage_min = 13;
+	}
+	[inventory]
+	{
+		[pcontent]
+		{
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					max = 20;
+					min = 12;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.25;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+			}
+		}
+	}
+	[trapped]
+	{
+		trap = trp_generator_arrow_barrel;
+	}
+}
+
+[t:template,n:c24_3_ctn_02_crystlayer]
+{
+	specializes = base_pot_des_clay_01;
+
+	category_name = "path2dm";
+	doc = "1W_barrel_cav_02_path2dm";
+
+	// from barrel_cav_02_path2dm
+	[attack]
+	{
+		damage_max = 25;
+		damage_min = 13;
+	}
+	[inventory]
+	{
+		[pcontent]
+		{
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					max = 20;
+					min = 6;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.25;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+			}
+		}
+	}
+	[trapped]
+	{
+		trap = trp_generator_arrow_barrel;
+	}
+}
+
+[t:template,n:c24_3_ctn_03_crystlayer]
+{
+	specializes = base_pot_cav_02;
+
+	category_name = "path2dm";
+	doc = "1W_crate_glb_path2dm";
+
+	// from crate_glb_path2dm
+	[attack]
+	{
+		damage_max = 26;
+		damage_min = 16;
+	}
+	[inventory]
+	{
+		[pcontent]
+		{
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					max = 80;
+					min = 60;
+				}
+				[oneof*]
+				{
+					chance = 0.3;
+					il_main = #weapon/10-22;
+					il_main = #armor/17-45;
+					il_main = #*/10-22;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+			}
+		}
+	}
+	[trapped]
+	{
+		trap = trp_generator_explosion_crate;
+	}
+}
