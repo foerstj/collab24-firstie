@@ -1,6 +1,6 @@
 [t:template,n:c24_3_ctn_01_crystlayer]
 {
-	specializes = base_pot_cav_03;
+	specializes = base_pot_cav_03;  // thin black-and-gold
 
 	category_name = "path2dm";
 	doc = "1W_barrel_cav_01_path2dm";
@@ -46,7 +46,7 @@
 
 [t:template,n:c24_3_ctn_02_crystlayer]
 {
-	specializes = base_pot_des_clay_01;
+	specializes = base_pot_des_clay_01;  // thin blue
 
 	category_name = "path2dm";
 	doc = "1W_barrel_cav_02_path2dm";
@@ -92,7 +92,7 @@
 
 [t:template,n:c24_3_ctn_03_crystlayer]
 {
-	specializes = base_pot_cav_02;
+	specializes = base_pot_cav_02;  // fat with skulls
 
 	category_name = "path2dm";
 	doc = "1W_crate_glb_path2dm";
