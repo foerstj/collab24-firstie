@@ -7,7 +7,7 @@
 	{
 		[other]
 		{
-			il_active_primary_spell = c24_3_spell_crystal_mage_iceblast;
+			il_active_primary_spell = c24_3_spell_crystal_mage_iceblast_teal;
 			il_spell_1 = 3W_c24_3_spell_summon_crystal_warriors_monster_teal;
 		}
 	}
@@ -28,7 +28,7 @@
 	{
 		[other]
 		{
-			il_active_primary_spell = c24_3_spell_crystal_mage_iceblast;
+			il_active_primary_spell = c24_3_spell_crystal_mage_iceblast_purple;
 			il_spell_1 = 3W_c24_3_spell_summon_crystal_warriors_monster_purple;
 		}
 	}
@@ -49,7 +49,7 @@
 	{
 		[other]
 		{
-			il_active_primary_spell = c24_3_spell_crystal_mage_iceblast;
+			il_active_primary_spell = c24_3_spell_crystal_mage_iceblast_green;
 			il_spell_1 = 3W_c24_3_spell_summon_crystal_warriors_monster_green;
 		}
 	}
@@ -70,7 +70,7 @@
 	{
 		[other]
 		{
-			il_active_primary_spell = c24_3_spell_crystal_mage_iceblast;
+			il_active_primary_spell = c24_3_spell_crystal_mage_iceblast_blue;
 			il_spell_1 = 3W_c24_3_spell_summon_crystal_warriors_monster_blue;
 		}
 	}
@@ -91,7 +91,7 @@
 	{
 		[other]
 		{
-			il_active_primary_spell = c24_3_spell_crystal_mage_iceblast;
+			il_active_primary_spell = c24_3_spell_crystal_mage_iceblast_red;
 			il_spell_1 = 3W_c24_3_spell_summon_crystal_warriors_monster_red;
 		}
 	}
@@ -112,7 +112,7 @@
 	{
 		[other]
 		{
-			il_active_primary_spell = c24_3_spell_crystal_mage_iceblast;
+			il_active_primary_spell = c24_3_spell_crystal_mage_iceblast_gold;
 			il_spell_1 = 3W_c24_3_spell_summon_crystal_warriors_monster_gold;
 		}
 	}
@@ -137,6 +137,22 @@
 			&auto_reveal = true;
 	}
 }
+[t:template,n:3W_c24_3_crystal_mage_teal_summon]
+{
+	specializes = 3W_c24_3_crystal_mage_teal_base;
+
+	// auto-reveal
+	[mind]
+	{
+		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible = true
+			&auto_reveal = true;
+	}
+	[inventory]
+	{
+		[pcontent] { /* ERASED */ }
+	}
+}
 [t:template,n:3W_c24_3_crystal_mage_purple_ar]
 {
 	specializes = 3W_c24_3_crystal_mage_purple_base;
@@ -147,6 +163,22 @@
 		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
 			?invisible = true
 			&auto_reveal = true;
+	}
+}
+[t:template,n:3W_c24_3_crystal_mage_purple_summon]
+{
+	specializes = 3W_c24_3_crystal_mage_purple_base;
+
+	// auto-reveal
+	[mind]
+	{
+		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible = true
+			&auto_reveal = true;
+	}
+	[inventory]
+	{
+		[pcontent] { /* ERASED */ }
 	}
 }
 [t:template,n:3W_c24_3_crystal_mage_green_ar]
@@ -161,6 +193,22 @@
 			&auto_reveal = true;
 	}
 }
+[t:template,n:3W_c24_3_crystal_mage_green_summon]
+{
+	specializes = 3W_c24_3_crystal_mage_green_base;
+
+	// auto-reveal
+	[mind]
+	{
+		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible = true
+			&auto_reveal = true;
+	}
+	[inventory]
+	{
+		[pcontent] { /* ERASED */ }
+	}
+}
 [t:template,n:3W_c24_3_crystal_mage_blue_ar]
 {
 	specializes = 3W_c24_3_crystal_mage_blue_base;
@@ -171,6 +219,22 @@
 		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
 			?invisible = true
 			&auto_reveal = true;
+	}
+}
+[t:template,n:3W_c24_3_crystal_mage_blue_summon]
+{
+	specializes = 3W_c24_3_crystal_mage_blue_base;
+
+	// auto-reveal
+	[mind]
+	{
+		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible = true
+			&auto_reveal = true;
+	}
+	[inventory]
+	{
+		[pcontent] { /* ERASED */ }
 	}
 }
 [t:template,n:3W_c24_3_crystal_mage_red_ar]
@@ -185,6 +249,22 @@
 			&auto_reveal = true;
 	}
 }
+[t:template,n:3W_c24_3_crystal_mage_red_summon]
+{
+	specializes = 3W_c24_3_crystal_mage_red_base;
+
+	// auto-reveal
+	[mind]
+	{
+		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible = true
+			&auto_reveal = true;
+	}
+	[inventory]
+	{
+		[pcontent] { /* ERASED */ }
+	}
+}
 [t:template,n:3W_c24_3_crystal_mage_gold_ar]
 {
 	specializes = 3W_c24_3_crystal_mage_gold_base;
@@ -195,5 +275,21 @@
 		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
 			?invisible = true
 			&auto_reveal = true;
+	}
+}
+[t:template,n:3W_c24_3_crystal_mage_gold_summon]
+{
+	specializes = 3W_c24_3_crystal_mage_gold_base;
+
+	// auto-reveal
+	[mind]
+	{
+		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible = true
+			&auto_reveal = true;
+	}
+	[inventory]
+	{
+		[pcontent] { /* ERASED */ }
 	}
 }

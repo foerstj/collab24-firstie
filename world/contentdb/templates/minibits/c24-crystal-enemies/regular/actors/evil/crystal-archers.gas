@@ -1,3 +1,5 @@
+// c24-3 Crystal Warriors
+
 [t:template,n:c24_3_crystal_archer_teal] { specializes = c24_3_crystal_archer_teal_base; }
 [t:template,n:c24_3_crystal_archer_teal_base]
 {
@@ -49,6 +51,13 @@
 		}
 	}
 }
+[t:template,n:c24_3_crystal_archer_teal_summon]
+{
+	specializes = c24_3_crystal_archer_teal_base;
+	physics:explode_when_killed = false;
+	inventory:spew_equipped_kill_count = <ignore>;
+}
+
 [t:template,n:c24_3_crystal_archer_purple] { specializes = c24_3_crystal_archer_purple_base; }
 [t:template,n:c24_3_crystal_archer_purple_base]
 {
@@ -100,6 +109,13 @@
 		}
 	}
 }
+[t:template,n:c24_3_crystal_archer_purple_summon]
+{
+	specializes = c24_3_crystal_archer_purple_base;
+	physics:explode_when_killed = false;
+	inventory:spew_equipped_kill_count = <ignore>;
+}
+
 [t:template,n:c24_3_crystal_archer_green] { specializes = c24_3_crystal_archer_green_base; }
 [t:template,n:c24_3_crystal_archer_green_base]
 {
@@ -151,6 +167,13 @@
 		}
 	}
 }
+[t:template,n:c24_3_crystal_archer_green_summon]
+{
+	specializes = c24_3_crystal_archer_green_base;
+	physics:explode_when_killed = false;
+	inventory:spew_equipped_kill_count = <ignore>;
+}
+
 [t:template,n:c24_3_crystal_archer_blue] { specializes = c24_3_crystal_archer_blue_base; }
 [t:template,n:c24_3_crystal_archer_blue_base]
 {
@@ -202,6 +225,13 @@
 		}
 	}
 }
+[t:template,n:c24_3_crystal_archer_blue_summon]
+{
+	specializes = c24_3_crystal_archer_blue_base;
+	physics:explode_when_killed = false;
+	inventory:spew_equipped_kill_count = <ignore>;
+}
+
 [t:template,n:c24_3_crystal_archer_red] { specializes = c24_3_crystal_archer_red_base; }
 [t:template,n:c24_3_crystal_archer_red_base]
 {
@@ -253,6 +283,13 @@
 		}
 	}
 }
+[t:template,n:c24_3_crystal_archer_red_summon]
+{
+	specializes = c24_3_crystal_archer_red_base;
+	physics:explode_when_killed = false;
+	inventory:spew_equipped_kill_count = <ignore>;
+}
+
 [t:template,n:c24_3_crystal_archer_gold] { specializes = c24_3_crystal_archer_gold_base; }
 [t:template,n:c24_3_crystal_archer_gold_base]
 {
@@ -303,4 +340,10 @@
 			frag_c24_3_crystal_ice_08_gold = 2;
 		}
 	}
+}
+[t:template,n:c24_3_crystal_archer_gold_summon]
+{
+	specializes = c24_3_crystal_archer_gold_base;
+	physics:explode_when_killed = false;
+	inventory:spew_equipped_kill_count = <ignore>;
 }

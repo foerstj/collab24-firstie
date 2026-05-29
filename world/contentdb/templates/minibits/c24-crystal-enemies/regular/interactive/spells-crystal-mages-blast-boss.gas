@@ -1,0 +1,17 @@
+[t:template,n:c24_3_spell_crystal_mage_boss_iceblast]
+{
+    specializes = c24_3_spell_crystal_mage_iceblast_base;
+    
+    [attack]
+    {
+		ammo_template = ice_shard_03_purple;
+    }
+
+    // stats from rock_krug (krug_throw), increased
+    [attack]
+    {
+        // EDITED - doubled, was 11-12
+		damage_max = 24;
+		damage_min = 22;
+    }
+}

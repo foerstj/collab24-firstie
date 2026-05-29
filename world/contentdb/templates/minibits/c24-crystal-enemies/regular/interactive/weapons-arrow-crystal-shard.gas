@@ -1,11 +1,33 @@
+[t:template,n:ice_shard_03_teal]
+{
+	specializes = ice_shard;
+	[aspect]
+	{
+		model = m_i_glb_frag-ice-11;
+		scale_base = 1;
+		textures:0 = b_i_cav_gems-01-static;
+	}
+	[common]
+	{
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script("ice_shard_dust_teal");
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+			}
+		}
+	}
+}
 [t:template,n:ice_shard_03_purple]
 {
 	specializes = ice_shard;
 	[aspect]
 	{
-		model=m_i_glb_frag-ice-11;
+		model = m_i_glb_frag-ice-11;
 		scale_base = 1;
-        textures:0 = b_i_cav_gems-02-static;
+		textures:0 = b_i_cav_gems-02-static;
 	}
 	[common]
 	{
@@ -14,6 +36,94 @@
 			[*]
 			{
 				action* = call_sfx_script("ice_shard_dust_purple");
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+			}
+		}
+	}
+}
+[t:template,n:ice_shard_03_green]
+{
+	specializes = ice_shard;
+	[aspect]
+	{
+		model = m_i_glb_frag-ice-11;
+		scale_base = 1;
+		textures:0 = b_i_cav_gems-03-static;
+	}
+	[common]
+	{
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script("ice_shard_dust_green");
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+			}
+		}
+	}
+}
+[t:template,n:ice_shard_03_blue]
+{
+	specializes = ice_shard;
+	[aspect]
+	{
+		model = m_i_glb_frag-ice-11;
+		scale_base = 1;
+		textures:0 = b_i_cav_gems-04-static;
+	}
+	[common]
+	{
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script("ice_shard_dust_blue");
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+			}
+		}
+	}
+}
+[t:template,n:ice_shard_03_red]
+{
+	specializes = ice_shard;
+	[aspect]
+	{
+		model = m_i_glb_frag-ice-11;
+		scale_base = 1;
+		textures:0 = b_i_cav_gems-05-static;
+	}
+	[common]
+	{
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script("ice_shard_dust_red");
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+			}
+		}
+	}
+}
+[t:template,n:ice_shard_03_gold]
+{
+	specializes = ice_shard;
+	[aspect]
+	{
+		model = m_i_glb_frag-ice-11;
+		scale_base = 1;
+		textures:0 = b_i_cav_gems-06-static;
+	}
+	[common]
+	{
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script("ice_shard_dust_gold");
 				condition* = receive_world_message("WE_ENTERED_WORLD");
 				single_shot = true;
 			}

@@ -1,3 +1,5 @@
+// c24-3 Crystal Warriors
+
 [t:template,n:2W_c24_3_crystal_warrior_teal] { specializes = 2W_c24_3_crystal_warrior_teal_base; }
 [t:template,n:2W_c24_3_crystal_warrior_teal_base]
 {
@@ -49,6 +51,13 @@
 		}
 	}
 }
+[t:template,n:2W_c24_3_crystal_warrior_teal_summon]
+{
+	specializes = 2W_c24_3_crystal_warrior_teal_base;
+	physics:explode_when_killed = false;
+	inventory:spew_equipped_kill_count = <ignore>;
+}
+
 [t:template,n:2W_c24_3_crystal_warrior_purple] { specializes = 2W_c24_3_crystal_warrior_purple_base; }
 [t:template,n:2W_c24_3_crystal_warrior_purple_base]
 {
@@ -100,6 +109,13 @@
 		}
 	}
 }
+[t:template,n:2W_c24_3_crystal_warrior_purple_summon]
+{
+	specializes = 2W_c24_3_crystal_warrior_purple_base;
+	physics:explode_when_killed = false;
+	inventory:spew_equipped_kill_count = <ignore>;
+}
+
 [t:template,n:2W_c24_3_crystal_warrior_green] { specializes = 2W_c24_3_crystal_warrior_green_base; }
 [t:template,n:2W_c24_3_crystal_warrior_green_base]
 {
@@ -151,6 +167,13 @@
 		}
 	}
 }
+[t:template,n:2W_c24_3_crystal_warrior_green_summon]
+{
+	specializes = 2W_c24_3_crystal_warrior_green_base;
+	physics:explode_when_killed = false;
+	inventory:spew_equipped_kill_count = <ignore>;
+}
+
 [t:template,n:2W_c24_3_crystal_warrior_blue] { specializes = 2W_c24_3_crystal_warrior_blue_base; }
 [t:template,n:2W_c24_3_crystal_warrior_blue_base]
 {
@@ -202,6 +225,13 @@
 		}
 	}
 }
+[t:template,n:2W_c24_3_crystal_warrior_blue_summon]
+{
+	specializes = 2W_c24_3_crystal_warrior_blue_base;
+	physics:explode_when_killed = false;
+	inventory:spew_equipped_kill_count = <ignore>;
+}
+
 [t:template,n:2W_c24_3_crystal_warrior_red] { specializes = 2W_c24_3_crystal_warrior_red_base; }
 [t:template,n:2W_c24_3_crystal_warrior_red_base]
 {
@@ -253,6 +283,13 @@
 		}
 	}
 }
+[t:template,n:2W_c24_3_crystal_warrior_red_summon]
+{
+	specializes = 2W_c24_3_crystal_warrior_red_base;
+	physics:explode_when_killed = false;
+	inventory:spew_equipped_kill_count = <ignore>;
+}
+
 [t:template,n:2W_c24_3_crystal_warrior_gold] { specializes = 2W_c24_3_crystal_warrior_gold_base; }
 [t:template,n:2W_c24_3_crystal_warrior_gold_base]
 {
@@ -303,4 +340,10 @@
 			frag_c24_3_crystal_ice_08_gold = 3;
 		}
 	}
+}
+[t:template,n:2W_c24_3_crystal_warrior_gold_summon]
+{
+	specializes = 2W_c24_3_crystal_warrior_gold_base;
+	physics:explode_when_killed = false;
+	inventory:spew_equipped_kill_count = <ignore>;
 }

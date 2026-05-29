@@ -23,7 +23,7 @@
 				[all*]
 				{
 					chance = 1.0;
-					il_main = c24_3_crystal_mage_purple_ar;
+					il_main = c24_3_crystal_mage_purple_summon;
 				}
 			}
 		}
