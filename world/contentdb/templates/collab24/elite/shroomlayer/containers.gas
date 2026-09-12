@@ -1,0 +1,90 @@
+[t:template,n:3W_c24_3_ctn_01_shroomlayer]
+{
+	specializes = base_pot_cav_01;  // teal curls
+
+	category_name = "path2dm";
+	doc = "3W_barrel_cav_02_path2dm";
+
+	// from 3W_barrel_cav_02_path2dm
+	[attack]
+	{
+		damage_max = 265;
+		damage_min = 143;
+	}
+	[inventory]
+	{
+		[pcontent]
+		{
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					max = 38877;
+					min = 15551;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_large;
+					il_main = potion_health_large;
+				}
+				[oneof*]
+				{
+					chance = 0.25;
+					il_main = potion_mana_super;
+					il_main = potion_health_super;
+				}
+			}
+		}
+	}
+	[trapped]
+	{
+		trap = trp_generator_arrow_barrel;
+	}
+}
+
+[t:template,n:3W_c24_3_ctn_02_shroomlayer]
+{
+	specializes = base_pot_des_clay_04;  // fat clay zigzag
+
+	category_name = "path2dm";
+	doc = "3W_crate_grs_03_path2dm";
+
+	// from 3W_crate_grs_03_path2dm
+	[attack]
+	{
+		damage_max = 288;
+		damage_min = 173;
+	}
+	[inventory]
+	{
+		[pcontent]
+		{
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					max = 58316;
+					min = 29158;
+					min_pile = 11;
+					piles = 2 - 4;
+				}
+				[oneof*]
+				{
+					chance = 0.3;
+					il_main = #weapon/100-219;
+					il_main = #armor/181-480;
+					il_main = #*/100-219;
+					il_main = potion_mana_super;
+					il_main = potion_health_super;
+				}
+			}
+		}
+	}
+	[trapped]
+	{
+		trap = trp_generator_arrow_crate;
+	}
+}

@@ -1,0 +1,134 @@
+[t:template,n:2W_c24_3_ctn_01_crystlayer]
+{
+	specializes = base_pot_cav_03;  // thin black-and-gold
+
+	category_name = "path2dm";
+	doc = "2W_barrel_cav_01_path2dm";
+
+	// from 2W_barrel_cav_01_path2dm
+	[attack]
+	{
+		damage_max = 169;
+		damage_min = 91;
+	}
+	[inventory]
+	{
+		[pcontent]
+		{
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					max = 9447;
+					min = 3779;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_medium;
+					il_main = potion_health_medium;
+				}
+				[oneof*]
+				{
+					chance = 0.25;
+					il_main = potion_mana_large;
+					il_main = potion_health_large;
+				}
+			}
+		}
+	}
+	[trapped]
+	{
+		trap = trp_generator_arrow_barrel;
+	}
+}
+
+[t:template,n:2W_c24_3_ctn_02_crystlayer]
+{
+	specializes = base_pot_des_clay_01;  // thin blue
+
+	category_name = "path2dm";
+	doc = "2W_barrel_cav_02_path2dm";
+
+	// from 2W_barrel_cav_02_path2dm
+	[attack]
+	{
+		damage_max = 169;
+		damage_min = 91;
+	}
+	[inventory]
+	{
+		[pcontent]
+		{
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					max = 9447;
+					min = 3779;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_medium;
+					il_main = potion_health_medium;
+				}
+				[oneof*]
+				{
+					chance = 0.25;
+					il_main = potion_mana_large;
+					il_main = potion_health_large;
+				}
+			}
+		}
+	}
+	[trapped]
+	{
+		trap = trp_generator_arrow_barrel;
+	}
+}
+
+[t:template,n:2W_c24_3_ctn_03_crystlayer]
+{
+	specializes = base_pot_cav_02;  // fat with skulls
+
+	category_name = "path2dm";
+	doc = "2W_crate_glb_path2dm";
+
+	// from 2W_crate_glb_path2dm
+	[attack]
+	{
+		damage_max = 184;
+		damage_min = 110;
+	}
+	[inventory]
+	{
+		[pcontent]
+		{
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					max = 14170;
+					min = 7085;
+				}
+				[oneof*]
+				{
+					chance = 0.3;
+					il_main = #weapon/66-144;
+					il_main = #armor/119-315;
+					il_main = #*/66-144;
+					il_main = potion_mana_large;
+					il_main = potion_health_large;
+				}
+			}
+		}
+	}
+	[trapped]
+	{
+		trap = trp_generator_explosion_crate;
+	}
+}
